@@ -1,0 +1,38 @@
+{% extends "base_site.html" %}
+
+<!-- benötigte Variablen: spielzeiten, spieltipp_previous, spieltipp_next -->
+{% load i18n  %}
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+    	<div style="float:left">
+		    <a href="{% url BuLiTippApp.views.index %}">{% trans 'Home' %}</a>
+		    {% if title %} &rsaquo; {{ title }}{% endif %}
+		    
+			-&rsaquo;
+			<a href="{% url BuLiTippApp.views.news %}">Mitteilungen</a>
+		    
+	    </div>
+    	<div style="float:right;">
+    		{% include "navigation.html" %}
+    	</div>
+    	<div style="clear:both"></div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+{% include "css/BuLiTippApp.css" %}
+
+<h2>Mitteilungen</h2>
+<div class="panel panel-info">
+{% for news_ in news %}
+    <div class="panel-heading">	
+        <b>{{ news_.author.username }}</b> schrieb am {{news_.datum}}
+    </div>
+    <div class="panel-body">
+	{{news_.text|safe}}
+    </div>
+{% endfor %}
+</div>
+
+{% endblock %}

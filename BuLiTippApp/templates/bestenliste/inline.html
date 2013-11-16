@@ -1,0 +1,25 @@
+<!-- benötigt: userpunkteplatz  -->
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+<table class="table table-bordered" >
+    <tr>
+        <th>Platz</th><th>Spieler</th><th>Punkte</th>
+    </tr>
+{% for user_, punkte, platz in userpunkteplatz %}
+        <tr {% if user.id == user_.id %} class="success" {% endif %}>
+            <td>
+                <b>{{platz}}</b>
+            </td>
+            <td >         
+                {{user_.username}}
+            </td>
+            <td>
+                {{punkte}}
+            </td>
+        </tr>
+{% endfor %}
+</table>
+</div>
+  <div class="col-md-4"></div>
+</div>
