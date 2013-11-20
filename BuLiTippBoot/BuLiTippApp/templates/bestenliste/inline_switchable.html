@@ -10,9 +10,10 @@ function switch_hidden() {
 	{% with userpunkteplatz=spieltag.userpunkteplatz %}
 		<div id="best_spieltag" class="panel panel-default">
             <div class=""panel-heading">
-    			Dieser Spieltag:
+    			<b>Wertung für </b>
 			    {% if spielzeit %}
-				    <a href="#" onclick='switch_hidden()'>#</a>
+				    <a href="#" onclick='switch_hidden()' class="btn btn-primary active ">Spielzeit</a>
+                    <a href="#" onclick='switch_hidden()' class="btn btn-primary ">Spieltag</a>
 			    {% endif %}
             </div>
             <div class="panel-body">
@@ -24,7 +25,8 @@ function switch_hidden() {
 {% with userpunkteplatz=spielzeit.userpunkteplatz %}
 	<div class="panel panel-default" id="best_spielzeit" {% if spieltag %}hidden{% endif %}>
         <div class=""panel-heading">
-            <b>Diese Spielzeit:</b><a href="#" onclick='switch_hidden()'>#</a>
+            <b>Diese Spielzeit:</b>
+            <a href="#" onclick='switch_hidden()' class="btn btn-primary ">Spieltag</a>
         </div>
         <div class="panel-body">
 		    {% include "bestenliste/inline.html" %}

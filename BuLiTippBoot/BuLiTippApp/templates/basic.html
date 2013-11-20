@@ -79,7 +79,7 @@
     {% block messages %}
         {% if messages %}
         <ul class="messagelist">{% for message in messages %}
-          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }} with: {{ message.tags}}</li>
         {% endfor %}</ul>
         {% endif %}
     {% endblock messages %}
@@ -89,10 +89,10 @@
         {% block pretitle %}{% endblock %}
         {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
 		{% if message != None %}
-			<div class="message">	{{ message }}	</div>
+			<div class="alert alert-success">	{{ message }}	</div>
 		{% endif %}
 		{% if error != None %}
-			<div class="error">	{{ error }}	</div>
+			<div class="alert-danger">	{{ error }}	</div>
 		{% endif %}
         {% block content %}
         {% block object-tools %}{% endblock %}

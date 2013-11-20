@@ -498,3 +498,21 @@ def delete_account(request, info=""):
 		djlogout(request)
 		return redirect(reverse("BuLiTippApp.views.index"), context_instance=RequestContext(request))
 	return render_to_response("user/delete_account.html", {}, context_instance=RequestContext(request))
+
+@login_required
+def spielzeit(request, spielzeit_id=-1):
+	# show Punkte, letzter Spieltag, naechster Spieltag
+	spielzeiten=[]
+	aktuelle_spielzeit=None
+
+	try:
+		aktuelle_spielzeit=Spielzeit.objects.get(pk=spielzeit_id)
+	except:
+		spielzeiten=Spielzeit.objects.all()
+	
+	return render_to_response("spielzeit/index.html",\
+		{"spielzeiten":spielzeiten, \
+		"spielzeit":aktuelle_spielzeit, \
+		"tabelle":Tabelle().getMannschaftPlatz(aktuelle_spielzeit), \
+		"news":news} ,\
+		context_instance=RequestContext(request))

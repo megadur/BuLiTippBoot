@@ -22,16 +22,24 @@
 {% endblock %}
 
 {% block content %}
-
-<div class="panel panel-info">
- <div class="panel-heading">Neueste Mitteilungen
-    <a href="{% url BuLiTippApp.views.news %}" class="hright">alle Mitteilungen</a>
-</div>
+<div class="panel-group panel-info" id="accordion">
+    <div class="panel-heading">Neueste Mitteilungen
+        <a href="{% url BuLiTippApp.views.news %}" class="hright">alle Mitteilungen</a>
+    </div>
+    <div class="panel panel-default">
 {% for news_ in news %}
-  <div class="panel-body">
-    von {{ news_.author.username }} am {{news_.datum}}: {{news_.text|safe}}
-  </div>
+        <div class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{news_.id}}">
+                <strong>{{ news_.author.username }}</strong> schrieb am {{news_.datum}}
+            </a>
+        </div>
+        <div id="collapse{{news_.id}}" class="panel-collapse collapse ">
+            <div class="panel-body">
+                {{news_.text|safe}}
+            </div>
+        </div>
 {% endfor %}
+    </div>
 </div>
 
 <!-- Wenn mehrere Saisons vorhanden -> Saison auswählen -->
@@ -50,8 +58,8 @@
 	{% if spieltipp_previous %}
         <!-- Nav tabs -->
         <ul class="nav nav-tabs">
-          <li><a href="#last" data-toggle="tab">Letzter Spieltag</a></li>
-          <li><a href="#next" data-toggle="tab">Nächster Spieltag</a></li>
+          <li><a href="#last" data-toggle="tab">Tabelle</a></li>
+          <li><a href="#next" data-toggle="tab">Tippen</a></li>
           <li><a href="#season" data-toggle="tab">Saisonverlauf</a></li>
         </ul>
         <!-- Tab panes -->
@@ -95,9 +103,9 @@
 		        {% endwith %}
 	        {% endif %}
             </div>
-        <div class="clearfix">
-		{% include "kommentar/detail.html" %}
-        </div>
+            <div class="clearfix">
+		        {% include "kommentar/detail.html" %}
+            </div>
         </div>
 
 		{% endwith %}

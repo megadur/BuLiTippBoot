@@ -1,0 +1,2 @@
+#DATABASE_NAME="database.db"
+DATABASE_NAME="test_2013-11-17.db"

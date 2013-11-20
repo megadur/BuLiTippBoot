@@ -29,26 +29,36 @@
 Ideen für weitere Inhalte oder Änderungen/Kritik/Gestaltung gerne an: <a href="mailto:info@tippbuli.de">info@TippBuLi.de</a>
 
 </div>
-<h2>Neueste Mitteilungen</h2>
-<a class="btn btn-info active" role="button" href="{% url BuLiTippApp.views.news %}">alle Mitteilungen</a>
-
-<div class="list-group">
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Neueste Mitteilungen
+                <a class="btn btn-info active hright" role="button" href="{% url BuLiTippApp.views.news %}">alle Mitteilungen</a>
+            </h3>
+        </div>
 {% for news_ in news %}
-  <a href="#" class="list-group-item ">
-    <h4 class="list-group-item-heading">von {{ news_.author.username }} am {{news_.datum}}</h4>
-    <p class="list-group-item-text">{{news_.text|safe}}
-	</p>
-  </a>
+        <div class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <strong>{{ news_.author.username }}</strong> schrieb am {{news_.datum}}
+            </a>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse ">
+            <div class="panel-body">
+                {{news_.text|safe}}
+            </div>
+        </div>
 {% endfor %}
+        </div>
+    </div>
 </div>
 
 <!-- Wenn mehrere Saisons vorhanden -> Saison ausählen -->
 {% if user.is_authenticated %}
     {% if spielzeiten|length > 1 %}
-	    <p>Bitte Spielzeit auswählen <span class="badge">{{spielzeiten|length}}</span></p>
+	    <H1>Bitte Spielzeit auswählen </H1>
         <div class="btn-group btn-group-justified">
 		    {% for spielzeit in spielzeiten %}
-			    <a class="btn btn-success" role="button"href="{% url BuLiTippApp.views.start spielzeit.id %}">{{spielzeit.bezeichner}} auswählen</a>
+			    <a class="btn btn-success col-md-4" role="button"href="{% url BuLiTippApp.views.spielzeit spielzeit.id %}">{{spielzeit.bezeichner}} auswählen</a>
 		    {% endfor %}
 		    </div>
     {% endif %}
