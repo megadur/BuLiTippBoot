@@ -5,6 +5,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>BuLiTippBoot</Name>
     <RootNamespace>BuLiTippBoot</RootNamespace>
+    <NameOfLastUsedPublishProfile>test</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -45,6 +46,9 @@
       <ProductId>Python27</ProductId>
       <FriendlyName>Python 2.7</FriendlyName>
     </WebPiReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BuLiTippBoot\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>
