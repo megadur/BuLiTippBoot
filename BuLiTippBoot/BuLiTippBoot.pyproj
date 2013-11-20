@@ -29,10 +29,23 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BuLiTippApp\admin.py" />
+    <Compile Include="BuLiTippApp\dataImport.py" />
+    <Compile Include="BuLiTippApp\dataImport_dfb.py" />
+    <Compile Include="BuLiTippApp\mail.py" />
+    <Compile Include="BuLiTippApp\models\models.py" />
+    <Compile Include="BuLiTippApp\models\models_statistics.py" />
+    <Compile Include="BuLiTippApp\models\punkterechner.py" />
+    <Compile Include="BuLiTippApp\models\__init__.py" />
+    <Compile Include="BuLiTippApp\templatetags\filters.py" />
+    <Compile Include="BuLiTippApp\templatetags\__init__.py" />
+    <Compile Include="BuLiTippApp\tests.py" />
+    <Compile Include="BuLiTippApp\views.py" />
+    <Compile Include="BuLiTippApp\__init__.py" />
+    <Compile Include="BuLiTippBoot\urls.py" />
     <Compile Include="manage.py" />
     <Compile Include="BuLiTippBoot\__init__.py" />
     <Compile Include="BuLiTippBoot\settings.py" />
-    <Compile Include="BuLiTippBoot\urls.py" />
     <Compile Include="BuLiTippBoot\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
@@ -48,7 +61,74 @@
     </WebPiReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BuLiTippApp\" />
+    <Folder Include="BuLiTippApp\data\" />
+    <Folder Include="BuLiTippApp\models\" />
+    <Folder Include="BuLiTippApp\static\" />
+    <Folder Include="BuLiTippApp\static\bootstrap\" />
+    <Folder Include="BuLiTippApp\static\bootstrap\css\" />
+    <Folder Include="BuLiTippApp\static\bootstrap\fonts\" />
+    <Folder Include="BuLiTippApp\static\bootstrap\js\" />
+    <Folder Include="BuLiTippApp\templates\" />
+    <Folder Include="BuLiTippApp\templates\bestenliste\" />
+    <Folder Include="BuLiTippApp\templates\BuLiTippApp\" />
+    <Folder Include="BuLiTippApp\templates\css\" />
+    <Folder Include="BuLiTippApp\templates\kommentar\" />
+    <Folder Include="BuLiTippApp\templates\registration\" />
+    <Folder Include="BuLiTippApp\templates\spieltag\" />
+    <Folder Include="BuLiTippApp\templates\stats\" />
+    <Folder Include="BuLiTippApp\templates\user\" />
+    <Folder Include="BuLiTippApp\templatetags\" />
     <Folder Include="BuLiTippBoot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BuLiTippApp\.gitignore" />
+    <Content Include="BuLiTippApp\data\2013_2014" />
+    <Content Include="BuLiTippApp\data\DFB_1" />
+    <Content Include="BuLiTippApp\static\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="BuLiTippApp\static\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="BuLiTippApp\static\bootstrap\css\bootstrap.css" />
+    <Content Include="BuLiTippApp\static\bootstrap\css\bootstrap.min.css" />
+    <Content Include="BuLiTippApp\static\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="BuLiTippApp\static\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="BuLiTippApp\static\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="BuLiTippApp\static\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="BuLiTippApp\static\bootstrap\js\bootstrap.js" />
+    <Content Include="BuLiTippApp\static\bootstrap\js\bootstrap.min.js" />
+    <Content Include="BuLiTippApp\static\bootstrap\Stylesheet1.css" />
+    <Content Include="BuLiTippApp\static\BuLiTipp.css" />
+    <Content Include="BuLiTippApp\templates\500.html" />
+    <Content Include="BuLiTippApp\templates\about.html" />
+    <Content Include="BuLiTippApp\templates\add_form.html" />
+    <Content Include="BuLiTippApp\templates\base.html" />
+    <Content Include="BuLiTippApp\templates\base_site.html" />
+    <Content Include="BuLiTippApp\templates\basic.html" />
+    <Content Include="BuLiTippApp\templates\basis.html" />
+    <Content Include="BuLiTippApp\templates\bestenliste\detail.html" />
+    <Content Include="BuLiTippApp\templates\bestenliste\inline.html" />
+    <Content Include="BuLiTippApp\templates\bestenliste\inline_switchable.html" />
+    <Content Include="BuLiTippApp\templates\BuLiTippApp\admin_app_name.html" />
+    <Content Include="BuLiTippApp\templates\BuLiTippApp\admin_model_testmeproxyforfieldsets_change_form.html" />
+    <Content Include="BuLiTippApp\templates\change_form.html" />
+    <Content Include="BuLiTippApp\templates\contact.html" />
+    <Content Include="BuLiTippApp\templates\css\BuLiTippApp.css" />
+    <Content Include="BuLiTippApp\templates\index.html" />
+    <Content Include="BuLiTippApp\templates\kommentar\detail.html" />
+    <Content Include="BuLiTippApp\templates\kommentar\inline.html" />
+    <Content Include="BuLiTippApp\templates\kommentar\inline_new.html" />
+    <Content Include="BuLiTippApp\templates\navigation.html" />
+    <Content Include="BuLiTippApp\templates\news.html" />
+    <Content Include="BuLiTippApp\templates\register.html" />
+    <Content Include="BuLiTippApp\templates\registration\login.html" />
+    <Content Include="BuLiTippApp\templates\saisontipp.html" />
+    <Content Include="BuLiTippApp\templates\spieltag\detail.html" />
+    <Content Include="BuLiTippApp\templates\spieltag\inline.html" />
+    <Content Include="BuLiTippApp\templates\start.html" />
+    <Content Include="BuLiTippApp\templates\stats\user.html" />
+    <Content Include="BuLiTippApp\templates\test.html" />
+    <Content Include="BuLiTippApp\templates\user\account.html" />
+    <Content Include="BuLiTippApp\templates\user\delete_account.html" />
+    <Content Include="BuLiTippBoot\.gitignore" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>

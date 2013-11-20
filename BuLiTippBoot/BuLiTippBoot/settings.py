@@ -1,10 +1,11 @@
 # Django settings for BuLiTippBoot project.
-
+from django.core.urlresolvers import reverse
+import local_settings
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    # ('MegaDur', 'megadur@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -12,8 +13,8 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
-        'USER': '',                      # Not used with sqlite3.
+	'NAME': local_settings.DATABASE_NAME,		      # Or path to database file if using sqlite3.
+	'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
@@ -27,11 +28,11 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Europe/Berlin'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'de-de'
 
 SITE_ID = 1
 
@@ -109,6 +110,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    "./BuLiTippApp/templates"
 )
 
 INSTALLED_APPS = (
@@ -119,9 +121,12 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    #'django_admin_bootstrapped',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    #'bootstrap_toolkit',
+    'BuLiTippApp',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -152,3 +157,6 @@ LOGGING = {
         },
     }
 }
+
+LOGIN_URL = "/login/"
+LOGIN_REDIRECT_URL = reverse("BuLiTippApp.views.index")
