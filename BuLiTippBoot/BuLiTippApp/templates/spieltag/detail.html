@@ -3,35 +3,32 @@
 {% load i18n  %}
 
 {% block breadcrumbs %}
-    
-    <div class="breadcrumbs">
-    	<div style="float:left">
-		    <a href="{% url BuLiTippApp.views.index %}">{% trans 'Home' %}</a>
-		    {% if title %} &rsaquo; {{ title }}{% endif %}
-		    
-		    -&rsaquo;
-		    <a href="{% url BuLiTippApp.views.index spielzeit.id %}">{{ spielzeit.bezeichner }}</a>
-		    -&rsaquo;
-		
-			<select name="spieltag" size="1" onchange="this.options[this.selectedIndex].value 
-		        	&& (window.location = this.options[this.selectedIndex].value);">
-				{% for st in spielzeit.spieltag_set.all %}
-		        		<option {%if st.id == spieltag.id%}selected{%endif%} value="{% url BuLiTippApp.views.detail st.id %}">{{st.nummer}}</option>
-				{% endfor %}
-			</select>
-	    </div>
-    	<div style="float:right;">
-    		{% include "navigation.html" %}
-    	</div>
-    	<div style="clear:both"></div>
-    </div>
 
+    <li>
+		<a href="{% url BuLiTippApp.views.index %}">{% trans 'Home' %}</a>
+    </li>
+    <li>
+		<a href="{% url BuLiTippApp.views.spielzeit spielzeit.id %}">{{ spielzeit.bezeichner }}</a>
+    </li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Spieltag {{spieltag.id}}
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+		{% for st in spielzeit.spieltag_set.all %}
+            <li {%if st.id == spieltag.id%}class="active"{%endif%} >
+                <a tabindex="-1" href="{% url BuLiTippApp.views.detail st.id %}">Spieltag {{st.nummer}}</a>
+            </li>
+		{% endfor %}
+        </ul>
+    </li>
     
 {% endblock %}
 
 {% block content %}
 
-<h2>Der {{ spieltag.nummer }}. Spieltag der Saison "{{ spielzeit.bezeichner  }}"
+<h2>Der {{ spieltag.nummer }}. Spieltag dieser Saison "{{ spielzeit.bezeichner  }}"
 <form class="form-inline hright" role="form">
     <div class="form-group">
         {% if no_navigation != "true" %}
@@ -50,28 +47,27 @@
     </div>
 </form >
 </h2>
-
 {% if spieltag.is_tippable %}
-<div class="alert alert-info">
-Jetzt tippen bis zum {{ spieltag.datum }}.
-</div>
+    <div class="alert alert-info">
+        Jetzt tippen bis zum {{ spieltag.datum }}.
+    </div>
 {% else %}
-<div class="alert alert-warning">
-Tippen nicht mehr möglich!
-</div>
+    <div class="alert alert-warning">
+        Tippen nicht mehr möglich!
+    </div>
 {% endif %}
 <div>
-<div style="float:left">
-{% include "spieltag/inline.html" %}
-</div>
-{% if not spieltag.is_tippable %}
-	{% with userpunkteplatz=spieltag.userpunkteplatz %}
-		<div style="float:right">
-		{% include "bestenliste/inline_switchable.html" %}
-		</div>
-	{% endwith %}
-{% endif %}
-<div style="clear:both"></div>
+    <div style="float:left">
+        {% include "spieltag/inline.html" %}
+    </div>
+    {% if not spieltag.is_tippable %}
+	    {% with userpunkteplatz=spieltag.userpunkteplatz %}
+		    <div style="float:right">
+		    {% include "bestenliste/inline_nav.html" %}
+		    </div>
+	    {% endwith %}
+    {% endif %}
+    <div style="clear:both"></div>
 </div>
 {% with kommentare=spieltag.kommentar_set.all spieltag=spieltag %}
 	{% include "kommentar/detail.html" %}

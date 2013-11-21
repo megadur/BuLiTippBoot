@@ -44,6 +44,22 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if user.is_active %}
+                <li>
+                    <a href="{% url 'BuLiTippApp.views.saisontipp' %}">Saisontipp</a>
+                </li>
+                <li>
+                    <a href="{% url 'BuLiTippApp.views.user_site' %}">Statistiken</a>
+                </li>
+                {% if spielzeit.id %}
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" >Spielzeit {{spielzeit.bezeichner}} </a>
+                    <ul class="dropdown-menu">
+		            {% for spielzeit in spielzeiten %}
+			            <li><a href="{% url 'BuLiTippApp.views.index' spielzeit.id %}">{{spielzeit.bezeichner}} </a></li>
+		            {% endfor %}
+                    </ul>                        
+                </li>
+                {% endif %}
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">{% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}<b class="caret"></b></a>
                         {% block userlinks %}
@@ -72,8 +88,8 @@
     </div>
     <ol class="breadcrumb">
     {% block breadcrumbs %}
-    <li><a href="{% url 'BuLiTippApp.views.index' %}">{% trans 'Home' %}</a></li>
-    {% if title %} &rsaquo; {{ title }}{% endif %}
+        <li><a href="{% url 'BuLiTippApp.views.index' %}">{% trans 'Home' %}</a></li>
+        {% if title %} &rsaquo; {{ title }}{% endif %}
     {% endblock %}
     </ol >
     {% block messages %}
@@ -88,8 +104,8 @@
      <div id="content" >
         {% block pretitle %}{% endblock %}
         {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
-		{% if message != None %}
-			<div class="alert alert-success">	{{ message }}	</div>
+		{% if message %}
+			<div class="alert alert-success">	'{{ message }}'	</div>
 		{% endif %}
 		{% if error != None %}
 			<div class="alert-danger">	{{ error }}	</div>

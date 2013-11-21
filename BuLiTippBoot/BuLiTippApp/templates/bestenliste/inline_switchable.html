@@ -6,6 +6,7 @@ function switch_hidden() {
 	document.getElementById("best_spieltag").hidden=!document.getElementById("best_spieltag").hidden;
 }
 </script>
+
 {% if spieltag %}
 	{% with userpunkteplatz=spieltag.userpunkteplatz %}
 		<div id="best_spieltag" class="panel panel-default">

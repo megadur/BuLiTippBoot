@@ -8,7 +8,7 @@ from django.contrib.auth import authenticate, login as djlogin, logout as djlogo
 from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
-from models import Spieltag, Spielzeit, Tipp, Kommentar, News, Meistertipp, Verein, Herbstmeistertipp, Absteiger, Tabelle
+from models import Spiel, Spieltag, Spielzeit, Tipp, Kommentar, News, Meistertipp, Verein, Herbstmeistertipp, Absteiger, Tabelle
 from datetime import datetime
 from sets import Set
 import operator
@@ -303,30 +303,6 @@ def register(request):
 		return redirect(reverse("BuLiTippApp.views.index"), context_instance=RequestContext(request))
 	return render_to_response("register.html", context_instance=RequestContext(request))
 	
-# using django.contrib.auth.views.login instead as login view
-#def login(request):
-#	if "username" in request.POST.keys():
-#		u = request.POST['username']
-#		p = request.POST['password']
-#		user = authenticate(username=u, password=p)
-#		if user is not None:
-#			if user.is_active:
-#				djlogin(request, user)
-#				next=request.GET.get('next', '')
-#				print "Get: "+str(request.GET)
-#				print "Post: "+str(request.POST)
-#				print "Next: "+next
-#				if next != "":
-#					return redirect(next)
-#				else:
-#					return redirect(reverse("BuLiTippApp.views.home"))
-#					#return HttpResponseRedirect(reverse("BuLiTippApp.views.index") )
-#			else:
-#				return HttpResponse("Falscher Username/Password!")
-#		else:
-#			return HttpResponse("Falscher Username/Password!")
-#	return render_to_response("login.html", context_instance=RequestContext(request))
-
 @login_required
 def detail(request, spieltag_id, spielzeit_id=-1, info=""):
 	spieltag = get_object_or_404(Spieltag, pk=spieltag_id)
@@ -504,15 +480,15 @@ def spielzeit(request, spielzeit_id=-1):
 	# show Punkte, letzter Spieltag, naechster Spieltag
 	spielzeiten=[]
 	aktuelle_spielzeit=None
-
-	try:
-		aktuelle_spielzeit=Spielzeit.objects.get(pk=spielzeit_id)
-	except:
-		spielzeiten=Spielzeit.objects.all()
+	spiele=[]
+	aktuelle_spielzeit=Spielzeit.objects.get(pk=spielzeit_id)
+	spielzeiten=Spielzeit.objects.all()
+	spiele=Spiel.objects.all()
 	
 	return render_to_response("spielzeit/index.html",\
 		{"spielzeiten":spielzeiten, \
 		"spielzeit":aktuelle_spielzeit, \
+		"spiele":spiele, \
 		"tabelle":Tabelle().getMannschaftPlatz(aktuelle_spielzeit), \
 		"news":news} ,\
 		context_instance=RequestContext(request))

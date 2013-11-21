@@ -11,7 +11,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4e277519-4cc8-40c5-a967-bbbb26b9a7cf</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>
+    </ProjectHome>
     <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <StartupFile>manage.py</StartupFile>
     <SearchPath>
@@ -43,10 +44,16 @@
     <Compile Include="BuLiTippApp\views.py" />
     <Compile Include="BuLiTippApp\__init__.py" />
     <Compile Include="BuLiTippBoot\urls.py" />
+    <Compile Include="local_settings.py" />
     <Compile Include="manage.py" />
     <Compile Include="BuLiTippBoot\__init__.py" />
     <Compile Include="BuLiTippBoot\settings.py" />
     <Compile Include="BuLiTippBoot\wsgi.py" />
+    <Compile Include="refreshStatistics.py" />
+    <Compile Include="send_reminders.py" />
+    <Compile Include="static\admin\js\compress.py" />
+    <Compile Include="templatetags\exprtag.py" />
+    <Compile Include="templatetags\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <WebPiReference Include="https://www.microsoft.com/web/webpi/3.0/toolsproductlist.xml%3fDjango">
@@ -76,10 +83,21 @@
     <Folder Include="BuLiTippApp\templates\kommentar\" />
     <Folder Include="BuLiTippApp\templates\registration\" />
     <Folder Include="BuLiTippApp\templates\spieltag\" />
+    <Folder Include="BuLiTippApp\templates\spielzeit\" />
     <Folder Include="BuLiTippApp\templates\stats\" />
     <Folder Include="BuLiTippApp\templates\user\" />
     <Folder Include="BuLiTippApp\templatetags\" />
     <Folder Include="BuLiTippBoot\" />
+    <Folder Include="install\" />
+    <Folder Include="install\sites-enabled\" />
+    <Folder Include="static\" />
+    <Folder Include="static\admin\" />
+    <Folder Include="static\admin\css\" />
+    <Folder Include="static\admin\img\" />
+    <Folder Include="static\admin\img\gis\" />
+    <Folder Include="static\admin\js\" />
+    <Folder Include="static\admin\js\admin\" />
+    <Folder Include="templatetags\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BuLiTippApp\.gitignore" />
@@ -106,6 +124,7 @@
     <Content Include="BuLiTippApp\templates\basis.html" />
     <Content Include="BuLiTippApp\templates\bestenliste\detail.html" />
     <Content Include="BuLiTippApp\templates\bestenliste\inline.html" />
+    <Content Include="BuLiTippApp\templates\bestenliste\inline_nav.html" />
     <Content Include="BuLiTippApp\templates\bestenliste\inline_switchable.html" />
     <Content Include="BuLiTippApp\templates\BuLiTippApp\admin_app_name.html" />
     <Content Include="BuLiTippApp\templates\BuLiTippApp\admin_model_testmeproxyforfieldsets_change_form.html" />
@@ -123,12 +142,87 @@
     <Content Include="BuLiTippApp\templates\saisontipp.html" />
     <Content Include="BuLiTippApp\templates\spieltag\detail.html" />
     <Content Include="BuLiTippApp\templates\spieltag\inline.html" />
+    <Content Include="BuLiTippApp\templates\spielzeit\index.html" />
     <Content Include="BuLiTippApp\templates\start.html" />
     <Content Include="BuLiTippApp\templates\stats\user.html" />
     <Content Include="BuLiTippApp\templates\test.html" />
     <Content Include="BuLiTippApp\templates\user\account.html" />
     <Content Include="BuLiTippApp\templates\user\delete_account.html" />
     <Content Include="BuLiTippBoot\.gitignore" />
+    <Content Include="install\README" />
+    <Content Include="install\sites-enabled\000-BuLiTipp-static" />
+    <Content Include="install\sites-enabled\001-BuLiTipp" />
+    <Content Include="static\admin\css\base.css" />
+    <Content Include="static\admin\css\changelists.css" />
+    <Content Include="static\admin\css\dashboard.css" />
+    <Content Include="static\admin\css\forms.css" />
+    <Content Include="static\admin\css\ie.css" />
+    <Content Include="static\admin\css\login.css" />
+    <Content Include="static\admin\css\rtl.css" />
+    <Content Include="static\admin\css\widgets.css" />
+    <Content Include="static\admin\img\changelist-bg.gif" />
+    <Content Include="static\admin\img\changelist-bg_rtl.gif" />
+    <Content Include="static\admin\img\chooser-bg.gif" />
+    <Content Include="static\admin\img\chooser_stacked-bg.gif" />
+    <Content Include="static\admin\img\default-bg-reverse.gif" />
+    <Content Include="static\admin\img\default-bg.gif" />
+    <Content Include="static\admin\img\deleted-overlay.gif" />
+    <Content Include="static\admin\img\gis\move_vertex_off.png" />
+    <Content Include="static\admin\img\gis\move_vertex_on.png" />
+    <Content Include="static\admin\img\icon-no.gif" />
+    <Content Include="static\admin\img\icon-unknown.gif" />
+    <Content Include="static\admin\img\icon-yes.gif" />
+    <Content Include="static\admin\img\icon_addlink.gif" />
+    <Content Include="static\admin\img\icon_alert.gif" />
+    <Content Include="static\admin\img\icon_calendar.gif" />
+    <Content Include="static\admin\img\icon_changelink.gif" />
+    <Content Include="static\admin\img\icon_clock.gif" />
+    <Content Include="static\admin\img\icon_deletelink.gif" />
+    <Content Include="static\admin\img\icon_error.gif" />
+    <Content Include="static\admin\img\icon_searchbox.png" />
+    <Content Include="static\admin\img\icon_success.gif" />
+    <Content Include="static\admin\img\inline-delete-8bit.png" />
+    <Content Include="static\admin\img\inline-delete.png" />
+    <Content Include="static\admin\img\inline-restore-8bit.png" />
+    <Content Include="static\admin\img\inline-restore.png" />
+    <Content Include="static\admin\img\inline-splitter-bg.gif" />
+    <Content Include="static\admin\img\nav-bg-grabber.gif" />
+    <Content Include="static\admin\img\nav-bg-reverse.gif" />
+    <Content Include="static\admin\img\nav-bg-selected.gif" />
+    <Content Include="static\admin\img\nav-bg.gif" />
+    <Content Include="static\admin\img\selector-icons.gif" />
+    <Content Include="static\admin\img\selector-search.gif" />
+    <Content Include="static\admin\img\sorting-icons.gif" />
+    <Content Include="static\admin\img\tool-left.gif" />
+    <Content Include="static\admin\img\tool-left_over.gif" />
+    <Content Include="static\admin\img\tool-right.gif" />
+    <Content Include="static\admin\img\tool-right_over.gif" />
+    <Content Include="static\admin\img\tooltag-add.gif" />
+    <Content Include="static\admin\img\tooltag-add_over.gif" />
+    <Content Include="static\admin\img\tooltag-arrowright.gif" />
+    <Content Include="static\admin\img\tooltag-arrowright_over.gif" />
+    <Content Include="static\admin\js\actions.js" />
+    <Content Include="static\admin\js\actions.min.js" />
+    <Content Include="static\admin\js\admin\DateTimeShortcuts.js" />
+    <Content Include="static\admin\js\admin\ordering.js" />
+    <Content Include="static\admin\js\admin\RelatedObjectLookups.js" />
+    <Content Include="static\admin\js\calendar.js" />
+    <Content Include="static\admin\js\collapse.js" />
+    <Content Include="static\admin\js\collapse.min.js" />
+    <Content Include="static\admin\js\core.js" />
+    <Content Include="static\admin\js\getElementsBySelector.js" />
+    <Content Include="static\admin\js\inlines.js" />
+    <Content Include="static\admin\js\inlines.min.js" />
+    <Content Include="static\admin\js\jquery.init.js" />
+    <Content Include="static\admin\js\jquery.js" />
+    <Content Include="static\admin\js\jquery.min.js" />
+    <Content Include="static\admin\js\LICENSE-JQUERY.txt" />
+    <Content Include="static\admin\js\prepopulate.js" />
+    <Content Include="static\admin\js\prepopulate.min.js" />
+    <Content Include="static\admin\js\SelectBox.js" />
+    <Content Include="static\admin\js\SelectFilter2.js" />
+    <Content Include="static\admin\js\timeparse.js" />
+    <Content Include="static\admin\js\urlify.js" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>
