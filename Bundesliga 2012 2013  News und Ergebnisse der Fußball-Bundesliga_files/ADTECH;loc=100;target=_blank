@@ -1,0 +1,3 @@
+document.write("<a href=\"http://im.banner.t-online.de/adlink/784/4628392/0/5798/AdId=9533502;BnId=4;itime=235930524;nodecode=yes;link=http://sportdaten.t-online.de\" target=\"_blank\"><img src=\"http://aka-cdn-ns.adtech.de/apps/62/Ad9533502St3Sz5798Sq104894944V0Id4/default_ergebnisbox.jpg\" border=\"0\" alt=\"Hier klicken!\" title=\"Hier klicken!\"></a>\n");
+var adcount_4628392_1_=new Image();
+adcount_4628392_1_.src="http://im.banner.t-online.de/adcount/3.0/784/4628392/0/5798/AdId=9533502;BnId=4;ct=1603749653;st=1128;adcid=1;itime=235930524;reqtype=5;";

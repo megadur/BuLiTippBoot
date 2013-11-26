@@ -1,0 +1,437 @@
+/* SPIN CONTENT */
+#content .left #spinContent { background-color: #ececec; color: #000; width: 308px; }
+#spinContent { background-color: #ececec; color: #000; width: 788px; }
+#spinContent .link_more { width: 250px; }
+#spinContent img { border: none; }
+#spinContent table { border-collapse: collapse; border-spacing: 0; empty-cells: show; margin: 0px; width: 786px; }
+
+
+/* TABLE HEADER */
+#spinContent .spinTabular th { text-align: left; border-top: 3px solid #ececec; border-bottom: 3px solid #ececec; padding: 2px 2px 0 8px; margin: 0; height: 29px; width: 786px; }
+#spinContent .spinTabular tr { height: 29px; }
+#spinContent .spinTabular { margin: 0; padding: 0; border-top: none; background-image: url(/pics/gra_hg_verlauf_786.gif); background-repeat: repeat-y; background-position: top; width: 786px; }
+#spinContent .standingsBig .spinTabular th { }
+
+
+/* ROUND HEADING */
+#spinContent .roundHeading { position: relative; top: -2px; left: 12px; padding: 15px 0 0 0; height: 65px; width: 774px; vertical-align: middle; }
+.roundHeading .clubIcon.home { position: absolute; top: 0px; left: 562px; width: 80px; height: 80px; z-index: 30; }
+.roundHeading .clubIcon.away { position: absolute; top: 0px; left: 651px; width: 80px; height: 80px; z-index: 30; }
+.fixtureHeading .clubIcon.home { margin-right: 44px; }
+.fixtureHeading .clubIcon.away { margin-right: 10px; }
+.tablePlayersByInitial { margin-top: 6px; width: 786px; }
+
+
+/* DATA BASE SELECTION */
+#spinContent table.databaseselection { border-collapse: collapse; border-spacing: 0; empty-cells: show; margin: 0px; width: 50%; }
+#spinContent table.databaseselection td.menueM,
+#spinContent table.databaseselection td.menueS { float: left; width: 100%; display: block; }
+#spinContent table.databaseselection td.menueM .spinView,
+#spinContent table.databaseselection td.menueS .spinView { float: left; display: block; width: auto; }
+#spinContentHead2HeadNav table.databaseselection td.menueS .spinView { float: left; display: block; width: auto; }
+#spinContentFixturesAndStandingsNav table.databaseselection td.menueM .spinView { float: left; display: block; width: auto; }
+#spinContent #sv0, #spinContent #sv9 { padding: 0px 0px 5px 5px; }
+#spinContentHead2HeadNav img.goButton, #spinContentFixturesAndStandingsNav img.goButton,
+#spinContent table.databaseselection img.goButton, #spinContent table.mainTb img.goButton { padding: 0px 0px 0px 0px; }
+#spinContent #tabelleHeadline { height: 26px; padding: 24px 0px 0px 12px; color: #c80000; font-size: 17px; font-weight: bold; border-left: 1px solid #6c6c6c; border-right: 1px solid #6c6c6c; }
+#spinContent .matchdayHeading { height: 26px; padding: 9px 0px 0px 12px; }
+#spinContent .spinTabular .s_soccer.c_regionalLigaNord.f_fixturesAndResults .matchdayHeading,
+#spinContent .spinTabular .s_soccer.c_regionalLigaSued.f_fixturesAndResults .matchdayHeading { display: none;}
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive .roundHeading,
+#spinContent .c_ligaPokal.f_fixturesAndResults .roundHeading { position: relative; top: 12px; left: 12px; height: 35px; }
+#spinContent table.dropselected, #spinContent table.selected { height: 20px; text-align: left; }
+#spinContent table.dropselected th { padding: 0px 0px 0px 12px; height: 20px; text-align: left; }
+
+
+/* FB REDBOXES FOR TABBED CONTENT OR CONTENT INSIDE BOX WITH RED TOP BAR */
+#spinContent .spinTabbed, #spinContent .spinBoxed { border-left: 1px solid #6C6C6C; border-right: 1px solid #6C6C6C; clear: both; margin: 0; padding: 0 0 3px 0; width: 786px; }
+
+
+/* OPTA STYLE DEFINITION */
+#spinContent div.selectionHeading,
+#spinContent div.selectionTitle { height: 26px; padding: 9px 0px 0px 12px; text-align: left; }
+#spinContent .mainTbtitle { text-align: left; padding: 0px 0px 0px 12px; height: 34px; }
+#spinContent .head2head table.ta01 TD { text-align: left; padding: 0px 0px 0px 5px; }
+#spinContent table.mainTb { margin: 0; padding: 0; border-collapse: collapse; background-image: url(/pics/titel_5spaltig.gif); background-repeat: no-repeat; width: 788px; text-align: center; vertical-align: middle; }
+#spinContent table.holding { border-collapse: collapse; background-color: #ECECEC; }
+#spinContent tr.mainTitle{ background-color: #CE0000; }
+#spinContent .tableHeading { height: 26px; padding: 9px 0px 0px 12px; background-color: #ECECEC; }
+#spinContent table.mainTb th { height: 32px; }
+#spinContent form, #spinContent form.fixtures_finals { text-align: left; }
+#spinContent .spinTabular td { margin: 0; height: 29px;  text-align: right; border-top: 3px solid #ececec; }
+#spinContent .tableTeamSquad td, #spinContent .tableTeamSquad th,
+#spinContent .tablePlayersByInitial td { padding: 0px 0px 0px 12px; text-align: left; }
+.tablePlayersByInitial td a { text-decoration: none; color: #D20500; }
+#spinContent .s_soccer.c_ALL f_player { float: right; width: 466px; background-color: #fff; text-align: right; }
+#spinContent table.portraitAndPlayer { margin: 0; padding: 0px 0px 0px 0px; width: 466px; background-color: #fff; text-align: right; }
+#spinContent  table.portraitAndPlayer td { vertical-align: top; }
+#spinContent  table.portraitAndPlayer td.imageRow { padding: 1px 0px 0px 0px; background-color: #fff; width: 159px; text-align: right; vertical-align: top; }
+#spinContent .tablePlayer { margin: 0; padding: 0; width: 307px; background-image: url(/pics/gra_hg_verlauf_308.gif); background-repeat: repeat-y; background-position: right; text-align: right; }
+#spinContent .tablePlayer tr { margin: 0; padding: 0; height: 29px; width: 307px; }
+#spinContent .tablePlayer td.tn01 { padding: 4px 0px 0px 12px; font-weight: bold; width: 154px; border-bottom: 3px solid #ececec; }
+#spinContent .tablePlayer td.tn02 { padding: 4px 0px 0px 0px; font-weight: normal; width: 153px; border-bottom: 3px solid #ececec; }
+
+/*hidden field in seasonbook form*/
+form tr.lastOrder{display:none;}
+
+/* DATATYPE DEFAULTS */
+#spinContent td.tNum { text-align: left; }
+#spinContent td.tDate { text-align: left; }
+#spinContent td.tText { text-align: left; }
+#spinContent td.tResult { text-align: left; }
+#spinContent td.tRegion { text-align: left; }
+#spinContent td.tp01 { text-align: left; }
+#spinContent td.tp02 { text-align: left; }
+#spinContent td.tImg { text-align: center; padding: 0; vertical-align: middle; }
+#spinContent td.tColon { text-align: center; }
+
+
+/* PROCEEDES MARKS */
+#spinContent td a.proceedes, #spinContent td span.proceedes { font-weight: bold; }
+
+
+/* f_fixturesAndResults */
+#spinContent td.tn01 { width: 56px; text-align: left; padding: 0px 0px 0px 12px; }
+#spinContent td.tn02 { width: 55px; text-align: left; padding: 0px 0px 0px 26px; }
+#spinContent td.tn03 { width: 198px; text-align: left; padding: 0px 0px 0px 51px; }
+#spinContent td.tn04 { width: 2px; text-align: left; }
+#spinContent td.tn05 { width: 212px; padding: 0px 0px 0px 31px; }
+#spinContent td.tn06 { width: 118px; padding: 0; }
+#spinContent td.tn07 { width: 80px; padding: 0; }
+#spinContent td.tn07Small { width: 80px; padding: 0; }
+
+
+/* f_fixturesAndResultsOneTeam */
+#spinContent .f_fixturesAndResultsOneTeam th.tn01,
+#spinContent .f_fixturesAndResultsOneTeam td.tn01 { width: 70px; text-align: left; padding: 0px 0px 0px 12px; }
+#spinContent .f_fixturesAndResultsOneTeam th.tn02,
+#spinContent .f_fixturesAndResultsOneTeam td.tn02 { width: 29px; text-align: left; padding: 0px 26px 0px 26px; }
+#spinContent .f_fixturesAndResultsOneTeam th.tn03,
+#spinContent .f_fixturesAndResultsOneTeam td.tn03 { width: 144px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .f_fixturesAndResultsOneTeam th.tn04,
+#spinContent .f_fixturesAndResultsOneTeam td.tn04 { width: 34px; text-align: left; padding: 0px 0px 0px 2px; }
+#spinContent .f_fixturesAndResultsOneTeam th.tn05,
+#spinContent .f_fixturesAndResultsOneTeam td.tn05 { width: 152px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .f_fixturesAndResultsOneTeam th.tn06,
+#spinContent .f_fixturesAndResultsOneTeam td.tn06 { width: 65px; text-align: left; padding: 0px 20px 0px 0px; }
+#spinContent .f_fixturesAndResultsOneTeam th.tn07,
+#spinContent .f_fixturesAndResultsOneTeam td.tn07,
+#spinContent .f_fixturesAndResultsOneTeam td.tn07Small { width: 80px; text-align: left; padding: 0; }
+
+/* f_fixturesAndResults */
+#spinContent .f_fixturesAndResults th.tn01,
+#spinContent .f_fixturesAndResults td.tn01 { width: 70px; text-align: left; padding: 0px 0px 0px 12px; }
+#spinContent .f_fixturesAndResults th.tn02,
+#spinContent .f_fixturesAndResults td.tn02 { width: 30px; text-align: left; padding: 0px 10px 0px 10px; }
+#spinContent .f_fixturesAndResults th.tn03,
+#spinContent .f_fixturesAndResults td.tn03 { width: 144px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .f_fixturesAndResults th.tn04,
+#spinContent .f_fixturesAndResults td.tn04 { width: 20px; text-align: left; padding: 0px 0px 0px 2px; }
+#spinContent .f_fixturesAndResults th.tn05,
+#spinContent .f_fixturesAndResults td.tn05 { width: 152px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .f_fixturesAndResults th.tn06,
+#spinContent .f_fixturesAndResults td.tn06 { width: 50px; text-align: left; padding: 0px 10px 0px 0px; }
+#spinContent .f_fixturesAndResults th.tn07,
+#spinContent .f_fixturesAndResults td.tn07,
+#spinContent .f_fixturesAndResults td.tn07Small,
+#spinContent .fixturesAndResultsOneTeam th.tn07Small,
+#spinContent .fixturesAndResultsOneTeam td.tn07Small,
+#spinContent .f_fixturesAndResults th.tn07Small { width: 55px; text-align: left; padding: 0; text-align:center; }
+
+
+/* .c_championsLeague.f_fixturesAndResults */
+#spinContent .f_fixturesAndResults.c2_international th.tn01,
+#spinContent .f_fixturesAndResults.c2_international td.tn01 { width: 70px; text-align: left; padding: 0px 0px 0px 12px; }
+#spinContent .f_fixturesAndResults.c2_international th.tn02,
+#spinContent .f_fixturesAndResults.c2_international td.tn02 { width: 29px; text-align: left; padding: 0px 50px 0px 26px; }
+#spinContent .f_fixturesAndResults.c2_international th.tn03,
+#spinContent .f_fixturesAndResults.c2_international td.tn03 { width: 144px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .f_fixturesAndResults.c2_international th.tn04,
+#spinContent .f_fixturesAndResults.c2_international td.tn04 { width: 33px; text-align: left; padding: 0px 0px 0px 2px; }
+#spinContent .f_fixturesAndResults.c2_international th.tn05,
+#spinContent .f_fixturesAndResults.c2_international td.tn05 { width: 182px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .f_fixturesAndResults.c2_international th.tn06,
+#spinContent .f_fixturesAndResults.c2_international td.tn06 { width: 65px; text-align: left; padding: 0px 50px 0px 0px; }
+#spinContent .f_fixturesAndResults.c2_international th.tn07,
+#spinContent .f_fixturesAndResults.c2_international td.tn07 { width: 147px; text-align: left; padding: 0; }
+
+
+
+
+
+/* c_ligaPokal f_fixturesAndResults */
+#spinContent .c_ligaPokal.f_fixturesAndResults th.tn01,
+#spinContent .c_ligaPokal.f_fixturesAndResults td.tn01 { width: 70px; text-align: left; padding: 0px 0px 0px 12px; }
+#spinContent .c_ligaPokal.f_fixturesAndResults th.tn02,
+#spinContent .c_ligaPokal.f_fixturesAndResults td.tn02 { width: 29px; text-align: left; padding: 0px 21px 0px 17px; }
+#spinContent .c_ligaPokal.f_fixturesAndResults th.tn03,
+#spinContent .c_ligaPokal.f_fixturesAndResults td.tn03 { width: 130px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .c_ligaPokal.f_fixturesAndResults th.tn04,
+#spinContent .c_ligaPokal.f_fixturesAndResults td.tn04 { width: 28px; text-align: left; padding: 0px 2px 0px 0px; }
+#spinContent .c_ligaPokal.f_fixturesAndResults th.tn05,
+#spinContent .c_ligaPokal.f_fixturesAndResults td.tn05 { width: 182px; text-align: left; padding: 0px 2px 0px 0px; }
+#spinContent .c_ligaPokal.f_fixturesAndResults th.tn06,
+#spinContent .c_ligaPokal.f_fixturesAndResults td.tn06 { width: 62px; text-align: left; padding: 0px 46px 0px 0px; }
+#spinContent .c_ligaPokal.f_fixturesAndResults th.tn07,
+#spinContent .c_ligaPokal.f_fixturesAndResults td.tn07 { width: 0px; padding: 0px 0px 0px 0px; }
+#spinContent .c_ligaPokal.f_fixturesAndResults th.tn08,
+#spinContent .c_ligaPokal.f_fixturesAndResults td.tn08 { width: 211px; padding: 0px 0px 0px 0px; }
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive th.tn01,
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive td.tn01 { width: 70px; text-align: left; padding: 0px 0px 0px 12px; }
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive th.tn02,
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive td.tn02 { width: 29px; text-align: left; padding: 0px 21px 0px 17px; }
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive th.tn03,
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive td.tn03 { width: 130px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive th.tn04,
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive td.tn04 { width: 28px; text-align: left; padding: 0px 2px 0px 0px; }
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive th.tn05,
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive td.tn05 { width: 182px; text-align: left; padding: 0px 2px 0px 0px; }
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive th.tn06,
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive td.tn06 { width: 62px; text-align: left; padding: 0px 46px 0px 0px; }
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive th.tn07,
+#spinContent .c_ligaPokal.f_fixturesAndResultsArchive td.tn07 { width: 211px; text-align: left; padding: 0px 0px 0px 0px; }
+
+
+/* previousmatches */
+#spinContent .spinTabular .previousmatches th.tn01,
+#spinContent .spinTabular .previousmatches td.tn01 { width: 70px; text-align: left; padding: 0px 0px 0px 12px; }
+#spinContent .spinTabular .previousmatches th.tn02,
+#spinContent .spinTabular .previousmatches td.tn02 { width: 29px; text-align: left; padding: 0px 41px 0px 26px; }
+#spinContent .spinTabular .previousmatches th.tn03,
+#spinContent .spinTabular .previousmatches td.tn03 { width: 144px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .spinTabular .previousmatches th.tn04,
+#spinContent .spinTabular .previousmatches td.tn04 { width: 34px; text-align: left; padding: 0px 0px 0px 2px; }
+#spinContent .spinTabular .previousmatches th.tn05,
+#spinContent .spinTabular .previousmatches td.tn05 { width: 152px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .spinTabular .previousmatches th.tn06,
+#spinContent .spinTabular .previousmatches td.tn06 { width: 65px; text-align: center; padding: 0px 50px 0px 0px;  }
+#spinContent .spinTabular .previousmatches th.tn07,
+#spinContent .spinTabular .previousmatches td.tn07 { width: 185px; text-align: left; padding: 0; }
+
+
+/* standings  defaults */
+#spinContent .standings td.tm01 { width: 14px; text-align: center; padding: 0 16px 0 10px; }
+#spinContent .standings td.tm02 { width: 7px; text-align: center; padding: 0 10px 0 0px; }
+#spinContent .standings td.tm03 { width: 29px; text-align: center; padding: 0px 28px 0px 0px; }
+#spinContent .standings td.tm04 { width: 161px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .standings td.tm05 { width: 14px; text-align: center; padding: 0px 13px 0px 13px; }
+#spinContent .standings td.tm06 { width: 14px; text-align: center; padding: 0px 6px 0px 6px; }
+#spinContent .standings td.tm07 { width: 14px; text-align: center; padding: 0px 40px 0px 40px; }
+#spinContent .standings td.tm08 { width: 14px; text-align: center; padding: 0px 28px 0px 28px; }
+#spinContent .standings td.tm09 { width: 54px; text-align: center; padding: 0px 15px 0px 15px; }
+#spinContent .standings td.tm10 { width: 14px; text-align: center; padding: 0px 16px 0px 16px; }
+#spinContent .standings th.tm01 { width: 40px; text-align: center; padding: 0 0px 0 0px; }
+#spinContent .standings th.tm02 { width: 17px; text-align: center; padding: 0 0px 0 0px; }
+#spinContent .standings th.tm04 { width: 208px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .standings th.tm05 { width: 40px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .standings th.tm06 { width: 36px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .standings th.tm07 { width: 94px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .standings th.tm08 { width: 70px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .standings th.tm09 { width: 84px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .standings th.tm10 { width: 46px; text-align: center; padding: 0px 0px 0px 0px; }
+
+
+/* standings  .standingsBig */
+#spinContent .standingsBig td.tm01 { width: 72px; text-align: center; padding: 0 20px 0 0px; }
+#spinContent .standingsBig td.tm02 { width: 20px; text-align: center; padding: 0 10px 0 0px; }
+#spinContent .standingsBig td.tm03 { width: 29px; text-align: center; padding: 0px 12px 0px 12px; }
+#spinContent .standingsBig td.tm04 { width: 142px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .standingsBig td.tm05 { width: 14px; text-align: center; padding: 0px 13px 0px 13px; }
+#spinContent .standingsBig td.tm06 { width: 14px; text-align: center; padding: 0px 6px 0px 6px; }
+#spinContent .standingsBig td.tm07 { width: 14px; text-align: center; padding: 0px 40px 0px 40px; }
+#spinContent .standingsBig td.tm08 { width: 14px; text-align: center; padding: 0px 28px 0px 28px; }
+#spinContent .standingsBig td.tm09 { width: 24px; text-align: center; padding: 0px 10px 0px 10px; }
+#spinContent .standingsBig td.tm10 { width: 28px; text-align: center; padding: 0px 16px 0px 16px; }
+#spinContent .standingsBig td.tm11 { width: 60px; text-align: center; padding: 0px 10px 0px 0px; }
+#spinContent .standingsBig td.tm12 { width: 76px; text-align: left; padding: 0px 10px 0px 0px; }
+#spinContent .standingsBig th.tm01 { width: 40px; text-align: center; padding: 0 0px 0 0px; }
+#spinContent .standingsBig th.tm02 { width: 17px; text-align: center; padding: 0 0px 0 0px; }
+#spinContent .standingsBig th.tm03 { width: 29px; text-align: center; padding: 0px 28px 0px 0px; }
+#spinContent .standingsBig th.tm04 { width: 161px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .standingsBig th.tm05 { width: 40px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .standingsBig th.tm06 { width: 36px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .standingsBig th.tm07 { width: 94px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .standingsBig th.tm08 { width: 70px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .standingsBig th.tm09 { width: 54px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .standingsBig th.tm10 { width: 60px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .standingsBig th.tm11 { width: 40px; text-align: center; padding: 0px 10px 0px 0px; }
+#spinContent .standingsBig th.tm12 { width: 76px; text-align: left; padding: 0px 10px 0px 0px; }
+
+
+/* START Platzierung mit Pfeil Backgrounds */
+
+#spinContent #sv3 { border-right: 1px solid #6C6C6C; border-left: 1px solid #6C6C6C; }
+#spinContent #sv3 .standings .tableHeading { font-size: 17px; font-weight: bold; color: #c80000; padding-top:15px; }
+#spinContent #sv3 .standings table .tr01 .tm01 { background: none; color: black; font-weight: normal; }
+
+
+#spinContent .f_standings.c_bundesliga table tr.tr01.champion td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr01.aufstieg td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr01.odd td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr02 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr17 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr18 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr01.champion td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr01.aufstieg td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr01.odd td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr02 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr17 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr18 td.tm01 { color: white; font-weight: bold; background: transparent url(/pics/_2010/box/box_tabelle_marker.png) 0px 0px no-repeat; }
+
+#spinContent .f_standings.c_bundesliga table tr.tr06 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr07 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr08 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr09 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr10 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr11 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr12 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr13 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr14 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr15 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr04 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr05 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr06 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr07 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr08 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr09 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr10 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr11 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr12 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr13 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr14 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr15 td.tm01 { color: black; font-weight: bold; background: transparent url(/pics/_2010/box/box_tabelle_marker.png) 0px -58px no-repeat; }
+
+#spinContent .f_standings.c_bundesliga table tr.tr03 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr04 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr05 td.tm01,
+#spinContent .f_standings.c_bundesliga table tr.tr16 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr03 td.tm01,
+#spinContent .f_standings.c_zweiteBundesliga table tr.tr16 td.tm01 { color: white; font-weight: bold; background: transparent url(/pics/_2010/box/box_tabelle_marker.png) 0px -29px no-repeat; }
+
+/* OHNE BACKGROUNDS */
+#spinContent .spinTabbed #stnd .f_standings table .odd td.tm01,
+#spinContent #content_ranking .f_standings table .odd td.tm01,
+#spinContent .f_standings table .odd td.tm01,
+#spinContent .f_standings table .even td.tm01,
+#spinContent #content_ranking .f_standings table .odd td.tm01,
+#spinContent #content_ranking .f_standings table .even td.tm01,
+#spinContent #content_ranking .f_standings table.ta02 .odd td.tm01,
+#spinContent #content_ranking .f_standings table.ta02 .even td.tm01,
+#spinContent table tr.tr01.odd td.tm01,
+#spinContent table tr.tr01.even td.tm01 { font-weight: normal; color: black; background: none; }
+/* END Platzierung mit Pfeil Backgrounds */
+
+
+
+#spinContent .head2head .spinTabular th.tn01,
+#spinContent .head2head .spinTabular td.tn01 { width: 162px; text-align: left; padding: 0px 0px 0px 12px; }
+#spinContent .head2head .spinTabular th.tn02,
+#spinContent .head2head .spinTabular td.tn02 { width: 130px; text-align: left; padding: 0px 0px 0px 12px; }
+#spinContent .head2head .spinTabular th.tn03,
+#spinContent .head2head .spinTabular td.tn03 { width: 100px; text-align: left; padding: 0px 30px 0px 0px; }
+#spinContent .head2head .spinTabular th.tn04,
+#spinContent .head2head .spinTabular td.tn04 { width: 100px; text-align: left; padding: 0px 30px 0px 2px; }
+#spinContent .head2head .spinTabular th.tn05,
+#spinContent .head2head .spinTabular td.tn05 { width: 100px; text-align: center; padding: 0px 0px 0px 0px; }
+
+
+/* f_statistics */
+#spinContent .f_statistics .spinTabular th.tn00 { width: 40px; text-align: center; padding: 0 0px 0 0px; }
+#spinContent .f_statistics .spinTabular th.tn01 { width: 332px; text-align: left; padding: 0px 0px 0px 20px; }
+#spinContent .f_statistics .spinTabular th.tn02 { width: 198px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .f_statistics .spinTabular th.tn03 { width: 193px; text-align: center; padding: 0px 0px 0px 0px; }
+#spinContent .f_statistics .spinTabular td.tn00 { width: 14px; text-align: center; padding: 0px 16px 0px 10px; }
+#spinContent .f_statistics .spinTabular td.tn01 { width: 332px; text-align: left; padding: 0px 0px 0px 20px; }
+#spinContent .f_statistics .spinTabular td.tn02 { width: 198px; text-align: left; padding: 0px 0px 0px 0px; }
+#spinContent .f_statistics .spinTabular td.tn03 { width: 193px; text-align: center; padding: 0px 0px 0px 0px; }
+
+
+
+
+/* START TABELLEN */
+#spinLeft { height: 386px; }
+#spinLeft .smallText { font-size: 10px; padding: 2px; }
+#spinLeft .wide table { width: 308px; }
+#spinLeft .wide .ta02 { margin: 0; padding: 0; width: 308px; }
+#spinLeft .wide table { border-left: 1px solid #6C6C6C; border-right: 1px solid #6C6C6C; width: 308px; }
+#spinLeft .wide .spinTabular table { margin: 0; padding-top: 4px; width: 308px;  }
+
+/* TABELLE SMALL - SPALTEN BREITEN*/
+#spinLeft .wide .f_standingsSmall th.tm01, #spinLeft .wide .f_standingsSmall td.tm01 { width: 15px; text-align: left; padding: 0px 15px 0px 10px; font-weight: bold; }
+#spinLeft .wide .f_standingsSmall th.tm02, #spinLeft .wide .f_standingsSmall td.tm02 { width: 20px; text-align: center; padding: 0; }
+#spinLeft .wide .f_standingsSmall td.tm03, #spinLeft .wide .f_standingsSmall th.tm03 { width: 25px; text-align: center; padding: 0; font-weight: bold; }
+#spinLeft .wide .f_standingsSmall th.tm04, #spinLeft .wide .f_standingsSmall td.tm04 { width: 30px; text-align: center; padding: 0; font-weight: bold; }
+#spinLeft .wide .f_standingsSmall th.tm05, #spinLeft .wide .f_standingsSmall td.tm05 { width: 60px; text-align: left; padding: 0; font-weight: bold; }
+#spinLeft .wide .f_standingsSmall th.tm10, #spinLeft .wide .f_standingsSmall td.tm10 { width: 15px; text-align: left; padding: 0; }
+#spinLeft .wide .f_standingsSmall th.tm11, #spinLeft .wide .f_standingsSmall td.tm11 { width: 15px; text-align: center; padding: 0; font-weight: bold; }
+
+/* TABELLE SMALL - SPALTEN BACKGROUNDS */
+#spinLeft table tr.tr01, #spinLeft table tr.tr02, #spinLeft table tr.tr03, #spinLeft table tr.tr04, #spinLeft table tr.tr05, #spinLeft table tr.tr06,
+#spinLeft table tr.tr07, #spinLeft table tr.tr08, #spinLeft table tr.tr09, #spinLeft table tr.tr10, #spinLeft table tr.tr11, #spinLeft table tr.tr12,
+#spinLeft table tr.tr13, #spinLeft table tr.tr14, #spinLeft table tr.tr15, #spinLeft table tr.tr16, #spinLeft table tr.tr17, #spinLeft table tr.tr18 { height: 20px; color: black; font-weight: bold; background: transparent url(/pics/_2010/box/box_tabelle_zeilen_small.png) 0px 0px repeat-x; }
+
+/* TABELLE SMALL - PLATZIERUNG BACKGROUNDS */
+#spinLeft table tr.tr01 td.tm01, #spinLeft table tr.tr02 td.tm01,
+#spinLeft table tr.tr17 td.tm01, #spinLeft table tr.tr18 td.tm01 { height: 20px; color: white; font-weight: bold; background: transparent url(/pics/_2010/box/box_tabelle_zeilen.png) 0px 0px no-repeat; }
+#spinLeft table tr.tr03 td.tm01, #spinLeft table tr.tr04 td.tm01,
+#spinLeft table tr.tr05 td.tm01, #spinLeft table tr.tr16 td.tm01 { height: 20px; color: white; font-weight: bold; background: transparent url(/pics/_2010/box/box_tabelle_zeilen.png) 0px -20px no-repeat; }
+#spinLeft table tr.tr04.middle td.tm01,
+#spinLeft table tr.tr05.middle td.tm01 { height: 20px; color: black; font-weight: bold; background: transparent url(/pics/_2010/box/box_tabelle_zeilen.png) 0px -40px no-repeat; }
+
+/* EWIGE TABELLE SMALL - SPALTEN BREITEN*/
+#historie-table #spinLeft table td.tm01 { width: 20px; }
+#historie-table #spinLeft table td.tm03 { width: 30px; }
+#historie-table #spinLeft table td.tm05 { width: 180px; }
+#historie-table #spinLeft table td.tm04 { width: 78px; }
+
+/* EWIGE TABELLE SMALL - KEINE PLATZIERUNGS BACKGROUNDS */
+#historie-table #spinLeft table tr.tr01 td.tm01, #historie-table #spinLeft table tr.tr02 td.tm01,
+#historie-table #spinLeft table tr.tr17 td.tm01, #historie-table #spinLeft table tr.tr18 td.tm01,
+#historie-table #spinLeft table tr.tr03 td.tm01, #historie-table #spinLeft table tr.tr04 td.tm01,
+#historie-table #spinLeft table tr.tr05 td.tm01, #historie-table  #spinLeft table tr.tr16 td.tm01 { height: 24px; color: black; font-weight: normal; background: transparent url(/pics/_2010/box/box_trend_zeile_hist.png) 0px 0px repeat-x; }
+
+/* EWIGE TABELLE SMALL - ZEILEN BACKGROUNDS */
+#historie-table #spinLeft table tr.tr01, #historie-table #spinLeft table tr.tr02, #historie-table #spinLeft table tr.tr03, #historie-table #spinLeft table tr.tr04,
+#historie-table #spinLeft table tr.tr05, #historie-table #spinLeft table tr.tr06, #historie-table #spinLeft table tr.tr07, #historie-table #spinLeft table tr.tr08,
+#historie-table #spinLeft table tr.tr09, #historie-table #spinLeft table tr.tr10, #historie-table #spinLeft table tr.tr11, #historie-table #spinLeft table tr.tr12,
+#historie-table #spinLeft table tr.tr13, #historie-table #spinLeft table tr.tr14, #historie-table #spinLeft table tr.tr15, #historie-table #spinLeft table tr.tr16,
+#historie-table #spinLeft table tr.tr17, #historie-table #spinLeft table tr.tr18 { height: 24px; color: black; font-weight: bold; background: transparent url(/pics/_2010/box/box_trend_zeile_hist.png) 0px 0px repeat-x; }
+
+/* BIG TABELLEN */
+#spinContent table tr.odd.aufstieg.last td,
+#spinContent table tr.even.aufstieg.last td,
+#spinContent table tr.odd.middle.last td,
+#spinContent table tr.even.middle.last td,
+#spinContent table tr.champion.last td,
+#spinContent table tr.championsLeaguePlusQuali.last td,
+#spinContent table tr.uefaPokal.last td,
+#spinContent table tr.relegation.last td { border-bottom: none; }
+#spinContent img.goButton { cursor:pointer; }
+#spinContent img.goButton { cursor:pointer; }
+#spinContent form img.goButton { cursor:pointer; }
+#spinContent:hover form img.goButton { cursor:pointer; }
+#spinContent:hover img.goButton { cursor:pointer; }
+#spinContent .initialHeading { padding: 10px 0px 0px 0px; text-align: center; vertical-align: middle; height: 25px; width: 786px; }
+#spinContent table.tablePlayersByInitial { margin: 0; padding: 0; width: 786px; border: none; }
+#spinContent .spinTabular table.tablePlayersByInitial tr { height: 20px; }
+#spinContent table.tablePlayersByInitial td { margin: 0; padding: 0 0 0 12px; height: 20px; border: none; }
+#spinContent table.tablePlayersByInitial .even td { background-image: url(/pics/gra_hg_verlauf_398.gif); background-repeat: repeat-y; background-position: top; width: 398px; }
+#spinContent table.tablePlayersByInitial tr.odd  { background-color: #fff; width: 786px; border: none; }
+
+
+/* NEW MATCHDAY ICONS */
+.matchDay { background: url(/pics/matchday/background.png) -5px 0px no-repeat; width: 37px; height: 17px; float: left; font-size: 11px; text-align: center; font-weight: bold; padding-top: 3px; color: #fff; border-right: 1px solid #6C6C6C; border-bottom: 1px solid #6C6C6C; }
+.matchDayFirst { background-position: 0px 0px; }
+.matchDayLast { background-position: 100% 0px; }
+.matchDayDone { background-position: -5px -20px; }
+.matchDayDoneFirst { background-position: 0px -20px; }
+.matchDayDoneLast { background-position: 100% -20px; }
+.matchDayActive { background-position: -5px -40px; }
+.matchDayActiveFirst { background-position: 0px -40px; }
+.matchDayActiveLast { background-position: 100% -40px; }
+.matchDayRelegation { width: 140px; border-right: 1px solid #6C6C6C; border-bottom: 1px solid #6C6C6C; }
+.matchDayRelegationActive { background-position: -5px -40px; border-right: 1px solid #6C6C6C; border-bottom: 1px solid #6C6C6C; }
+.matchDayRelegationDone { background-position: -5px -20px; border-right: 1px solid #6C6C6C; border-bottom: 1px solid #6C6C6C; }
+.matchDayInactive { border-right: 1px solid #6C6C6C; border-bottom: 1px solid #6C6C6C; }
+.matchDayLeftOuter { border-left: 1px solid #6C6C6C; }
+.matchDayLong { width: 140px; border-bottom: 1px solid #6C6C6C; border-right: 0px solid #6C6C6C;}

@@ -1,0 +1,47 @@
+ul.wwe-tabs li a, ul.wwe-tabs li span {
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 9px 16.3px;
+}
+
+ul.wwe-tabs.wwe-tabs-season-stats li a, ul.wwe-tabs.wwe-tabs-season-stats li span {
+padding: 9px 26.3px;
+}
+
+ul.wwe-tabs.wwe-tabs-schedule-overview-el li a, ul.wwe-tabs.wwe-tabs-schedule-overview-el li span {
+padding: 9px 6.3px;
+}
+
+ul.wwe-tabs.wwe-tabs-schedule_overview-cl li a, ul.wwe-tabs.wwe-tabs-schedule-overview-el li span {
+padding: 9px 16.0px;
+}
+/*
+table.wwe-table th,
+table.wwe-table td {
+	display: inline-table;
+}
+table.wwe-table tr {
+	border-bottom: 1px sold -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E7E7E7), to(#1D1D1D), color-stop(.6,#E7E7E7));
+    background-image: -moz-linear-gradient(left center ,#E7E7E7 #1D1D1D, #E7E7E7);
+    border: 0 none;
+    height: 1px;
+    margin: 10px 0;
+    width: 100%;
+}*/
+
+table.wwe-table tr {
+	background: none;
+	height: 25px;
+	border-bottom: 1px solid #5e5e5e;
+	}
+	
+table.wwe-standings-small tr {
+	background: none!important;
+	border-bottom: 1px solid #5e5e5e!important;
+	height: 16px;
+}
+table.wwe-standings-flash {
+	border-collapse:collapse;
+}

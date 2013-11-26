@@ -1,0 +1,7 @@
+document.write("<scr"+"ipt type='text/javascript' src='http://imagesrv.adition.com/js/adition.js'>\n");
+document.write("</scr"+"ipt>\n");
+document.write("\n");
+document.write("<scr"+"ipt type='text/javascript' src='http://ad4.adfarm1.adition.com/js?wp_id=409989&ts=235929997&clickurl=http://im.banner.t-online.de/adlink/784/1845236/0/1358/AdId=8531882;BnId=10;itime=235929997;nodecode=yes;link=[url_plain]'>\n");
+document.write("</scr"+"ipt>\n");
+var adcount_1845236_1_=new Image();
+adcount_1845236_1_.src="http://im.banner.t-online.de/adcount/3.0/784/1845236/0/1358/AdId=8531882;BnId=10;ct=1602669833;st=1826;adcid=1;itime=235929997;reqtype=5;";

@@ -1,0 +1,53 @@
+/* Voreinstellungen */
+html, body{ margin: 0px; padding:0px; font-family:Arial,Verdana,Helvetica; line-height: normal; color: Black; background-color: White; background-image: none; text-align: left; }
+img { border: none; }
+div { line-height: normal; }
+br  { line-height: 10px; }
+.MOZ12{ display: none; border: 1px solid red; }
+html>body .MOZ12{ line-height: 12px; clear: both; display: block; }
+
+.ERROR { position: relative; top: 0px; left: 0px; width: 96%; height: 96%; min-height: 120px; margin: 20px; overflow: visible; clear: both;}
+.ERROR .sub1 { width: 75px; padding: 20px; }
+.ERROR .sub2 { vertical-align: middle; }
+
+.login .spalte1a, 
+.login .spalte2a,
+.login .spalte2 { display: none; }
+
+/* IVW Pixel */
+#ivw { display: none; }
+
+/* Head */
+#head           { width: auto; overflow: hidden; padding: 0px 0px 10px 0px; }
+ 
+/* Ligen Leiste (Wappen) */
+#ligen           { display: none }
+
+/* Content */
+#content { position: relative; top: 0px; left: 0px; width: 640px; height: auto; overflow: visible;  }
+#content .left  { position: relative; top: 0px; left: 0px; width: 468px; height: auto; clear: both; }
+#content .right { position: relative; top: 0px; left: 0px; width: 308px; height: auto; clear: both; }
+#content #spinContent #sv2 { position: relative; top: 0px; left: 0px; width: 640px; height: auto; border-left: 1px solid #D26E6E; border-right: 1px solid #D26E6E; clear: both; }
+
+#inhalt { text-align: left; }
+#area_fliesstext { text-align: left; }
+
+#content #spinContent #sv2 .spinTabular { width: 640px; }
+#content #spinContent #sv2 .spinTabular .ta01 { width: 640px; }
+#spinContent td.tn07,
+#spinContent th.tn07{ width: 30px !important; }
+
+/* Footer */
+#footer  { display: none }
+
+/* Navigation */
+#navigation        { display: none }
+
+/* Navigation -> Box */
+#box_links      { display: none }
+
+/* Breadcrumb */
+#content #breadcrumb { display: none; }
+
+/* BANNER */
+#betandwinad { display: none; }

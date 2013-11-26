@@ -1,0 +1,397 @@
+.TeaserWrapper{
+    width: 948px;
+}
+
+.topTeaser{float:left; height:383px; position:relative; overflow:hidden; width:628px;}
+.topTeaser h1{-webkit-margin-before: 0em; -webkit-margin-after:0em;}
+
+.boxBasic{
+    margin-top:12px;
+    width:948px;
+    /*width: 628px;*/
+    /*height: 353px;*/
+    float: left;
+}
+.boxBasic a{
+    text-decoration: none;
+}
+
+hgroup{
+    display: block;
+}
+
+ul.slides{
+    height: 353px;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+div.flex-caption{
+    /*position: absolute;
+    z-index: 2;*/
+}
+.flex-links{
+    display: none;
+}
+
+ul.slides li .image img{
+    /*position: absolute;
+    z-index: 1;*/
+    display: block;
+    width: 628px;
+    height: 353px;
+    border: none;
+}
+
+ul.slides li a{
+    text-decoration: none;
+}
+
+ul.slides li{
+    list-style:none;
+    position: relative;
+    width: 628px;
+    height: 353px;
+}
+ul.slides li + li{display:none;}
+
+ul.slides li object,
+ul.slides li video{
+    position: relative;
+    width: 628px;
+    height: 353px;
+}
+ul.flex-control-paging{
+    border-top: 1px solid #8b8f99;
+    height: 30px;
+    line-height: 30px;
+    background: url("/pics/_topteaser2013/black_header_bg.jpg") #000;
+    color: #fff;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    bottom:0;
+    left:0;
+    position:absolute;
+    width:100%;
+}
+ul.flex-control-paging li{
+    cursor: pointer;
+    float: left;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    background: url("/pics/_topteaser2013/divider_menu.png") 100% 0 no-repeat;
+}
+ul.flex-control-paging li a{color:#fff; padding:0 20px;}
+ul.flex-control-paging li a:hover{color:red;}
+ul.flex-control-paging li.active a:hover,
+ul.flex-control-paging li.flex-active a:hover{color:#fff;}
+ul.flex-control-paging li.active,
+ul.flex-control-paging li.flex-active{background: url("/pics/_topteaser2013/red_header_bg.png");}
+
+ul.flex-control-paging li > a.flex-active{
+    background: url("/pics/_topteaser2013/red_header_bg.png");
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+hgroup h1,  hgroup h2{
+    font-family: Arial;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0;
+    color: #000;
+}
+
+hgroup h1{
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: -2px 1px 1px #eee;
+}
+hgroup h2{
+    font-weight: 100;
+    font-size: 20px;
+    text-shadow: -2px 1px 1px #eee;
+    margin-top: 5px;
+}
+
+hgroup h1:hover{
+    color: #C80000;
+}
+
+hgroup h1, hgroup h2{
+    display: block;
+}
+
+hgroup h1.white, hgroup h2.white{
+    color: #fff;
+    text-shadow: -1px 1px 1px #000;
+    display: block;
+    text-transform: none;
+}
+
+/*.alignLeftTop hgroup, .alignLeftTopLong hgroup{
+    background: url("/pics/_topteaser2013/play-btn.png") 0 100% no-repeat;
+    padding-bottom: 70px;
+}
+
+.alignLeftTop hgroup:hover, .alignLeftTopLong hgroup:hover{
+    background: url("/pics/_topteaser2013/play-btn-mo.png") 0 100% no-repeat;
+    padding-bottom: 70px;
+}
+
+.alignLeftBottom hgroup{
+    background: url("/pics/_topteaser2013/play-btn.png") 100% 100% no-repeat;
+    padding-bottom: 70px;
+}
+
+.alignLeftBottom hgroup:hover{
+    background: url("/pics/_topteaser2013/play-btn-mo.png") 100% 100% no-repeat;
+    padding-bottom: 70px;
+}
+
+.alignRightBottom {
+    background: url("/pics/_topteaser2013/play-btn.png") 100% 100% no-repeat;
+    padding-bottom: 70px;
+}
+
+.alignRightBottom:hover{
+    background: url("/pics/_topteaser2013/play-btn-mo.png") 100% 100% no-repeat;
+    padding-bottom: 70px;
+}*/
+/******************** Font position classes **********************/
+
+/* Left Short */
+.alignLeftTopLong,
+.alignLeftTop{
+    top: 35px;
+    left: 35px;
+    width: 550px;
+    text-align: left;
+    position: absolute;
+}
+
+/* Right Long */
+.alignRightTop{
+    top: 35px;
+    right: 35px;
+    width: 550px;
+    text-align: right;
+    position: absolute;
+}
+
+/* Right Long */
+.alignRightBottom{
+    bottom: 35px;
+    right: 35px;
+    width: 550px;
+    text-align: right;
+    position: absolute;
+}
+/* Left Short */
+.alignLeftBottom{
+    bottom: 35px;
+    left: 35px;
+    width: 550px;
+    text-align: left;
+    position: absolute;
+}
+/****************** Font position classes *****************************/
+.alignRightBottom hgroup h2{
+    float: right;
+}
+
+.TopTeaserModule{
+    width: 320px;
+    height: 383px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.TopTeaserModule ul#list2, .TopTeaserModule ul#list3,
+.TopTeaserModule ul#list1 {
+    position: absolute;
+}
+
+
+ul.TopTeaserHeaders{
+    cursor: pointer;
+    width: auto;
+    height: 31px;
+    background: url("/pics/_topteaser2013/black_header_bg.jpg");
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+ul.TopTeaserHeaders li{
+    color: #fff;
+    float: left;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: bold;
+    line-height: 30px;
+    width: 106px;
+    text-align: center;
+    font-size: 15px;
+}
+ul.TopTeaserHeaders li:hover{color:red;}
+ul.TopTeaserHeaders li.TopTeaserActive:hover{color:#fff;}
+li.TopTeaserActive{
+    background: url("/pics/_topteaser2013/red_header_bg.png");
+}
+
+ul.TopTeaserList{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    background: url("/pics/_topteaser2013/topteaser_bg.png");
+    position: absolute;
+    top: 31px;
+}
+
+ul.TopTeaserList h1, ul.TopTeaserList p{
+    margin: 0 0 0 12px;
+    padding: none;
+}
+
+ul.TopTeaserList li:first-child{
+    padding-top: 20px;
+}
+
+ul.TopTeaserList li{
+    padding: 0;
+    width: 320px;
+    height: 111px;
+    background: url("/pics/_topteaser2013/top-teaser-sep.png") 50% 90% no-repeat;
+}
+
+ul.TopTeaserList li.last{
+    background: none;
+}
+
+ul.TopTeaserList li a{
+    text-decoration: none;
+    color: #000;
+    background: url("/pics/_topteaser2013/arrow-right.png") 97% 70% no-repeat;
+    width: 320px;
+    height: 111px;
+    display: block;
+}
+
+ul.TopTeaserList li a:hover{
+    background: url("/pics/_topteaser2013/arrow-right-mo.png") 97% 70% no-repeat;
+}
+
+ul.TopTeaserList li{
+    color: #000;
+}
+
+ul.TopTeaserList li:hover, ul.TopTeaserList li a:hover{
+    color: #C80000;
+}
+
+ul.TopTeaserList li h1{
+    color:inherit;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+ul.TopTeaserList li p{
+    font-family: Arial;
+    font-size: 15px;
+    margin-top: 5px;
+    width: 283px;
+}
+
+.TopTeaserActiveList{
+    z-index: 3;
+}
+
+.boxBasic .video .flex-caption{
+    /*display: none;*/
+}
+
+/*#list1 img.adv{
+    z-index: 5;
+}*/
+
+/*.adv{
+    position: absolute;
+    z-index: 4;
+}*/
+
+.clear{
+    clear: both;
+}
+#bookmark1{
+    width: 107px;
+}
+/****** Advertisement off ****/
+/*.adv{
+    display: none;
+}*/
+
+/*#content .left .box_ng_partner{margin-top:30px;}*/
+.boxTopTeaser .partners {
+    border:1px solid #e1e1e1;
+    float: left;
+    display: none;
+    height: 72px;
+    margin:3px 0;
+    position: relative;
+    text-align: center;
+    width:946px !important;
+}
+.boxTopTeaser .partners.active {
+    display: block;
+}
+.boxTopTeaser .partners a{display:inline-block; float:none; margin:0 40px;}
+.boxTopTeaser .partners .official {float:left; margin-left:10px}
+.boxTopTeaser .partners .adidas {}
+.boxTopTeaser .partners .krombacher {}
+.boxTopTeaser .partners .sky {}
+.boxTopTeaser .partners .grundig {}
+
+.boxTopTeaser .partners .hermes{margin:0;}
+.boxTopTeaser .partners .hermes img {margin-top:10px; width:270px;}
+
+#content .left{overflow: visible;}
+.right.margin-top{margin-top:467px;}
+
+
+
+body{background:#fff;}
+
+.navpos1,
+.navpos2,
+.navpos3,
+.navpos4,
+.navpos5,
+.navpos6,
+.navpos7,
+.navpos8,
+.navpos9,
+.navpos10{position:relative;}
+#nav li ul.navul1, #nav li ul{left:0 !important;}
+#nav .sizer li,
+#nav .sizer .navbox{margin:0 !important;}
+/*#nav li ul{display:block !important;}*/
+#nav li:hover,
+#nav li.hover{position:relative !important;}
+#nav li:hover ul,
+#nav li.sfhover ul{margin:0 !important;}
+#navigation .menue .navul3 li .navbox{margin:0 !important;}
+
+div.cb_std_tab_container{background:#f0f0f0 !important;}
+div.cb_std_tab_center_inactive,
+div.cb_std_tab_center_inactive:hover{background:url("/newDesign/pics/_2010/buttons/reiter_02.png") no-repeat scroll 0 -20px transparent; padding:0 10px;}
+#content #spinContent #sv2 #leiste{background:#f0f0f0 !important; width:788px;}

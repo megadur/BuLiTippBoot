@@ -1,0 +1,3 @@
+document.write('<a href="http://im.banner.t-online.de/?adlink/784/4254788/0/1761/AdId=8646845;BnId=13;itime=235929245;" target="_blank"><img src="http://aka-cdn-ns.adtech.de/images/189/Ad8646845St1Sz1761Sq104346562V0Id13.gif" border="0" alt="Hier klicken!" width="300" height="170"/></a>');
+ var adcount_4254788_1_=new Image();
+adcount_4254788_1_.src="http://im.banner.t-online.de/adcount/3.0/784/4254788/0/1761/AdId=8646845;BnId=13;ct=1603038960;st=3995;adcid=1;itime=235929245;reqtype=5;"; 

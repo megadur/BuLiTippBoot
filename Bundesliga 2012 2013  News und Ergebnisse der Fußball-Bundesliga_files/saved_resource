@@ -1,0 +1,62 @@
+if (!document.body) { document.write('<body></body>');} document.write('<div class="plista_widget_i611x90" id="plista_widget_i611x90_529100ca1dd3b"></div>');
+			(function () {
+			var
+			tmp, html, c,
+			className = 'plista_widget_i611x90',
+			loadCSS = function(content) {
+			var elm = document.createElement('style');
+			elm.type = 'text/css';
+			if (typeof elm.textContent !== 'undefined') {
+			elm.textContent = content;
+			} else {
+			elm.styleSheet.cssText = content;
+			}
+			document.getElementsByTagName("head")[0].appendChild(elm);
+			};
+
+			tmp = document.getElementById( "plista_widget_i611x90_529100ca1dd3b" );
+
+			if (tmp) {
+			c = tmp.className;
+			if (c !== className) {
+			tmp.className = c ? className + ' ' + c : className;
+			}
+
+			loadCSS( ".plista_widget_i611x90{width:611px !important;height:90px !important;overflow:hidden;background-color:#fff;font-family:Arial,Helvetica,sans-serif}.plista_widget_i611x90 .plistaList{width:611px !important;height:73px !important;overflow:hidden}.plista_widget_i611x90 .itemLinkPET{height:72px !important;display:block;padding:0;text-decoration:none !important;text-transform:none;background-color:#fff;color:#504342;overflow:hidden;float:left;width:305px }.plista_widget_i611x90 .itemTitle{color:#1C1C1C;font-size:12px;line-height:14px;font-weight:bold;position:relative;display:block;font-family:arial,helvetica,freesans,sans-serif}.plista_widget_i611x90 .itemText{margin:1px 0 0 0;font-weight:normal;position:relative;color:#1C1C1C;font-size:12px;display:block;font-family:arial,helvetica,freesans,sans-serif}.plista_widget_i611x90 .itemMore{color:#FF7300;font-size:12px;font-family:arial,helvetica,freesans,sans-serif}.plista_widget_i611x90 .itemTitle:hover,.plista_widget_i611x90 .itemMore:hover{text-decoration:underline}.plista_widget_i611x90 .plistaPowered{padding:0px 5px;height:16px;background:#fff;border-bottom:1px solid #D8CECD }.plista_widget_i611x90 .plistaPowered a{font-size:9px;color:#777777;text-decoration:none;font-weight:normal;text-transform:none;float:right}.plista_widget_i611x90 .plistaPowered a:hover{color:#444}.plista_widget_i611x90 .plistaPowered img{vertical-align:middle;border:none;display:inline !important}.plista_widget_i611x90 .plistaClear{clear:both;line-height:0px;height:0px;font-size:1px;display:block}.plista_widget_i611x90 .plista_widget_imgwrapper img{border:none}.plista_widget_i611x90 .plista_widget_imgwrapper{float:left;font-size:10px;margin:0 4px 0px 0;position:relative;height:92px;display:block}.plista_widget_i611x90 .itempet{font-size:11px;color:#aaa;background-color:#fff;display:block;float:left }" );
+			html = "<div class=\"plistaPowered\">\n\t<a title=\"powered by plista\" href=\"http:\/\/www.plista.com\" target=\"_blank\">\n\t\t<img alt=\"\" title=\"plista\" src=\"http:\/\/static.plista.com\/image\/logo_plista_lightgray_ffffff_alpha.gif\"\/>\n\t\tpowered by plista\n\t<\/a>\n<\/div>\n<div  class=\"plistaList\"><a target=\"_blank\" class=\"plista_widget_i611x90_item itemLinkPET\" href=\"http:\/\/farm.plista.com\/pets?friendid=57122935&itemid=146557495&campaignid=13027&frienddomainid=3526&widgetid=7364&bucketid=0&Pookie=Plgz9yl24XpXse4ug3UnEg%3D%3D&bv=,,,1543345,331544,10,14684,0)18841_1)18842,26887,0)6,0)165251,,2,284806,,48811,48985,1,78119,1385234634,,64287,20,0,57122935,,3526,,17332,,,0.482642%7C0.482643.0.1.7.98.651.1.0...%281)%3A1.482644%7C0.1788408.0.1.7.92.651.1.0...%282)%3A2.1788409%7C0.1821768.0.1.0.2.1.1.0...%28)1.318514.1.1.0.98.1.1.0...%28),,,,,1838986,,7364,,,4,,,,,654013,,41,,19)255,,,,,1138207,2029909163,,1275566,,,1788369&bve=,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0&tend=1385263434&crc=cc8c8479933d541b5e9e896d5d8dfd43&urlprefix=http%3A%2F%2Fim.banner.t-online.de%2Fadlink%2F784%2F1845233%2F0%2F560%2FAdId%3D8518347%3BBnId%3D7%3Bitime%3D234633241%3Bnodecode%3Dyes%3Blink%3D\" title=\"Neue Kfz-Ver\u00adsi\u00adche\u00adrung? \" data-type=\"pet\">\n\t<span class=\"plista_widget_imgwrapper\" style=\"display: block; overflow: hidden;width:70px;height:72px;\"><img src=\"http:\/\/static.plista.com\/image\/resized\/25095\/ptAP1Ir1Ah47slD_2_1383237071527285cf05c73_70x72_6791.jpeg\" title=\"Neue Kfz-Ver\u00adsi\u00adche\u00adrung? \" alt=\"\" style=\"width:70px;height:72px;\" \/><\/span>\n\t<span class=\"itemTitle\">Neue Kfz-Ver\u00adsi\u00adche\u00adrung?<\/span>\n\t<span class=\"itemText\">Kfz-Haft\u00adpflicht und  Voll\u00adkasko ab 99\u20ac. Bis 30.11. zu DA Direkt wech\u00adseln und clever sparen.&#160;<span class=\"itemMore\">mehr&raquo;<\/span><\/span>\n\t<span class=\"plistaClear\"><\/span>\n<\/a><a target=\"_blank\" class=\"plista_widget_i611x90_item itemLinkPET\" href=\"http:\/\/farm.plista.com\/pets?friendid=57122935&itemid=143114476&campaignid=12432&frienddomainid=3526&widgetid=7364&bucketid=0&Pookie=Plgz9yl24XpXse4ug3UnEg%3D%3D&bv=,,,1543345,331544,10,14684,0)18841_1)18842,26887,0)6,0)165251,,2,284806,,48811,48985,2,78119,1385234634,,64287,20,0,57122935,,3526,,17332,,,0.482642%7C0.482643.0.1.7.98.651.1.0...%281)%3A1.482644%7C0.1788408.0.1.7.92.651.1.0...%282)%3A2.1788409%7C0.1821768.0.1.0.2.1.1.0...%28)1.318514.1.1.0.98.1.1.0...%28),,,,,1838986,,7364,,,4,,,,,654013,,41,,19)255,,,,,1138207,2029909163,,1275566,,,1788369&bve=,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0&tend=1385263434&crc=a82f8d5bae9fd28316940e2e83f900f0&urlprefix=http%3A%2F%2Fim.banner.t-online.de%2Fadlink%2F784%2F1845233%2F0%2F560%2FAdId%3D8518347%3BBnId%3D7%3Bitime%3D234633241%3Bnodecode%3Dyes%3Blink%3D\" title=\"DIE SEAT VORTEILSWOCHEN.\" data-type=\"pet\">\n\t<span class=\"plista_widget_imgwrapper\" style=\"display: block; overflow: hidden;width:70px;height:72px;\"><img src=\"http:\/\/static.plista.com\/image\/resized\/25515\/84nXZb3Q96xOto8_70x72_6889.jpeg\" title=\"DIE SEAT VORTEILSWOCHEN.\" alt=\"\" style=\"width:70px;height:72px;\" \/><\/span>\n\t<span class=\"itemTitle\">DIE SEAT VORTEILSWOCHEN.<\/span>\n\t<span class=\"itemText\">\u201eSichern Sie sich jetzt bis zu 1.000 \u20ac** Gebraucht\u00adwa\u00adgen\u00adein\u00adtausch\u00adpr\u00e4mie. Mehr Infos finden Sie...&#160;<span class=\"itemMore\">mehr&raquo;<\/span><\/span>\n\t<span class=\"plistaClear\"><\/span>\n<\/a><\/div>";
+			
+window.plistaloader = window.plistaloader || [];
+window.plistaloader.push(function(PLISTA) {
+	PLISTA.path = 'http://farm.plista.com/';
+	PLISTA.cdnpath = 'http://static.plista.com/';
+	PLISTA.domainid = 3526;
+	PLISTA.publickey = "bc969196061dd4d7c014b97c";
+	PLISTA.widgetname = "i611x90";
+	var main = document.getElementById("plista_widget_i611x90_529100ca1dd3b");
+	if (!main) {
+		return;
+	}
+	if (0 && window.self === window.top && PLISTA.widgetviews) {
+		PLISTA.widgetviews.init(main);
+	}
+	if (PLISTA.oba) {
+		if (0) {
+			PLISTA.oba({getTarget:function(){return main;}});
+		} else {
+			PLISTA.OBA.powered({getTarget:function(){return main;}},{items:[{status:1, type:'pet'}]});
+		}
+	}
+});
+var s0 = document.getElementsByTagName('script')[0],
+s = document.createElement('script');
+s.type = 'text/javascript';
+s.async = 'async';
+s.src = 'http://static.plista.com/jsmodule/browser,oba,tiny.widgetviews/' + encodeURIComponent('plistaloader[' + (window.plistaloader.length - 1) + ']');
+s0.parentNode.insertBefore(s, s0);
+			tmp.innerHTML = html;
+			if (document.location.hash === '#plista') {
+			document.location.hash = '#' + tmp.id;
+			}
+
+			}}());
+			

@@ -1,10 +1,5 @@
-*.pyc
-/.pydevproject
-/.project
-/.settings
-local_settings.py
 *.db
-
+Thumbs.db
 *.obj
 *.exe
 *.pdb

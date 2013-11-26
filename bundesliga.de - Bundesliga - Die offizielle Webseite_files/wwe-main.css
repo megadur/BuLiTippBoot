@@ -1,0 +1,2265 @@
+@import url("/data/feed/css/wwe-teams.css");
+
+.wwe-main {
+width:788px;
+color:#000;
+font: bold 12px Arial,Helvetica,sans-serif;
+position:relative;
+/* background: #ECECEC url('/data/feed/img/wwe-background-border-repeat-y.gif') repeat-y;*/
+}
+
+.wwe-no-border {
+width:786px;
+background-image:none;
+background: #e7e7e7;
+}
+
+.wwe-main a,
+.wwe-main a:active
+{
+outline:none;
+border:none;
+/*ie-dummy: expression(this.hideFocus=true);*/
+/*color: #fff;*/
+color: #000;
+}
+
+/*.wwe-main a:focus*/
+
+.wwe-table td > a:hover {
+color: #c80000;
+}
+
+.wwe-content {
+width:788px;
+min-height:400px;
+position:relative;
+}
+
+.wwe-no-border .wwe-content{
+margin:0;
+}
+
+
+
+.wwe-tabs-content-container {
+position:relative;
+}
+
+.wwe-content-loaded {
+display:none;
+}
+
+.wwe-preloader {
+width:100%;
+position:absolute;
+z-index:10;
+top:0;
+left:0;
+}
+
+.wwe-preloader-content {
+width:32px;
+height:32px;
+margin:200px auto 0 auto;
+padding:10px;
+background: URL('/data/feed/img/ajax-loader.gif') no-repeat center top;
+}
+
+#ajaxBusy {
+width:100%;
+position:absolute;
+z-index:200;
+top:0;
+left:0;
+background-color:#ECECEC;
+min-height:400px;
+height:100%;
+}
+
+div.wwe-header {
+background: URL('/data/feed/img/wwe-header.png');
+height:36px;
+}
+
+h2.wwe-header {
+background: URL('/data/feed/img/wwe-header.png');
+height:36px;
+color: #fff;
+padding: 10px 0;
+}
+
+.wwe-footer{
+position:relative;
+height:6px;
+/* border-bottom:1px solid #6C6C6C;
+ */}
+
+.wwe-footer-content{
+padding:0 10px;
+}
+
+.wwe-padding {
+	padding:10px;
+}
+
+.wwe-padding-10 {
+	padding:10px;
+}
+
+.wwe-margin-5{
+	margin:5px;
+}
+
+.wwe-padding-20 {
+	padding:20px;
+}
+
+.wwe-header-content {
+padding:7px 12px;
+position:relative;
+}
+
+.wwe-position-relative {
+position:relative;
+}
+
+.wwe-bold {
+font-weight:bold!important;
+text-transform:uppercase!important;
+}
+
+/*******************************
+table styles
+*******************************/
+#spinContent .wwe-main table {
+    width: 100%;
+	border-collapse: separate;
+}
+
+#spinContent {
+background: none!important;
+}
+
+.container-open-close {
+border: none!important;
+}
+
+table.wwe-table thead {
+background-image: url("/data/feed/img/wwe-header_black_23.png");
+height: 23px;
+color: #fff;
+border-top: 1px solid #676868;
+border-bottom: 1px solid #000;
+}
+
+table.wwe-table a {
+color: #000;
+}
+
+/* table.wwe-table tr td,
+table.wwe-table tr th {
+height:34px;
+} */
+
+table.wwe-table tr td {
+/*border-bottom: 1px solid #fff;*/
+height:36px;
+}
+
+table.wwe-table tr {
+	background-image: url("/data/feed/img/wwe-border_788.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+	-webkit-background-size: 100% 1px;
+}
+
+table#wwe-card-stats.wwe-table tr {
+background-image: none!important;
+}
+
+#wwe-card-stats  tr td {
+/*line-height:30px;*/
+}
+
+table.wwe-standings-small {
+text-align:center!important;
+width:100%!important;
+font-size:10px;
+font-weight:bold;
+font-family: Arial,Helvetica,sans-serif;
+}
+
+table.wwe-table-small {
+text-align:left;
+width:100%!important;
+font-size:11px;
+font-weight:bold;
+margin:0 0 10px 0;
+}
+
+table.wwe-table-small tr td,
+table.wwe-table-small tr th{
+padding:3px 5px;
+}
+
+table.wwe-table-small tr td:first-child{
+font-weight:normal;
+color:#666;
+}
+
+table.wwe-table-small tr td:last-child{
+text-align:right;
+}
+
+table.wwe-standings-flash {
+width:308px!important;
+background: #e7e7e7;
+}
+
+table.wwe-standings-small thead {
+Background: url("/data/feed/img/wwe-header_black_23.png");
+border-bottom:1px solid #000;
+border-top:1px solid #676868;
+color: #fff;
+height: 23px;
+}
+
+
+table#wwe-table-rounds thead {
+Background: url("/data/feed/img/wwe-header_black_23.png");
+border-bottom:1px solid #000;
+border-top:1px solid #676868;
+color: #fff;
+}
+
+table#wwe-table-rounds thead tr {
+height: 23px;
+}
+
+table.wwe-standings-small tr td,
+table.wwe-standings-small tr th {
+/*line-height:20px;*/
+cursor:pointer;
+white-space: nowrap;
+padding-left: 2px;
+/*padding-left: 5px;*/
+}
+
+table.wwe-standings-small tr{
+	background-image: url("/data/feed/img/wwe-border_304.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+	height: 23px;
+}
+
+table.wwe-standings-flash tr th,
+table.wwe-standings-flash tr td{
+cursor:default!important;
+}
+
+table.wwe-standings-flash tr td {
+height:23px;
+}
+
+table.wwe-standings-small tr th {
+text-transform:uppercase;
+}
+
+table.wwe-standings-small caption{
+text-align:left;
+font-weight:bold;
+font-size: 17px;
+padding:5px 10px;
+}
+
+table.wwe-table-small tr{
+	background-image: url("/data/feed/img/wwe-border_187.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+}
+
+table.wwe-standings-small tr:hover.wwe-team-hover td{
+background-color:#ccc;
+}
+
+
+.infoLabel {font-size: 9px; padding: 0 4px 0 4px;}
+
+
+table.wwe-table tr.wwe-more-info-content td {
+border-bottom: none;
+/*line-height:0;*/
+height:auto;
+/*background:#E5E5E5 URL('/data/feed/img/wwe-bg-gradient.png') repeat-x center top; */
+background:#000 URL('/data/feed/img/bg_black_120.png') repeat-x center top;
+color: #fff;
+}
+
+.wwe-more-info-content  table.wwe-table tr {
+    background-image: url("/data/feed/img/wwe-border_473.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+}
+
+table.wwe-table tr.wwe-more-info-content td table,
+table.wwe-table tr.wwe-more-info-content td table td,
+table.wwe-table tr.wwe-more-info-content td table td div{
+background-color:transparent;
+background-image:none;
+}
+
+table.wwe-table tr.wwe-more-info-content td  div.wwe-more-info-content-div {
+position:relative;
+overflow:hidden;
+z-index:1;
+}
+
+table.wwe-table tr.wwe-more-info-content td  div td{
+/*line-height:30px;*/
+height:34px;
+text-align:left;
+}
+
+/*
+table.wwe-table tr th {
+background:#ececec;
+border-bottom:none;
+}
+*/
+
+.wwe-content .wwe-tabs-content table tr th {
+padding:0 5px;
+font-size:11px;
+}
+
+table.wwe-table {
+/*background: url("/data/feed/img/gra_hg_verlauf_786.gif") 0 0 repeat-y;*/
+width:100%!important;
+text-align:center;
+border-collapse:collapse;
+border-spacing:0;
+background-color: #e7e7e7;
+}
+
+
+table.his-background {
+	/*background: url("/data/feed/img/gra_hg_verlauf_his_786.jpg") 0 0 repeat-y;*/
+	background-color: #e7e7e7;
+}
+
+
+table.wwe-table-no-style {
+background:none;
+text-align:left;
+/*line-height:13px;*/
+}
+
+table.wwe-table caption{
+text-align:left;
+font-weight:bold;
+font-size: 17px;
+padding:5px 10px;
+}
+
+table.wwe-table-no-style td,
+table.wwe-table-no-style th{
+padding:0 5px;
+border-bottom:none;
+}
+
+table.wwe-table.wwe-table-cell-background td{
+background: #b6bdc2;
+}
+
+table.wwe-table.wwe-table-first-column td:first-child{
+background: none;
+}
+
+table.wwe-table#fairness {
+background:none;
+margin:20px 0 0 20px;
+width:360px;
+font-size: 17px;
+font-weight:bold;
+border-spacing:0 4px;
+border-collapse:separate;
+float:left;
+}
+
+table.wwe-table#fairness td,
+table.wwe-table#fairness th{
+padding:0 5px;
+border-bottom:none;
+}
+
+table.wwe-table tr td.wwe-rank,
+table.wwe-table tr td.wwe-0rank,
+table.wwe-table tr td.wwe-1rank,
+table.wwe-table tr td.wwe-2rank,
+table.wwe-table tr td.wwe-3rank,
+table.wwe-table tr td.wwe-4rank,
+table.wwe-table tr td.wwe-5rank,
+table.wwe-table tr td.wwe-6rank,
+table.wwe-table tr td.wwe-7rank,
+table.wwe-table tr td.wwe-16rank,
+table.wwe-table tr td.wwe-17rank,
+table.wwe-table tr td.wwe-18rank
+
+{
+background: url("/data/feed/img/wwe-rank-bg.png") no-repeat 0 -34px;
+color:#FFF;
+font-weight:bold;
+padding-left:10px;
+text-align:left;
+}
+
+table.wwe-table tr td.wwe-rank span,
+table.wwe-table tr td.wwe-0rank span,
+table.wwe-table tr td.wwe-1rank span,
+table.wwe-table tr td.wwe-2rank span,
+table.wwe-table tr td.wwe-3rank span,
+table.wwe-table tr td.wwe-4rank span,
+table.wwe-table tr td.wwe-5rank span,
+table.wwe-table tr td.wwe-6rank span,
+table.wwe-table tr td.wwe-7rank span,
+table.wwe-table tr td.wwe-16rank span,
+table.wwe-table tr td.wwe-17rank span,
+table.wwe-table tr td.wwe-18rank span {
+position:relative;
+top: -1px;
+}
+
+/*für 3.Liga:*/
+table.wwe-table tr td.wwe-19rank,
+table.wwe-table tr td.wwe-20rank
+{
+background: url("/data/feed/img/wwe-rank-bg.png") no-repeat 0 0px;
+color:#FFF;
+font-weight:bold;    
+padding-left: 10px;
+text-align: left;
+}
+
+
+table.wwe-table tr td.wwe-1rank,
+table.wwe-table tr td.wwe-2rank,
+table.wwe-table tr td.wwe-17rank,
+table.wwe-table tr td.wwe-18rank
+{
+background-position:  0 0;
+}
+
+table.wwe-table tr td.wwe-rank,
+table.wwe-table tr td.wwe-0rank
+{
+background-position:  0 -68px;
+}
+
+
+
+td.wwe-rank-small,
+td.wwe-0rank-small,
+td.wwe-1rank-small,
+td.wwe-2rank-small,
+td.wwe-3rank-small,
+td.wwe-4rank-small,
+td.wwe-5rank-small,
+td.wwe-6rank-small,
+td.wwe-7rank-small,
+td.wwe-16rank-small,
+td.wwe-17rank-small,
+td.wwe-18rank-small
+{
+background: url("/data/feed/img/wwe-rank-bg.png") no-repeat left -38px;
+color:#FFF;
+font-weight:bold;
+font-size:10px;
+padding-left:10px;
+width:47px;
+text-align:left;
+}
+
+td.wwe-1rank-small,
+td.wwe-2rank-small,
+td.wwe-17rank-small,
+td.wwe-18rank-small
+{
+background-position: 0 -5px;
+}
+
+td.wwe-rank-small,
+td.wwe-0rank-small
+{
+background-position:  0 -73px;
+}
+
+
+table.wwe-table col {
+background:none;
+}
+
+.wwe-table-col-trend {
+width:30px;
+}
+
+.wwe-table-col-quali {
+width:70px;
+}
+
+table.wwe-table .wwe-first-col {
+width:71px;
+}
+
+table.wwe-table .wwe-table-col-width {
+width:40px;
+}
+
+.wwe-align-left,
+#goalgetter-ever  {
+text-align:left!important;
+padding-left:10px;
+}
+
+.wwe-align-right {
+text-align:right!important;
+padding-right:10px;
+}
+
+.wwe-align-center{
+text-align:center!important;
+}
+
+table.wwe-table tr th.wwe-align-left {
+padding-left:10px;
+}
+
+table.wwe-table .wwe-align-center  {
+text-align:center;
+}
+
+.wwe-table-header-big th{
+	font-weight:bold;
+	font-size:17px;
+	/*line-height:30px;*/
+	text-transform:uppercase;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:left;
+}
+
+.wwe-table-overview-stats {
+background: #e7e7e7;
+}
+
+.wwe-table-overview-stats tr {
+/*background:#FFF URL('/data/feed/img/wwe-header_grey.png') repeat-x center center;*/
+height:34px;
+	background-image: url("/data/feed/img/wwe-border_375.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+}
+
+/* .wwe-table-overview-stats tr:hover {
+background:#FFF;
+} */
+
+
+.wwe-table-overview-stats th span{
+	font-weight:normal;
+	font-size:17px;
+	text-align:left;
+	text-transform:none;
+}
+
+.wwe-table-overview-stats th {
+	/*line-height:30px;*/
+	text-align:left;
+}
+
+.wwe-table-overview-stats  td{
+	/* background:#FFF URL('/data/feed/img/tablebg.png') repeat-x center center; */
+	border-bottom:none !important;
+	height:34px !important;
+}
+
+.wwe-player-card .wwe-table-overview-stats  td{
+	height:auto !important;
+	padding:5px;
+}
+
+table.wwe-table-overview-stats .wwe-no-background{
+	background:none !important;
+	font-weight:bold;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+.wwe-table-padding-first-last-column tr th:first-child,
+.wwe-table-padding-first-last-column tr  td:first-child{
+	padding-left:10px;
+}
+
+.wwe-table-padding-first-last-column tr th:last-child,
+.wwe-table-padding-first-last-column tr td:last-child,
+.wwe-padding-right{
+	padding-right:10px;
+}
+
+.wwe-table-header-small th{
+	font-weight:normal;
+	font-size:11px;
+	/*line-height:11px;*/
+	text-transform:none;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:left;
+	height:50px;
+}
+
+
+table.wwe-table-overview-stats {
+padding: 0 5px;
+}
+
+table#wwe-head-to-head {
+margin-top: 40px;
+background: none;
+}
+
+/*******************************
+Definition List
+*******************************/
+dl.wwe-definitionlist {
+margin:10px 0;
+}
+
+dl.wwe-definitionlist dd {
+margin:0;
+}
+
+dl.wwe-definitionlist dd,
+dl.wwe-definitionlist dt,
+dl.wwe-definitionlist dt.wwe-definitionlist-dt{
+background:url("/data/feed/img/tablebg.png") repeat-x center center #FFF;
+font-weight:bold;
+color:#000;
+padding:5px;
+}
+
+dl.wwe-definitionlist dt{
+float:left;
+width:70%;
+font-weight:normal;
+color:#999;
+}
+
+dl.wwe-definitionlist dt.wwe-grey{
+
+}
+
+dl.wwe-definitionlist dd{
+float:left;
+text-align:right;
+}
+
+/*******************************
+Headlines
+*******************************/
+
+.wwe-content-headline {
+background-color: #fff;
+/* padding:10px;
+position:relative; */
+height: 24px;
+padding: 7px 0 0 12px;
+background:url("/data/feed/img/wwe-header_grey.png");
+border-bottom:1px solid #676868;
+}
+
+.wwe-content-headline h3{
+color: #000;
+/* font-size: 20px;*/
+font-size: 15px;
+letter-spacing: -0.02em;
+margin:0;
+padding:0;
+display:inline;
+text-transform: uppercase;
+}
+
+
+.wwe-content-headline h1 {
+	color: #000;
+	font-size:12px;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+
+.wwe-header-content form  {
+width:auto;
+float:right;
+}
+
+.wwe-header-content select {
+/*margin: 2px 5px;*/
+font-size:10px;
+/* vertical-align:top; */
+position: relative;
+bottom: 4px;
+}
+
+
+
+.wwe-header-content form *{
+/*vertical-align:middle;*/	
+}
+
+.wwe-header h2{
+ color:#FFF;
+ /*font: bold 20px Arial,Helvetica,sans-serif;*/
+ font: bold 15px Arial,Helvetica,sans-serif;
+ letter-spacing: -0.02em;
+ padding:0;
+ display:inline;
+ margin:0;
+ text-transform: none;
+ float:left;
+ text-transform: uppercase;
+ position: relative;
+ /* top: 2px; */
+}
+
+h2.wwe-header,
+h3.wwe-header{
+ font: bold 15px Arial,Helvetica,sans-serif;
+ letter-spacing: -0.02em;
+ padding:0!important;
+ margin:0;
+ text-transform: uppercase;
+}
+
+h3.wwe-heading{
+    color: #000;
+    font: bold 15px Arial,Helvetica,sans-serif;
+	letter-spacing: -0.02em;
+    padding:4px 12px 0;
+	margin:0;
+	text-transform: uppercase;
+	height: 27px;
+	Background: url("/data/feed/img/wwe-header_grey.png");
+	border-bottom: 1px solid #676868;
+	
+}
+
+.wwe-heading {
+Background:url("/data/feed/img/wwe-header_grey.png");
+height:25px;
+padding: 3px;
+border-bottom: 1px solid #676868;
+}
+
+.wwe-cleardiv {
+clear:both;
+/*line-height:0;*/
+height:0;
+float:none !important;
+}
+
+.wwe-float-right {
+float:right;
+}
+
+.wwe-float-left {
+float:left;
+}
+
+
+
+input[type="button"] {
+background: url("/data/feed/img/wwe-button.png") no-repeat 0 0;
+width:27px;
+height:23px;
+border:none;
+border-style:none;
+cursor:pointer;
+position:relative;
+bottom: 1px;
+
+}
+
+input[type="button"]:hover {
+background-position:0 -24px;
+}
+
+#refresh {
+background-position:0 -480px;
+position:absolute;
+top:7px;
+right:7px;
+z-index:10;
+}
+
+#refresh:hover {
+background-position:0 -504px;
+}
+
+.refresh-disabled {
+background-position:0 -504px!important;
+}
+
+.wwe-arrow-left{
+background-position:0 -552px!important;
+position:absolute;
+z-index:10;
+left:20px;
+top:20px;
+width:27px!important;
+padding:0!important;
+}
+
+.wwe-arrow-left:hover {
+background-position:0 -528px!important;
+}
+
+.wwe-arrow-right{
+background-position:0 -600px!important;
+position:absolute;
+z-index:10;
+right:20px;
+top:20px;
+width:27px!important;
+padding:0!important;
+}
+
+.wwe-arrow-right:hover {
+background-position:0 -576px!important;
+}
+/*******************************
+definition list
+*******************************/
+.wwe-definition-list{
+/*margin:0 10px;*/
+padding: 10px;
+background: #e7e7e7;
+margin:0;
+}
+
+.wwe-definition-list dt {
+float:left;
+font-size:10px;
+/*line-height:25px;*/
+margin:0;
+}
+
+
+.wwe-definition-list div {
+position: relative;
+/*left: -10px;*/
+}
+
+.wwe-border-definition-list {
+	background-image: url("/data/feed/img/wwe-border_216.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+	min-height:23px;
+	padding:5px 10px 0;
+}
+
+
+dt.wwe-definition-without-icon{
+margin-left:25px;
+}
+
+.wwe-definition-list dd{
+/*line-height:25px;*/
+margin:0;
+font-weight:bold;
+font-size:10px;
+float:right;
+text-align:right;
+line-height: 20px;
+}
+
+
+
+.wwe-definition-list-legend{
+margin:0;
+}
+
+.wwe-definition-list-legend dt{
+float:left;
+font-size:10px;
+width:30px;
+margin:0;
+
+}
+
+.wwe-definition-list-legend dd{
+margin:0;
+font-size:10px;
+float:left;
+margin:0;
+}
+
+
+/*******************************
+round corners
+*******************************/
+/* .wwe-round-corners-container-padding{padding:6px;} */
+.wwe-round-corners-container-width {
+float:left;
+width:100%;
+}
+
+.wwe-width-25 {width:25% !important;}
+.wwe-width-50 {width:50% !important;}
+.wwe-width-75 {width:75% !important;}
+.wwe-width-33 {width:33.3% !important;}
+.wwe-width-66 {width:66.6% !important;}
+.wwe-width-10 {width:10% !important;}
+.wwe-width-20 {width:20% !important;}
+.wwe-width-30 {width:30% !important;}
+.wwe-width-40 {width:40% !important;}
+.wwe-width-60 {width:60% !important;}
+.wwe-width-70 {width:70% !important;}
+.wwe-width-80 {width:80% !important;}
+.wwe-width-90 {width:90% !important;}
+.wwe-width-100 {width:100% !important;}
+
+.wwe-width-467 {width:467px !important;}
+.wwe-width-307 {width:307px !important;}
+.wwe-width-308 {width:308px !important;}
+
+.wwe-width-308 div.wwe-header {
+background: URL('/data/feed/img/wwe-header.png');
+height:36px;
+}
+.wwe-width-308 div.wwe-content {
+/* border:1px solid #6c6c6c; */
+border-top:none;
+border-bottom:none;
+width:auto;
+margin:0; 
+background: #e7e7e7;
+}
+
+.wwe-round-corners-content {
+overflow:hidden;
+position:relative;
+}
+
+.wwe-squad-player-stats .wwe-round-corners-content {
+background: #e7e7e7;
+}
+
+.wwe-squad-player-season-stats .wwe-round-corners-content {
+background: #e7e7e7;
+}
+
+.wwe-round-corners-container-width-career {
+margin-top: 10px;
+margin-left: 12px;
+}
+
+.wwe-round-corners-container-width-player {
+margin-left: 12px;
+}
+
+.wwe-width-308 {
+background:none;
+border:none!important;
+margin:0!important;
+}
+
+.wwe-width-308,
+.wwe-round-corners-container {
+/* filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#e5e5e5');
+background: #fff;
+background: -moz-linear-gradient(top, #ffffff, #e5e5e5);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #e5e5e5));
+background: -o-linear-gradient(#ffffff, #e5e5e5);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#e5e5e5')"; */
+position:relative;
+/* border:1px solid #6c6c6c; */
+/* margin:6px; */
+width:auto;
+padding:0;
+zoom:1;
+}
+
+.wwe-gradient-dark {
+/* filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ddd', endColorstr='#bbb');
+background: #ddd;
+background: -moz-linear-gradient(top, #ddd, #bbb);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ddd), color-stop(1, #bbb));
+background: -o-linear-gradient(#ddd, #bbb);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ddd', endColorstr='#bbb')"; */
+}
+
+div.wwe-round-corners-footer {
+/*background: url('/data/feed/img/wwe-round-corners-container-shadow.png') center no-repeat;*/
+height:14px;
+width:100%;
+margin-top:-6px;
+}
+
+/*div.wwe-round-corners {
+background-image: url('/data/feed/img/wwe-round-corners.png');
+position:absolute!important;
+width:7px;
+height:7px;
+z-index:100;
+}
+
+div.wwe-round-corners-top-left{
+background-position: top left;
+top:-1px;
+left:-1px;
+}
+
+div.wwe-round-corners-top-right{
+background-position: top right;
+top:-1px;
+right:-1px;
+}
+
+div.wwe-round-corners-bottom-left{
+background-position: bottom left;
+bottom:-1px;
+left:-1px;
+}
+
+div.wwe-round-corners-bottom-right{
+background-position: bottom right;
+bottom:-1px;
+right:-1px;
+}*/
+
+.wwe-round-corners-container h2,
+.wwe-round-corners-container h3{
+margin:0;
+text-transform:uppercase;
+padding-left:10px;
+font-size: 15px;
+}
+
+.wwe-text-color {
+color:#000!important;
+}
+
+.wwe-stats-container h2 {
+margin:10px 0;
+text-align:left;
+text-transform:uppercase;
+padding-left:20px;
+font-size: 15px;
+color:#000;
+}
+
+.wwe-footer div.wwe-round-corners-bottom-left{
+left:0;
+}
+
+.wwe-footer div.wwe-round-corners-bottom-right{
+right:0;
+}
+
+
+/*******************************
+Table Paging
+*******************************/
+
+.wwe-button {
+	padding:0 10px 0 32px;
+	height:23px;
+	background: URL('/data/feed/img/wwe-button.png') no-repeat 0 0;
+	float:left;
+	/*line-height:23px;*/
+	font-weight:bold;
+	color:#C80000;
+	cursor:pointer;
+}
+
+#pager {
+padding:5px;
+margin:0 auto;
+background: URL('/data/feed/img/wwe-footer_32.png');
+height:22px;
+}
+
+#pager .wwe-button {
+color: #fff;
+padding: 3px 10px 0 32px;
+}
+
+#pager .wwe-button.next {
+padding: 3px 32px 0 10px;
+}
+
+#pager .wwe-button.last {
+padding: 3px 32px 0 10px;
+}
+
+#pager .wwe-button:hover {
+color: #c80000;
+}
+
+#pager label {
+color: #fff;
+}
+
+.pagedisplay-div,
+.pagesize-div {
+float:left;
+padding:0 25px;
+}
+
+.wwe-button:hover {
+	background-position:0 -24px;
+	color:#999;
+}
+
+.prev 					{background-position:0 		-96px;							}
+.prev:hover 				{background-position:0 		-120px;							}
+.next 					{background-position:right 	0;padding:0 32px 0 10px;		}
+.next:hover				{background-position:right 	-24px;							}
+.first 					{background-position:0 		-192px;							}
+.first:hover 			{background-position:0 		-216px;							}
+.last 					{background-position:right 	-144px;padding:0 32px 0 10px;	}
+.last:hover 				{background-position:right 	-168px;							}
+
+
+.wwe-magnify {
+	height:23px;
+	width:27px;
+	background: URL('/data/feed/img/wwe-button.png') no-repeat 0 -432px;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	cursor:pointer;
+}
+.wwe-magnify:hover{background-position:right -456px;}
+
+.wwe-close{background-position:right -624px;float:right;}
+.wwe-close:hover{background-position:right -648px;}
+
+/*******************************
+Table Sorting
+*******************************/
+
+table.wwe-table th.header { 
+    background: url(/data/feed/img/tablesort.png) no-repeat right 0;     
+    cursor: pointer; 
+    font-weight: bold; 
+    padding: 0 10px 0 0; 
+	margin:0;
+	border-bottom: none;
+	/*line-height:30px;*/
+}
+
+table.wwe-table th.inner-header { 
+    background:url(/data/feed/img/wwe-header_black_23.png);
+	/*background:#dfe5e8 url(/data/feed/img/wwe-kader-label.png); */
+	color:#fff;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:left;
+	font-size:15px;
+	padding-left:20px;
+	height: 23px;
+}
+
+table.wwe-table th:hover.header{ 
+    color:#c80000;
+}  
+
+table.wwe-table th.headerSortUp { 
+   background:url(/data/feed/img/tablesort.png) no-repeat right -60px!important;
+}
+
+table.wwe-table th.headerSortDown { 
+    background:url(/data/feed/img/tablesort.png) no-repeat right -30px!important;
+}
+
+table.wwe-table th.header-nosort,
+#goalgetter th,
+#scorer th{ 
+    /*background:#DDD;*/
+}
+
+table.wwe-table th.header-nosort.headerSortUp,
+table.wwe-table th.header-nosort.headerSortDown { 
+    /*background:#CCC;*/
+}
+
+table.wwe-table .selectedcolumn  {
+background: url(/data/feed/img/black-alpha-10.png) repeat!important;
+background:rgba(0,0,0,0.05);
+}
+
+
+span.hideRank {
+	display: none;
+}
+
+span.hideSpan {
+	display: none;
+}
+
+/*******************************
+TABS
+*******************************/
+
+ul.wwe-tabs,
+ul.wwe-tabs-noscript,
+ul.wwe-tabs-red {
+    margin: 0;
+    list-style: none;
+    height:31px;
+	/*width:100%;*/
+	background: #000;
+	background: URL('/data/feed/img/wwe-tabs.png');
+	padding:0;
+}
+
+.wwe-width-308 ul.wwe-tabs{
+    padding: 0;
+	margin-left:1px;
+	background-color: transparent;
+	width:auto;
+}
+
+ul.wwe-tabs-in-container {
+	background-color: transparent;
+	/* padding-top:6px; */
+	/*margin:0 7px -6px;*/
+	width:auto;
+	position:relative;
+	z-index:1;
+	border-bottom:none;
+}
+
+ul.wwe-tabs-red {
+	border-bottom:1px solid #d26e6e;
+}
+
+ 
+ul.wwe-tabs li,
+ul.wwe-tabs-noscript li,
+ul.wwe-tabs-red  li {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+	font-weight:bold;
+	float: left;
+    display: inline; /*For ignore double margin in IE6*/
+	border-left: 1px solid #6C6C6C;
+	height:31px;
+	/*line-height:20px;*/
+}
+
+ul.wwe-tabs li:first-child,
+ul.wwe-tabs-noscript li:first-child,
+ul.wwe-tabs-red  li:first-child {
+border: none;
+}
+
+ul.wwe-tabs li.wwe-live-tab a,
+ul.wwe-tabs-red  li {
+color: #fff;
+}
+ 
+ul.wwe-tabs  li span,
+ul.wwe-tabs-noscript li span,
+ul.wwe-tabs-red  li span,
+ul.wwe-tabs li a {
+    /* margin: 0 10px 0 -10px;
+    padding: 0 0px 0 10px; */
+    float:left;
+	padding: 0 8px;
+	
+}
+
+ul.wwe-tabs li a, ul.wwe-tabs li span {
+	color: #fff;
+	text-decoration:none;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 9px 16.7px;
+}
+
+ul.wwe-tabs.wwe-tabs-schedule-overview-el li a, ul.wwe-tabs.wwe-tabs-schedule-overview-el li span {
+padding: 9px 5.6px;
+}
+
+ul.wwe-tabs.wwe-tabs-schedule_overview-cl li a, ul.wwe-tabs.wwe-tabs-schedule-overview-el li span {
+padding: 9px 16.12px;
+}
+
+
+
+ul.wwe-tabs li,
+ul.wwe-tabs-noscript li{
+    background: URL('/data/feed/img/wwe-tabs.png') right;
+}
+ 
+/*ul.wwe-tabs li span,
+ul.wwe-tabs li a,
+ul.wwe-tabs-noscript li span {
+    background: URL('/data/feed/img/wwe-tabs.png') left -21px no-repeat;
+}*/
+
+ul.wwe-tabs li.wwe-tab-active,
+ul.wwe-tabs li:hover,
+ul.wwe-tabs-noscript li.wwe-tab-active,
+ul.wwe-tabs-noscript li:hover  {
+/*background-position: right top;*/
+background: URL('/data/feed/img/wwe-tabs_red.png');
+-webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.4); /* WebKit */
+-moz-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.4); /* Firefox */
+box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.4); /* Standard */ 
+}
+
+ul.wwe-tabs li.wwe-tab-active span,
+ul.wwe-tabs li:hover span,
+ul.wwe-tabs li:hover a,
+ul.wwe-tabs-noscript li.wwe-tab-active span,
+ul.wwe-tabs li.wwe-tab-active a,
+ul.wwe-tabs-noscript li:hover span{
+/*background-position: left top;*/
+}
+
+/* ul.wwe-tabs-red li,
+ul.wwe-tabs li.wwe-live-tab{
+    background: URL('/data/feed/img/wwe-tabs.png');
+} */
+
+/* ul.wwe-tabs li.wwe-live-tab a, 
+ul.wwe-tabs-red li  span {
+    background: URL('/data/feed/img/wwe-tabs.png');
+} */
+
+ul.wwe-tabs li.wwe-live-tab.wwe-tab-active,
+ul.wwe-tabs-red li.wwe-tab-active,
+ul.wwe-tabs-red li:hover  {
+/* background-position: right -42px; */
+}
+
+ul.wwe-tabs li.wwe-live-tab.wwe-tab-active a,
+ul.wwe-tabs-red li.wwe-tab-active span,
+ul.wwe-tabs-red li:hover span {
+/* background-position: left -42px; */
+}
+
+/*******************************
+Submenu
+*******************************/
+ul.wwe-submenu,
+ul.wwe-lineup-filter {
+    padding: 9px;
+    margin: 0;
+    list-style: none;
+	width:742px;
+	background: #e7e7e7;
+	display:block;
+}
+
+ul.wwe-lineup-filter {
+    padding: 0 9px 9px;
+}
+ 
+ul.wwe-submenu li{
+	text-decoration: none;
+    color: #000;
+	font-weight:bold;
+	margin:1px;
+	/*line-height:23px;*/
+	height:23px;
+	float: left;
+    display: inline; /*For ignore double margin in IE6*/
+}
+
+ul.wwe-submenu li span {
+	color: #000;
+	text-decoration:none;
+	/*line-height:23px;*/
+	height:23px;
+	margin-left:10px;
+	padding-right:10px;
+	display: block;
+}
+
+
+ul.wwe-submenu li:hover ,
+ul.wwe-submenu li.wwe-submenu-active {
+    color: #D00;
+	background: URL('/data/feed/img/wwe-tabs.png') no-repeat left -102px;
+	cursor:pointer;
+}
+
+ul.wwe-submenu li:hover span,
+ul.wwe-submenu li.wwe-submenu-active span{
+    color: #D00;
+	background: URL('/data/feed/img/wwe-tabs.png') no-repeat right -102px;
+}
+
+ul.wwe-lineup-filter li{
+	text-decoration: none;
+	font-weight:bold;
+	margin: 0 1px;
+	/*line-height:23px;*/
+	height:23px;
+	float: left;
+    display: inline; /*For ignore double margin in IE6*/
+	color: #d80000;
+	background: URL('/data/feed/img/wwe-tabs.png') no-repeat left -102px;
+	cursor:pointer;
+}
+
+ul.wwe-lineup-filter li span{
+	color: #d80000;
+	text-decoration:none;
+	/*line-height:23px;*/
+	height:23px;
+	margin-left:10px;
+	padding-right:10px;
+	display: block;
+	background: URL('/data/feed/img/wwe-tabs.png') no-repeat right -102px;
+}
+
+ul.wwe-lineup-filter li.active,
+ul.wwe-lineup-filter li.active span {
+	background: none;
+	color:#000;
+}
+
+.wwe-submenu-container {
+    position:relative;
+	background: #e7e7e7;
+}
+
+.wwe-submenu-shadow {
+    position:absolute;
+	left:0;
+	bottom:-10px;
+	z-index:1;
+	background: transparent url('/data/feed/img/wwe-submenu-shadow.png') center center no-repeat;
+	width:100%;
+	height:10px;
+}
+
+.wwe-submenu-shadow-bottom {
+    position:absolute;
+	left:0;
+	bottom:0;
+	z-index:101;
+	background: transparent url('/data/feed/img/wwe-submenu-shadow-bottom.png') center center no-repeat;
+	width:100%;
+	height:10px;
+}
+
+/*******************************
+Round Selection Menu
+*******************************/
+ul.wwe-round-selection {
+	padding: 0;
+    margin: 0;
+    list-style: none;
+	width:100%;
+	background-color: #000;
+	border-bottom: 1px solid #676868;
+}
+
+/* ul.wwe-round-selection:first-child {
+border-top: 1px solid #676868;
+} */
+
+
+ul.first-round {
+border-top: 1px solid #676868;
+}
+
+ul.wwe-round-selection  li{
+    text-decoration: none;
+	font-weight:bold;
+	float: left;
+    display: inline; /*For ignore double margin in IE6*/
+	background-color: #000;
+    border-right: 1px solid #676868;
+    color: #999;
+    font-size: 10px;
+    font-weight: bold;
+    height: 17px;
+    padding-top: 3px;
+    text-align: center;
+    width: 37px;
+}
+
+ul.wwe-round-selection  li.has-data{
+    color: #FFFFFF;
+}
+
+ul.wwe-round-selection  li.has-data:hover
+{
+	cursor:pointer;
+	/*background-color: #666;*/
+}
+
+ul.wwe-round-selection  li.active-round-selection,
+ul.wwe-round-selection  li.active-round-selection:hover{
+	background-color: #c80000;
+}
+
+
+.wwe-content  .wwe-table-overview-stats-head  {
+	text-align: left;
+}
+
+.wwe-content  .wwe-table-overview-stats-head h1  {
+	color: #000;
+	font-size: 14px;
+}
+
+.loading {
+height:400px;
+display:block;
+}
+
+#wwe-tabs-container {
+min-height:400px;
+}
+
+
+.wwe-icon-button {
+	width:27px;
+	height:23px;
+	background: URL('/data/feed/img/wwe-button.png') no-repeat 0 0;
+	cursor:pointer;
+}
+
+.wwe-icon-chart:hover 			{background-position:0 		-288px;	}
+.wwe-icon-chart 					{background-position:0		-312px;	}
+.wwe-icon-table:hover  			{background-position:0 		-336px;	}
+.wwe-icon-table					{background-position:0 		-360px;	}
+
+.wwe-icon,
+.wwe-event-icon{
+height:25px;
+width:25px;
+/*line-height:25px;*/
+background:transparent url('/data/feed/img/wwe-icons-sprite.png') no-repeat 0 0;
+display:block;
+position:relative;
+text-align:center;
+z-index:10;
+}
+
+
+td#position .wwe-event-icon {
+height:25px;
+width:25px;
+/*line-height:25px;*/
+background:transparent url('/data/feed/img/wwe-icons-sprite.png') no-repeat 0 0;
+display:block;
+position:relative;
+text-align:center;
+right: 15px;
+}
+
+
+
+.wwe-icon-25x25{
+height:25px;
+width:25px;
+/*line-height:25px;*/
+background:transparent url('/data/feed/img/wwe-icon-sprite-25x25.png') no-repeat 0 0;
+display:block;
+position:relative;
+text-align:center;
+
+}
+
+.wwe-icon {
+height:35px;
+width:35px;
+}
+
+.wwe-event-icon-red-card			{background-position:	-25px	0;	}
+.wwe-event-icon-yellow-card			{background-position:	0		0;	}
+.wwe-event-icon-yellowred-card		{background-position:	-50px	0;	}
+.wwe-event-icon-sub					{background-position:	-200px	0;	}
+.wwe-event-icon-subfor				{background-position:	-225px	0;	}
+.wwe-event-icon-subsubfor			{background-position:	-250px	0;	}
+.wwe-event-icon-goal				{background-position:	-124px	0;	}
+.wwe-event-icon-goal-own			{background-position:	-150px	0;	}
+.wwe-event-icon-penalty				{background-position:	0		0;	}
+.wwe-event-icon-foul-for			{background-position:	-100px	0;	}
+.wwe-event-icon-foul-against		{background-position:	-75px	0;	}
+.wwe-reset-icon 						{background-position: 	-427px	0;	}
+.wwe-trend-positive-icon 			{background-position: 	-450px	0;	}
+.wwe-trend-negative-icon 			{background-position: 	-475px	0;	}
+.wwe-event-icon-penalty-shot-taken 	{background-position: 	-525px	0;	}
+.wwe-event-icon-penalty-shot-scored 	{background-position: 	-450px	0;	}
+.wwe-event-icon-penalty-shot-failed 	{background-position: 	-475px	0;	}
+.wwe-event-icon-stadion			 	{background-position: 	-526px	0;	}
+.wwe-event-icon-stadion-active	 	{background-position: 	-550px	0;margin-left:2px;	}
+.wwe-info-icon						{background-position: 	-550px	0;	}
+
+.wwe-more-info						{background-position:	-355px	0;	}
+.wwe-more-info:hover				{background-position:	-379px	0;	}
+.wwe-more-info-active,			
+/* .wwe-more-info-active:hover			{background-position:	-405px	0;	} */
+.wwe-more-info-active:hover			{background-position:	-404px	0;	}
+
+.wwe-position-1 						{background-position:	-75px	-25px;font-weight:bold;color:#fff;}
+.wwe-position-2 						{background-position:	-100px	-25px;font-weight:bold;color:#fff;}
+.wwe-position-3 						{background-position:	-125px	-25px;font-weight:bold;color:#fff;}
+.wwe-position-4 						{background-position:	-150px	-25px;font-weight:bold;color:#fff;}
+
+
+td#position .wwe-position-1 			{background-position:	-75px	-25px;font-weight:bold;color:#fff;}
+td#position .wwe-position-2 			{background-position:	-100px	-25px;font-weight:bold;color:#fff;}
+td#position .wwe-position-3 			{background-position:	-125px	-25px;font-weight:bold;color:#fff;}
+td#position .wwe-position-4 			{background-position:	-150px	-25px;font-weight:bold;color:#fff;}
+
+
+
+
+.wwe-print-button-icon 				{background-position:-300px 0;margin:-4px 10px 0 0;}
+.wwe-print-button:hover .wwe-print-button-icon {background-position:-325px 0;}
+.wwe-print-button{color: #C80000;float:left;height:25px;text-decoration:none;width:85px;}
+.wwe-print-button:hover {color: #000;}
+
+.wwe-icon-penalty					{background-position:	-0		-50px;	width:70px;	}
+.wwe-icon-goal						{background-position:	-70px	-50px;				}
+
+
+.wwe-icon-20x20{
+height:20px;
+width:20px;
+/*line-height:20px;*/
+background:transparent url('/data/feed/img/wwe-icon-sprite-20x20.png') no-repeat 0 0;
+display:block;
+position:relative;
+text-align:center;
+z-index:11;
+}
+
+.wwe-tendency {
+	width: 20px;
+	height: 20px;
+	/*line-height: 20px;*/
+	display:none;
+	position:relative;
+	text-align:center;
+	z-index:11;
+	font-size:  13px;
+}
+
+
+.wwe-icon-20x20-red-card				{background-position:	-20px	0;	}
+.wwe-icon-20x20-yellow-card				{background-position:	0		0;	}
+.wwe-icon-20x20-yellowred-card			{background-position:	-40px	0;	}
+.wwe-icon-20x20-sub						{background-position:	-160px	0;	}
+.wwe-icon-20x20-subfor					{background-position:	-180px	0;	}
+.wwe-icon-20x20-goal					{background-position:	-100px	0;	}
+.wwe-icon-20x20-goal-own				{background-position:	-120px	0;	}
+.wwe-icon-20x20-penalty					{background-position:	-140px	0;	}
+.wwe-icon-20x20-foul-for				{background-position:	20px	0;	}
+.wwe-icon-20x20-foul-against			{background-position:	20px	0;	}
+.wwe-icon-20x20-reset					{background-position: 	-340px	0;	}
+.wwe-icon-20x20-trend-positive			{background-position: 	-360px	0;	}
+.wwe-icon-20x20-trend-negative 			{background-position: 	-380px	0;	}
+.wwe-icon-20x20-penalty-shot-taken 		{background-position: 	-440px	0;	}
+.wwe-icon-20x20-penalty-shot-failed 		{background-position: 	-400px	0;	}
+.wwe-icon-20x20-penalty-shot-scored 	{background-position: 	-140px	0;	}
+
+
+.wwe-trikot-36x36 .wwe-icon-20x20-red-card			 {right:-6px;	top:4px		;	position:absolute;		}
+.wwe-trikot-36x36 .wwe-icon-20x20-yellow-card		 {right:-6px;	top:4px		;	position:absolute;		}
+.wwe-trikot-36x36 .wwe-icon-20x20-yellowred-card		 {right:-6px;	top:4px		;	position:absolute;		}  
+.wwe-trikot-36x36 .wwe-icon-20x20-sub				 {right:-6px;	top:22px	;	position:absolute;		}
+.wwe-trikot-36x36 .wwe-icon-20x20-subfor				 {right:-6px;	top:22px	;	position:absolute;		}  
+.wwe-trikot-36x36 .wwe-icon-20x20-goal				 {right:-6px;	top:-14px	;	position:absolute;		}
+.wwe-trikot-36x36 .wwe-icon-20x20-goal-own			 {right:-6px;	top:-14px	;	position:absolute;		}
+.wwe-trikot-36x36 .wwe-icon-20x20-penalty			 {right:-6px;	top:0		;	position:absolute;		}
+.wwe-trikot-36x36 .wwe-icon-20x20-foul-for			 {right:-6px;	top:0		;	position:absolute;		}
+.wwe-trikot-36x36 .wwe-icon-20x20-foul-against		 {right:-6px;	top:0		;	position:absolute;		}
+
+/*******************************
+Tool Tip
+*******************************/
+.wwe-tooltip-container{
+position:relative;
+cursor:pointer;
+}
+
+.wwe-trikot-container {
+z-index:1;
+cursor:default;
+}
+
+.wwe-cursor-pointer {
+	cursor:pointer;
+}
+
+span.wwe-tooltip
+{
+text-align: left;
+position:absolute;
+background:white;
+bottom:110%;
+display:none;
+z-index:1000;
+padding:5px 10px;
+width:auto;
+height:auto;
+color:grey;
+font-weight:normal;
+white-space:nowrap;
+/*line-height:15px;*/
+margin-left:-20px;
+border-radius: 5px 5px 5px 5px;
+box-shadow: 1px 0 5px rgba(0,0,0,.5);
+min-width:150px;
+left:50%;
+}
+
+
+span.wwe-tooltip-goals
+{
+text-align: left;
+position:absolute;
+background:white;
+bottom:100%;
+right:-15px;
+display:none;
+z-index:500;
+padding:5px 10px;
+border-radius: 5px 5px 5px 5px;
+box-shadow: 1px 0 5px rgba(0,0,0,.5);
+min-width:150px;
+}
+
+
+span.wwe-tooltip-goals em {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: white transparent;
+    border-style: solid solid none;
+    border-width: 10px 10px 0;
+    bottom: -7px;
+    display: block;
+    height: 0;
+    left: 89%;
+    position: absolute;
+    width: 0;
+}
+
+
+
+span.wwe-tooltip table td{
+border:none;
+}
+
+.wwe-tooltip table{
+width:100%!important;
+}
+
+span em {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: white transparent;
+    border-style: solid solid none;
+    border-width: 10px 10px 0;
+    bottom: -7px;
+    display: block;
+    height: 0;
+    left: 10px;
+    position: absolute;
+    width: 0;
+}
+
+
+.wwe-tooltip  th {
+	border:1px solid red;
+}
+
+/*.wwe-tooltip-container:hover span.wwe-tooltip{
+visibility:visible!important;
+display:block!important;
+}*/
+
+/*******************************
+Bar Charts
+*******************************/
+
+.wwe-bar-chart-shadow{
+box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+-moz-box-shadow: 1px 0 5px rgba(0,0,0,.5);
+}
+
+/* .wwe-border-radius-left,
+.wwe-team-home div {
+border-radius: 4px 0 0 4px;
+-moz-border-radius: 4px 0 0 4px;
+}
+
+.wwe-border-radius-right,
+.wwe-team-away div {
+border-radius: 0 4px 4px 0;
+-moz-border-radius: 0 4px 4px 0;
+}
+
+.wwe-border-radius {
+border-radius: 4px;
+-moz-border-radius:4px;
+} */
+
+.wwe-bar-chart{
+margin:5px;
+}
+
+.wwe-stats-dropdown { padding: 5px 0 0 11px;}
+
+
+/*******************************
+Icons
+*******************************/
+
+.wwe-trikot-25x25,
+.wwe-trikot-35x35  {
+height:36px;
+width:36px;
+background:transparent url('/data/feed/img/wwe-trikotsprite.png') no-repeat 0 0;
+float:left;
+}
+
+.wwe-trikot-25x25 {background-position:0 -25px;}
+.wwe-trikot-25x25-red {background-position:0 -25px;}
+.wwe-trikot-25x25-blue {background-position:-25px -25px;}
+.wwe-trikot-25x25-green {background-position:-25px -25px;}
+
+.wwe-bar-legend {
+	width:5px; 
+	height:5px; 
+	background: #C80000; 
+	float:left; 
+	margin: 5px 5px 0 5px;
+}   
+
+.wwe-trikot-36x36  span{
+position: relative;
+width: 36px;
+left:0;
+top:5px;
+}
+
+.wwe-trikot-label {
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.8); 
+	color:#fff;  
+	white-space: nowrap;
+	position:absolute;
+	width: auto;
+	display:none;
+	padding: 2px 4px 2px 14px;
+	margin-left:-10px;
+	top: 5px;
+	left:100%;
+	z-index: 1;
+	font-size: 10px;
+	cursor:pointer;
+}
+
+
+.wwe-nofloat,
+.wwe-team-logos-30x30-center{
+float:none;
+margin-right:auto;
+margin-left:auto;
+}
+
+.wwe-margin-auto{
+margin:auto;
+}
+
+.wwe-button-gray,
+.wwe-button-gray a,
+.wwe-button-red,
+.wwe-button-red span{
+    background: URL('/data/feed/img/wwe-tabs.png') left -125px no-repeat;
+	/*line-height:25px;*/
+	height:25px;
+	display:inline-block;
+	cursor:pointer;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:10px;
+	color:#000;
+	text-decoration:none;
+	margin: 2px 12px;
+}
+
+.wwe-button-red span{
+    background-position:right -125px;
+	margin:0 -20px 0 20px;
+	padding-right:20px;
+}
+
+.wwe-button-gray {
+    background-position:left -150px;
+}
+
+.wwe-button-gray a{
+    background-position:right -150px;
+	margin:0 -20px 0 20px;
+	padding-right:20px;
+}
+
+.wwe-button-gray:hover {
+    background-position:left -125px;
+}
+
+.wwe-button-gray:hover a{
+    background-position:right -125px;
+}
+
+.wwe-button-red:hover span{
+    background-position:right -150px;
+}
+
+.wwe-button-red:hover {
+    background-position:left -150px;
+}
+
+
+
+#wwe-back-to-squad{
+	position:absolute;
+	top:10px;
+	left:10px;
+	z-index:10;
+}
+
+
+.wwe-squad-container {
+width: auto;
+}
+
+.wwe-squad-container-img{
+	position: relative; 
+	margin-left: 100px;
+	margin-bottom: 10px;
+	float:left;
+}
+
+.wwe-squad-container-link{
+	width: auto;
+	position: relative;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+
+.wwe-magnify-squad {
+	height:23px;
+	width:27px;
+	background: URL('/data/feed/img/wwe-button.png') no-repeat 0 -432px;
+	cursor:pointer;
+}
+
+.wwe-magnify-squad-link {
+	padding: 0 0 0 40px;
+	font-weight: bold;
+	min-width: 80px;
+}
+
+a.wwe-lang-click {
+color: #000;
+}
+
+a.wwe-lang-click:hover {
+color: #c80000;
+}
+
+.wwe-magnify-squad:hover{background-position:right -456px;}
+
+
+#wwe-goal-table {
+	margin-bottom: 35px;	
+	width: 100% !important;
+}
+
+#wwe-goal-table tbody td {
+	font-size: 12px;
+}
+
+#wwe-goals-info-button {
+	position: relative;
+	z-index: 200;
+}
+
+.wwe-goals-details {
+background: URL('/data/feed/img/player_siluette.png') bottom center no-repeat;
+width:300px;
+height:360px;
+}
+
+.wwe-info-details-goals-head,
+.wwe-info-details-goals-other,
+.wwe-info-details-goals-left-leg,
+.wwe-info-details-goals-right-leg{
+position:absolute;
+bottom:10px;
+/*line-height:13px;*/
+}
+
+.wwe-info-details-goals-right-leg{
+left:20px;
+bottom:50px;
+}
+
+.wwe-info-details-goals-left-leg {
+right:20px;
+bottom:50px;
+}
+
+.wwe-info-details-goals-other{
+ bottom: 135px;
+ right: 30px;
+}
+
+.wwe-info-details-goals-head {
+ bottom: 290px;
+ right: 100px;
+}
+
+.wwe-data-details{
+font-size:24px;
+/*line-height:30px;*/
+font-weight:bold;
+text-align:center;
+display:block;
+}
+
+
+/* Card Matrix */
+
+.wwe-color-yellow-card-0 	{background-color:#FFF;}
+.wwe-color-yellow-card-1 	{background-color:#FFC;}
+.wwe-color-yellow-card-2 	{background-color:#FF9;}
+.wwe-color-yellow-card-3 	{background-color:#FF3;}
+.wwe-color-yellow-card-4 	{background-color:#FE0;}
+
+.wwe-color-yellowred-card-0 	{background-color:#FFF;}
+.wwe-color-yellowred-card-1 	{background-color:#ffebcc;}
+.wwe-color-yellowred-card-2 	{background-color:#ffc66d;}
+
+.wwe-color-red-card-0 		{background-color:#FFF;}
+.wwe-color-red-card-1 		{background-color:#F66;}
+.wwe-color-red-card-2 		{background-color:#C00;}
+
+
+h1.wwe-score-label{
+	color: #000000;
+	padding: 0;
+	margin:0;
+}
+
+
+/*******************************
+Player, Match Season Stats
+*******************************/
+#statsMenu {
+height: 25px;
+    /*padding: 3px 12px;	*/
+	/*Background:url("/data/feed/img/wwe-header_grey.png");*/
+}
+
+.wwe-stats-content {
+	height: 25px;
+    padding: 3px 12px;	
+	Background:url("/data/feed/img/wwe-header_grey.png");
+}
+
+.wwe-stats-content  form{
+	float: left;
+	width: auto;
+}
+
+.wwe-header-align-stats {
+	padding-left: 20px;
+}
+
+/* CCU START*/
+#wwe-timeline-extra{
+	display:block;
+    background: url("/data/feed/img/wwe-timeline-extra.png") no-repeat scroll center center transparent;
+    height: 92px;
+    margin: 25px;
+    position: relative;
+    vertical-align: middle;
+    width: 310px;	
+}
+
+#wwe-timeline-penalty{
+	display:block;
+    background: url("/data/feed/img/wwe-timeline-penalty.png") no-repeat scroll center center transparent;
+    height: 92px;
+    margin: 25px;
+    position: relative;
+    vertical-align: middle;
+    width: 160px;	
+}
+
+
+#wwe-stadion-2454{
+	top:140px;
+	left:120px;
+}
+
+#wwe-stadion-2476{
+	top:207px;
+	left:177px;
+}
+
+#wwe-stadion-2387{
+    top:189px;
+    left:86px;
+}
+
+#wwe-stadion-2477{
+    top:248px;
+    left:95px;
+}
+
+#wwe-stadion-2478{
+	top:291px;
+	left:242px;
+}
+
+#wwe-stadion-1434{
+	top:270px;
+	left:381px;
+}
+
+#wwe-stadion-714{
+	top:293px;
+	left:507px;
+}
+
+#wwe-stadion-2356{
+	top:348px;
+	left:536px;
+}
+
+
+.wwe-nav-flag{
+	height:40px;
+	width:150px;
+	float:left;
+	margin-right:40px;
+	position:relative;
+}
+
+.wwe-nav-flag-active{
+	background:#E3E3E3;
+	box-shadow:0 0 3px 0 #999999;
+}
+
+div.wwe-header-628{
+	background: URL('/data/feed/img/wwe-header_628.png');
+	height:36px;
+}
+
+.wwe-header-628 h2 {
+    color: #FFFFFF;
+    display: inline;
+    float: left;
+    font: bold 17px/20px Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
+
+.wwe-border-628{
+    background: url("/data/feed/img/wwe-background-border-repeat-y-628.gif") repeat-y scroll 0 0 #ECECEC !important;
+    color: #000000;
+    font: 12px Arial,Helvetica,sans-serif;
+    position: relative;
+}
+
+#wwe-stadion-link :hover{
+	cursor:pointer;
+}
+
+
+#wwe-em-card{
+	display:block;
+    background: url("/data/feed/img/PolenUkraine_.png") no-repeat scroll center center transparent;
+	width:624px;
+	height:493px;
+	margin:auto;
+	position:relative;
+}
+
+.wwe-stadion-table tr td, table.wwe-stadion-table tr th{
+	height:21px!important;
+}
+/* CCU ENDE*/
+
+#wwe-player-content{
+	/*display:none;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+ul.wwe-tabs.wwe-tabs-schedule-overview-cl li a, ul.wwe-tabs.wwe-tabs-schedule-overview-cl li span {
+    padding: 9px 15.1px;
+}
+
+ul.wwe-tabs.wwe-tabs-season-stats li a, ul.wwe-tabs.wwe-tabs-season-stats li span {
+    padding: 9px 26.6px;
+}
+
+/* #wwe-division-select-19 {
+    padding: 0 7.1px;
+} */
+
+
+.bg-390 {
+background: url("/data/feed/img/bg_390.png") repeat-x;
+border-bottom: 1px solid #000;
+}
+
+.bg-255 {
+background: url("/data/feed/img/bg_255.png") repeat-x;
+border-bottom: 1px solid #000;
+padding-bottom:10px;
+}
+
+.highcharts-container {
+/*margin-top: 21px;*/
+}
+
+.wwe-pie-box-bg {
+	padding: 10px;
+	background: url("/data/feed/img/bg_227.png");
+}

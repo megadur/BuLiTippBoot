@@ -1,0 +1,1 @@
+if(T_os=="MAC"){Tinc("#Tmni .Tnav a {font-size:0.9em}")};

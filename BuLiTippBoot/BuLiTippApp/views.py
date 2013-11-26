@@ -8,6 +8,7 @@ from django.contrib.auth import authenticate, login as djlogin, logout as djlogo
 from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
+from django.db.models import Q
 from models import Spiel, Spieltag, Spielzeit, Tipp, Kommentar, News, Meistertipp, Verein, Herbstmeistertipp, Absteiger, Tabelle
 from datetime import datetime
 from sets import Set
@@ -480,15 +481,36 @@ def spielzeit(request, spielzeit_id=-1):
 	# show Punkte, letzter Spieltag, naechster Spieltag
 	spielzeiten=[]
 	aktuelle_spielzeit=None
-	spiele=[]
 	aktuelle_spielzeit=Spielzeit.objects.get(pk=spielzeit_id)
 	spielzeiten=Spielzeit.objects.all()
+	spiele=[]
 	spiele=Spiel.objects.all()
+	vereine=[]
+	vereine=Verein.objects.all()
 	
-	return render_to_response("spielzeit/index.html",\
+	return render_to_response("spielzeit/spielzeit.html",\
 		{"spielzeiten":spielzeiten, \
 		"spielzeit":aktuelle_spielzeit, \
 		"spiele":spiele, \
+		"vereine":vereine, \
 		"tabelle":Tabelle().getMannschaftPlatz(aktuelle_spielzeit), \
 		"news":news} ,\
+		context_instance=RequestContext(request))
+
+@login_required
+def verein(request, verein_id=-1):
+	# show Punkte, letzter Spieltag, naechster Spieltag
+	spiele=[]
+	#spiele=Spiel.objects.filter(heimmannschaft_id=verein_id).filter(auswaertsmannschaft_id=verein_id)
+	spiele=Spiel.objects.filter(
+    Q(heimmannschaft_id=verein_id) | Q(auswaertsmannschaft_id=verein_id)
+).order_by('datum')
+	vereine=[]
+	vereine=Verein.objects.filter(id=verein_id)
+	
+	return render_to_response("verein/verein.html",\
+		{\
+		"spiele":spiele, \
+		"vereine":vereine \
+		} ,\
 		context_instance=RequestContext(request))

@@ -11,7 +11,6 @@ class News(models.Model):
 	datum = models.DateTimeField()
 	text = models.CharField(max_length=1000)
 	
-
 class Spielzeit(models.Model):
 	class Meta:
 		app_label = 'BuLiTippApp'
@@ -46,7 +45,6 @@ class Spielzeit(models.Model):
 	def is_tippable(self):
 		return timezone.now()<self.saisontipp_end
 	
-
 class Spieltag(models.Model):
 	class Meta:
 		app_label = 'BuLiTippApp'
@@ -141,6 +139,7 @@ class Verein(models.Model):
 	class Meta:
 		app_label = 'BuLiTippApp'
 	name = models.CharField(max_length=75)
+	abk = models.CharField(max_length=5,default='')
 	def __unicode__(self):
 		return unicode(self.name)
 

@@ -1,0 +1,384 @@
+/**
+ * Live-Bar Layout
+ */
+
+.livebar p{
+    margin: 0;
+}
+
+.livebar img{
+    border: none;
+}
+
+.livebar{
+    width: 948px;
+    height: 60px;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: bold;
+    overflow: hidden;
+}
+.livebar .small-arrow{
+    vertical-align: sub;
+}
+
+.single_title ul, .double_title ul, .more_than_two_title ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.more_than_two_title ul li{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-size: 11px;
+    font-family: Arial;
+    height: 20px;
+    line-height: 20px;
+    display: none;
+    width: 85px;
+    text-align: center;
+}
+
+.more_than_nine_teams ul li.first-match, .more_than_nine_teams ul li.last-match{
+    line-height: normal;
+}
+
+.more_than_nine_teams ul li.first-match img, .more_than_nine_teams ul li.last-match img{
+    margin-top: 17px;
+}
+
+
+.more_than_two_title ul li.active, .more_than_two_title ul li:first-child,
+.more_than_two_title ul li.last
+{
+    display: block;
+}
+
+.double_title ul li{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-size: 11px;
+    font-family: Arial;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    width: 85px;
+    text-align: center;
+    background: url("/pics/_livebox2013/sprite_livebox.png") no-repeat scroll -360px 0 transparent;
+    cursor: pointer;
+}
+.double_title ul li.active {
+    background: url("/pics/_livebox2013/sprite_livebox.png") no-repeat scroll -90px 0 transparent;
+}
+
+.single_title ul li{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-size: 12px;
+    font-family: Arial;
+    height: 58px;
+    line-height: 58px;
+    display: block;
+    width: 85px;
+    text-align: center;
+}
+
+.single_title{
+    width: 85px;
+    height: 60px;
+    background: url("/pics/_livebox2013/sprite_livebox.png") 0px -60px no-repeat;
+    float: left;
+}
+.single_title p{
+    padding: 0;
+    margin: 0px;
+    width: 85px;
+    height: 60px;
+    line-height: 58px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.two_teams, .nine_teams, .more_than_nine_teams{
+    width: 777px;
+    height: 60px;
+    float: left;
+    background: url("/pics/_livebox2013/livebox_boxes.png") repeat-x;
+}
+
+.two_teams ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.two_teams ul li{
+    float: left;
+    display: block;
+}
+
+.two_teams .time{
+    font-size: 14px;
+    color: #000;
+    width: 125px;
+    height: 58px;
+    float: left;
+    background: url("/pics/_livebox2013/livebox-sep-vertical.png") 100% 2px no-repeat;
+}
+
+.two_teams .time p{
+    width: 125px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    margin: 0px;
+}
+
+li.first_team{
+    width: 280px;
+    line-height: 57px;
+}
+
+li.first_team p{
+    text-align: left;
+    float: left;
+}
+
+li.second_team{
+    width: 280px;
+    line-height: 57px;
+    margin-left: 17px;
+}
+
+li.second_team p{
+    text-align: right;
+    float: right;
+}
+
+
+.no_link_box, .one_link_box, .two_link_box
+{
+    float: left;
+    width: 86px;
+    height: 60px;
+    background: url("/pics/_livebox2013/sprite_livebox.png") 100% 0 no-repeat;
+}
+
+.img_two_teams{
+    width: 50px;
+    height: 50px;
+    margin: 4px 10px 4px 20px;
+
+}
+
+li.first_team .img_two_teams{
+    float: left;
+}
+
+li.second_team .img_two_teams{
+    float: right;
+}
+
+li.score{
+    width: 50px;
+    float: left;
+    margin-left: 17px;
+    font-size: 36px;
+    font-width: bold;
+    line-height: 57px;
+    white-space: nowrap;
+}
+
+
+.no_link_box{
+    text-align: center;
+}
+
+.no_link_box p{
+    height: 30px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 30px;
+}
+
+.double_title {
+    width: 85px;
+    height: 58px;
+    /*background: url("/pics/_livebox2013/sprite_livebox.png") -90px 0px no-repeat;*/
+    float: left;
+    text-align: center;
+}
+.double_title p{
+    width: 85px;
+    height: 29px;
+    line-height: 29px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.nine_teams ul, .more_than_nine_teams ul{
+    margin: 0 0 0 2px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nine_teams ul li, .more_than_nine_teams ul li{
+    margin: 0 2px 0 0;
+    width: 84px;
+    height: 60px;
+    float: left;
+    background: url("/pics/_livebox2013/livebox-sep-vertical.png") 100% 2px no-repeat;
+}
+
+.nine_teams ul li.last-match, .more_than_nine_teams ul li.last-match{
+    background: none;
+    padding: 0;
+}
+
+.nine_teams ul li p, .more_than_nine_teams ul li p{
+    font-size: 10px;
+    line-height: 19px;
+    height: 19px;
+    color: #000;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+.nine_teams ul li p:first-child, .more_than_nine_teams ul li p:first-child{
+    background: url("/pics/_livebox2013/livebox-sep-horizontal.png") 50% 100% no-repeat;
+}
+
+.match.live .score,
+.match.live .time {
+    color: #C80000;
+}
+
+.nine_teams ul li div > .img_small,
+.more_than_nine_teams ul li div > .img_small{
+    width: 14px;
+    height: 14px;
+    float: left;
+    padding: 0px;
+    margin: 3px 2px 0 2px;
+}
+.nine_teams ul li div > .img_small img,
+.more_than_nine_teams ul li div > .img_small img{
+    width: 14px;
+    height: 14px;
+}
+
+.nine_teams span, .more_than_nine_teams span{
+    float: right;
+    margin-right: 3px;
+}
+
+.nine_teams ul li div, .more_than_nine_teams ul li div{
+    font-size: 10px;
+    font-weight: bold;
+    height: 17px;
+    line-height: 17px;
+    padding-right: 4px;
+}
+
+.more_than_nine_teams ul li.first-match, .more_than_nine_teams ul li.last-match{
+    width: 39px;
+    text-align: center;
+    line-height: 65px;
+    vertical-align: center; 
+    padding: 0;
+    cursor: pointer;
+}
+
+.one_link_box p{
+    height: 20px;
+    line-height: 20px;
+}
+
+.one_link_box a{
+    color: #fff;
+    font-size: 10px;
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+}
+
+.more_than_two_title{
+    width: 85px;
+    height: 58px;
+    background: url("/pics/_livebox2013/sprite_livebox.png") 0px 0px no-repeat;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.more_than_two_title p{
+    height: 20px;
+    padding: 0px;
+}
+
+.more_than_two_title p:last-child{
+    margin-top: 2px;
+}
+
+.two_link_box a{
+    color: #fff;
+    font-size: 10px;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+}
+
+.two_link_box ul, .one_link_box ul, .no_link_box ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-family: Arial;
+    font-size: 10px;
+}
+
+.two_link_box.no-title ul, .one_link_box ul, .no_link_box ul{
+    width: 86px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+.one_link_box ul li a{
+    height: 30px;
+    line-height: 30px;
+}
+.more_info ul li.title{
+    line-height: 28px;
+    height: 28px;
+}
+
+.two_link_box ul li{
+    width: 86px;
+    text-align: center;
+    height: 14px;
+    line-height: 14px;
+}
+.two_link_box ul li a{
+    height: 14px;
+    line-height: 14px;
+}
+.two_link_box.no-title ul li,
+.one_link_box ul li{
+    width: 86px;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+}
+.two_link_box.no-title ul li a,
+.one_link_box ul li a{
+    height: 28px;
+    line-height: 28px;
+}

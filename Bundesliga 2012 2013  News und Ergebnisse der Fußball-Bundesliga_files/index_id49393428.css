@@ -1,0 +1,659 @@
+.Tagbox{width:618px;float:left;overflow:hidden;margin:0 0 10px}
+.Tart{border-top:1px solid #ededed;margin-top:1px;width:611px}
+.Tart h1{font:bold 16px Arial,Helvetica,freesans;color:#404040;margin-top:12px;margin-bottom:2px;padding-bottom:12px;border-bottom:1px solid #e8e8e8}
+.Tart .Thl,.Tart .Tbu{color:#a4a4a4}
+.Tart p{color:#404040;line-height:14px}
+.Tart h2,.Tart h5{font-size:12px;color:#404040;line-height:23px}
+.Tart h2,.Tart h5,.Tart h3,.Tart h6{position:static;border:0;margin:0;padding:0}
+.Tart a{color:#ff7300}
+.Tart p.Thl{margin:7px 0 20px}
+.Tart .Temvpl{width:425px;margin:14px 93px}
+.Tice{text-align:center;display:block}
+.Tart table{table-layout:auto;font-size:12px;padding:5px 0}
+.Tart table *{font-size:12px}
+.Tart table p{margin:0}
+.Tart table td{border-bottom:1px solid #e5e5e5;padding:5px 5px 5px 0}
+#TFunctionTop,.Tfkto{border-bottom:1px solid #ededed;width:100%;height:31px}
+.Tcom,.Tprt,.Tfsc,.Tbew,.Trss{display:block;float:left;margin-top:5px;margin-right:20px;color:#ff7300}
+.Tcom{margin-right:15px}
+.Tprt{margin-right:0;float:right;line-height:15px;padding-top:2px}
+.Tcom a{text-decoration:none}
+.Tcom img{background-position:1px 0}
+.Tcom img:hover{background-position:1px -17px}
+.Tprt:hover span,.Tfsc:hover span{text-decoration:underline}
+.Tfsc{margin-top:5px}
+.Tfsc img.Tfscs{width:7px;background-position:-32px 0}
+.Tfsc img.Tfscs:hover{background-position:-32px -17px}
+.Tfsc img.Tfscd{width:11px;background-position:-39px 0}
+.Tfsc img.Tfscd:hover{background-position:-39px -17px}
+.Tfsc img.Tfscl{width:12px;background-position:-50px 0}
+.Tfsc img.Tfscl:hover{background-position:-50px -17px}
+.Tart #Tartft{color:#a4a4a4;border-bottom:1px solid #ededed}
+.Tart .Tml6 li{color:#404040}
+.Tfktu span{margin:0;color:#ff7300}
+.Tsend,.Tletter,.Tlink{float:right;margin:7px 10px 0 0}
+.Tsend img,.Tletter img,.Tlink img{background:url(http://www.t-online.de/rl09/static/imgs/artsprite2.png) 0 0 no-repeat;cursor:pointer;vertical-align:middle}
+.Tsend:hover span,.Tletter:hover span,.Tlink:hover span{text-decoration:underline}
+.Tsend img{background-position:-71px 0}
+.Tsend:hover img{background-position:-71px -17px}
+.Tletter{margin-right:0}
+.Tletter img{background-position:-89px 0}
+.Tletter:hover img{background-position:-89px -17px}
+.Tlink img{background-position:-105px 0}
+.Tlink:hover img{background-position:-105px -17px}
+.Tfacebook{margin-right:5px}
+.Tfacebook img{width:64px}
+.Tfacebook a span{display:none}
+.Ttwitter:hover span,.Tfacebook:hover span{text-decoration:underline}
+.Ttwitter img{background-position:-148px 0}
+.Tfoly{width:611px;background:#9c3;margin:5px 0;float:left;border:0}
+.Tfoly *{font-size:12px}
+.Tfoly .Tarr{left:470px}
+.Tfktu .Tletterform .Tarr{left:555px}
+.Tlinkform .Tarr{left:333px}
+.Tfoly h4,#TComments .Tfoly h4{color:#fff;font-size:12px;font-weight:bold;margin:0;padding:5px 8px}
+.Tfoly h5{text-transform:none;font-weight:bold;padding:0 10px}
+.Tfoly div{width:294px}
+.Tfoly div span{display:block;float:left;width:42px;padding-top:7px}
+.Tfoly input,.Tfoly textarea{width:234px;border:1px solid #000;background:#fff}
+.Tfoly textarea{width:581px}
+.Tfoly div.Tbut input{border:0 none;font-weight:bold;background:#ff7300;color:#fff;padding:0 0 2px}
+.Tfoly div.Tbut input:hover{color:#1c1c1c}
+.Tfoly div.fos1{width:410px}
+.Tfoly div.fos1 input{width:355px;background-position:0 -231px}
+.Tfoly p{margin-left:10px}
+.Tclose{position:absolute;right:5px;top:3px;font-size:10px;width:58px;height:9px;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/mddclose.png) right 0 no-repeat;cursor:pointer;float:none;margin:0}
+.Tclose:hover{background-position:right -9px;color:#e20074}
+#TComments h3,#TComments h6{color:#a4a4a4;font-weight:400;font-size:12px;margin-top:5px}
+#TComments h3 img,#TComments h6 img{background:url(http://www.t-online.de/rl09/static/imgs/artsprite2.png) 0 0 no-repeat}
+#TComments .Tdt{color:#a4a4a4;font-size:10px;margin-left:7px}
+#TComments p{padding-left:8px}
+#TComments .Tbuco a.Tnl{background-color:#ff7300;color:#fff;font-weight:bold}
+.TFlashPlayer{margin:0}
+.Tlbvipr{padding-right:200px;position:relative;height:60px;margin:0 15px}
+.Tlbviprq{display:block;text-align:right;position:absolute;right:0;top:0}
+.Tart .Tvplrfl{width:611px;height:375px;margin-top:10px}
+.Tgbox .Tlbvplr{width:611px}
+.Tart table p{margin:0}
+.Ttabs-nav li{height:11px;line-height:11px;color:#1c1c1c;background:#f0f0f0;font-size:11px;font-weight:bold;margin-left:3px;filter:alpha(opacity:80);-moz-opacity:.8;opacity:.8;padding:2px;border-top:0;border-right:0}
+.Ttabs-nav li:hover{color:#ff7300}
+.Ttabs-nav li.aa{cursor:default;background:transparent;border-right:0;border-top:0;height:18px;padding:0}
+.Ttabs-nav li.zz{cursor:default;border-right:0;border-top:0;height:18px;margin:0;padding:0}
+.Ttabs-nav li.act{color:#9c0}
+.Ttabs-nav li.act:hover{color:#ff7300}
+.Tmreit .Tllc{padding-bottom:0}
+.Tmreit{margin:0}
+.Tmst4 .Ttabs-nav .act,.Tmst4 .Tmreit .Tts,.Tmst4 .Ttabs-nav li.navl,.Tmst4 .Ttabs-nav li.navr{background:none repeat scroll 0 0 #1c1c1c;filter:alpha(opacity:80);-moz-opacity:.8;opacity:.8}
+.Tmreit .Tll h2,.Tmreit .Tll h3{border-top:0;border-bottom:0;background:0;padding:0;top:0;height:28px;overflow:hidden}
+.Tmreit .Tml6 .Tllc{padding:0;background:0}
+.Tmreit .Tml6 .Tllc .Ttsc{padding:2px 10px 0;margin:0}
+.Tmreit .Tml6 .Tllc .Tlll{padding:0}
+.Tmst1 .Tstgr{height:345px;width:156px}
+.Tmst1 span{display:none}
+.Tmst1 .Tstgc{width:609px;height:341px;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/verlauf-vlp.png);border:1px solid #e8e8e8}
+.Tmst1 li{margin-bottom:0;margin-top:10px;padding-left:0}
+.Tmst4 .Tmreit{width:597px;height:110px}
+.Tmst4 p.Ttst{background:0;color:#9c0;padding:6px 0 0;font-size:16px;height:17px;overflow:hidden}
+.Tmst4 p a{color:#9c0;font-size:16px;line-height:16px}
+.Tmst4 p a:hover{text-decoration:underline}
+.Tmst4 .Tstgc{padding-top:250px;padding-left:7px}
+.Tmst4 .Tlll{padding:0;width:597px}
+.Tmst4 .Ttab{position:absolute;top:15px;height:110px}
+.Tstg .Tstgr1{visibility:visible;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/stage-logo.gif) no-repeat scroll 0 0 transparent;height:41px;left:10px;position:absolute;top:10px;width:211px;z-index:2}
+.Tstg{margin:0 7px 7px 0}
+.Tstg .Tll h3,.Tstg .Tll h6{color:#fff;font-size:12px;font-weight:bold;margin:0;padding:4px 0 0 11px;top:0;visibility:visible;height:12px;overflow:hidden}
+.Tstg .Tll h3:hover,.Tstg .Tll h6:hover{color:#fff}
+.Tstg .Tll h3 a,.Tstg .Tll h6 a{color:#fff;font-size:12px;line-height:14px;font-weight:bold;margin:0}
+.Tstgl .Tmc10{padding:0 31px 0 12px}
+.Tstg .Tstgl{padding:0;width:100%}
+.Tstg .Tmc10 .Ttsz{left:7px;top:214px;height:76px;width:386px;background:#000;opacity:.7;position:absolute;z-index:1}
+.Tstg h2,.Tstg h5{text-transform:uppercase;margin:0;padding:0 0 0 13px}
+.Tstg h2 a,.Tstg h5 a{font-size:24px;color:#9c0;line-height:28px;font-weight:bold}
+.Tstg h2 a:hover,.Tstg h5 a:hover{text-decoration:underline}
+.Tmc10 h2>a,.Tmc10 h5>a{font-size:15px}
+.Tstgl span{display:block;font-weight:bold;font-size:13px;color:#9c3;padding:6px 12px}
+.Tmst1 .Tstgr .Tstgpup{height:35px;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/pagerup.png) no-repeat scroll 69px 27px transparent}
+.Tmst1 .Tstgr .Tstgpup:hover{background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/pagerupSel.png) no-repeat scroll 69px 27px transparent;cursor:pointer}
+.Tmst1 .Tstgr .Tstgpupun,.Tmst1 .Tstgr .Tstgpupun:hover{height:35px;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/pagerupDis.png) no-repeat scroll 69px 27px transparent;cursor:default}
+.Tmst1 .Tstgr .Tstgpdn{height:10px;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/pagerdown.png) no-repeat scroll 69px 0 transparent}
+.Tmst1 .Tstgr .Tstgpdn:hover{background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/pagerdownSel.png) no-repeat scroll 69px 0 transparent;cursor:pointer}
+.Tstgr .Tmc3{padding-top:0}
+.Tstgr .Ttsbv{left:40%;top:32%}
+.Tstgri{height:285px}
+.Tstgri h2 a,.Tstgri h5 a{font-size:12px}
+.Tstg .Tstgrh .Ttsm{padding-left:17px}
+.Tmst8{box-shadow:4px 4px 2px #4b4b4b}
+.Tmst8,.Tmst8 .Tstgc{width:920px;height:259px}
+.Tmst8 .Tstgl,.Tmst8 .Tstgr,.Tmst8 .Tstgr .Tllc{width:460px;height:259px}
+.Tmst8 .Tlll,.Tmst8 .Tstgl,.Tmst8 .Tml6,.Tmst8 .Tstgr,.Tmst8 .Tllc,.Tmst8 h5{margin:0;padding:0;background:0}
+.Tmst8 .Temvpl{position:absolute;width:460px;height:259px;background:#333}
+.Tmst8 .TFlashPlayer{margin:0}
+.Tmst8 .Ttsbv{width:65px;height:65px;background:url(http://www.t-online.de/rl09/static/imgs/plbut65.png);top:113px;left:auto;right:5px}
+.Tmst8 .Tstgl{position:relative;height:259px}
+.Tmst8 .Tstgl .Tml6{position:absolute;bottom:5px;height:auto}
+.Tmst8 .Tstgl .Tllc{margin-left:5px;height:auto}
+.Tmst8.Tts,.Tmst8 .Tts{border:0}
+.Tmst8 .Tstgl .Tllc h5,.Tmst8 .Tstgl .Ttst{margin:0;padding:3px 5px;display:inline-block}
+.Tmst8 .Tstgl .Tllc h5 a,.Tmst8 .Tstgl .Tllc h5 span{color:#1c1c1c;font-size:14px;text-transform:none;position:relative}
+.Tmst8 .Tstgl span{padding:0}
+.Tmst8 .Tstgl .Ttst,.Tmst8 .Tstgl .Ttst a,.Tmst8 .Tstgl .Ttst span{color:#1c1c1c;font-size:12px;line-height:15px;font-weight:normal;position:relative;display:inline-block}
+.Tmst8 .Tstgr{background:url(http://img.toi.de/fb/fb-stg3s-r.png) repeat-x #838383}
+.Tmst8 .Tmc4{margin:0;padding:0;width:460px;height:86px;background:0}
+.Tmst8 .Tmc4 h5,.Tmst8 .Tmc4 h6,.Tmst8 .Tmc4 .Ttst{padding:0 0 0 155px;background:0}
+.Tmst8 .Tmc4 h5,.Tmst8 .Tmc4 h5 *,.Tmst8 .Tmc4 h6,.Tmst8 .Tml6 .Tllc h6 span,.Tmst8 .Tmc4 .Ttst,.Tmst8 .Tmc4 .Ttst a{font-size:11px;color:#fff}
+.Tmst8 .Tmc4 h5{margin:1px 0 0 0}
+.Tmst8 .Tmc4 h5 *{font-size:12px;font-weight:bold;text-transform:none;color:#9c3}
+.Tmst8 .Tml6 .Tllc h6{margin-top:1px;display:block}
+.Tmst8 .Tml6 .Tllc h6 span{font-weight:bold;line-height:15px;font-size:10px;text-transform:uppercase}
+.Tmst8 .Tmc4 .Ttsi{margin:5px 0 0 5px}
+.Tmst8 .Tmc4 .Ttst{padding-right:4px;line-height:13px}
+.Tmst8 .Ttst a{padding-left:10px;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/fb-stg3s-arr.png) no-repeat 0 4px}
+.Tmst8 .Tmc4 .Ttst a{display:block;margin-top:4px;padding-left:15px;background-position:2px -18px}
+.Ttsaw{position:absolute;width:100%;height:100%;top:0;left:0;background:#fff;opacity:.9;filter:alpha(opacity=90);z-index:0;padding:0}
+i,.Ti{font-style:italic}
+u,.Tu{text-decoration:underline}
+s,.Ts{text-decoration:line-through}
+a{color:#ff7300}
+Xsup,Xsub{vertical-align:0;font-size:80%}
+.Tabs,.Tdivmap a{position:absolute}
+.Tdb,.Tdivmap a{display:block}
+.Tv0,.Tdivmap b{visibility:hidden}
+.Td0{display:none}
+.Tdi{display:inline}
+.Tdib{display:inline-block}
+.Tv1{visibility:visible}
+.Tnbr{white-space:nowrap}
+.Tsibup .Tsib{top:-14px}
+#Tstat{float:right}
+#Tstat img{float:right}
+.Tgbox,.Tagbox{display:inline}
+.Tgboxh{display:inline-block;overflow:visible}
+#Tmainbox{width:934px;padding:0}
+#Tcontbox{width:920px;padding:0 0 0 7px}
+#Tcontboxi,.Tagbox{width:618px}
+.Tgbox,.Tagbox .Tgbox,.Tgboxh{width:920px}
+.Tsib{width:302px;margin-right:0}
+.Tlbox.Tww1{width:302px}
+.Tlbox.Tww2{width:618px}
+.Tww1{width:302px}
+.Tww2,.Tww3{width:611px}
+.Thh69{height:69px}
+.Thh72{height:72px}
+.Thh156{height:156px}
+.Thh160{height:160px}
+.Thh2{height:118px}
+.Thh2m{min-height:118px}
+.Thh3{height:199px}
+.Thh4{height:405px}
+.Thh4\+{height:265px}
+.Thh5{height:347px}
+.Thpx170{height:170px}
+.Thpx341{height:341px}
+.Thpx344{height:344px}
+.Thpx157{height:157px}
+.Twpx300{width:300px}
+.Twpx514{width:597px}
+.Ttsh136{padding-left:136px}
+.Ttsh142{padding-left:142px}
+.Ttsh317{padding-left:317px}
+.Ttsh216{padding-left:216px}
+h1,h1 a,h2,h2 a,h3,h3 a{color:#1c1c1c}
+h1 a:hover,h2 a:hover{color:#9C3}
+.Tll h3 *,.Tll h6 *,.Tts h3 *:hover,.Tts h6 *:hover,.Tll h3 *:hover,.Tll h6 *:hover{color:#1c1c1c}
+.Tll h3,.Tll h6,.Tts h3:hover,.Tts h6:hover,.Tll h3:hover,.Tll h6:hover{color:#9C3}
+.Tll h3,.Tll h6,.Tll h2,.Tll h5,.Tlll{border:1px solid #e8e8e8;border-top:0;border-bottom:0}
+.Tbut{color:#0070a8}
+.Ttsbv{background:url("http://www.t-online.de/rl09/static/imgs/fussball-de/player_40x40.png") no-repeat;height:40px;width:40px}
+.Ttsv122 .Ttsbv{left:92px;top:48px}
+.Ttsh141 .Ttsbv{display:none;left:58px;top:28px}
+.Ttsv239 .Ttsbv{left:166px;top:87px}
+#vmsb{left:-715px;top:0}
+#vmsky{left:100px}
+#Tadspacemrec *{text-transform:none}
+.Tadspacemrec,#Tadspacemrec{position:relative;left:0;top:0}
+.Tsib #Tadspacemrec{top:auto}
+#Tadspacefoot{position:absolute;top:0;left:839px}
+.Tgbox #im_hockeystick_anker{margin-bottom:7px;z-index:1!important}
+.Tlb5,.Tlbfoto{width:auto}
+.Tlbhph.Tsib{margin:75px 0 0 3px}
+.Tlbfoto h1,.Tlbvideo h1{border-bottom:1px solid #e8e8e8}
+.Tlbpnav a{color:#a4a4a4}
+.Tlbfsar{right:23px}
+.Tlbfstxo{border-bottom:1px solid #e8e8e8;margin:0 15px}
+.Tlbfsq{bottom:0}
+.Tpnav2{margin-left:315px}
+.Tpnav3{margin-left:304px}
+.Tpnav4{margin-left:293px}
+.Tpnav5{margin-left:282px}
+.Tpnav6{margin-left:271px}
+.Tpnav7{margin-left:260px}
+.Tlbpenav a.Tlbepna{color:#ff7300}
+.Tlbartx{margin:0 15px 30px;padding-bottom:30px}
+.Tlbartx h2,.Tlbartx h5,.Tlbartx h3,.Tlbartx h6,.Tlbartx p{margin:0 0 10px 0}
+.Tlbartx td h2,.Tlbartx td h5,.Tlbartx td h3,.Tlbartx td h6,.Tlbartx td p{margin:0}
+.Tlbartx h2,.Tlbartx h5{margin-top:25px;font-size:15px;color:#4b4b4b}
+.Tlbartx h3,.Tlbartx h6{font-weight:normal;color:#4b4b4b}
+.Tlbco{z-index:10000}
+.Tlbco .Tsib,.Tlbco .Tsib .Tml6.Tww1{width:302px}
+.Tlbco .Tsib .Tml6 .Tllc .Tlll.Tlult li{height:auto}
+.Tlbemb #Tfootblock{width:952px}
+.Tlbco .Tmc4 .Ttsc{padding-left:70px;border:0}
+.Tlbco .Tmc4{padding-top:0}
+.Tlbco .Tmc4 h5 *{font-size:12px}
+.Tts,.Tll,.Tifr{margin:0 7px 7px 0}
+.Tts{border-top:1px solid #e8e8e8}
+.Tll,.Tifr{padding-bottom:1px;width:100%}
+.Tll{height:101%}
+.Ttst{padding:11px 0 0}
+.Ttshh .Ttsi{margin:0}
+.Tnewsh2,.Tmsl .Ttsx h2,.Tmsl .Ttsx h6,#Tfoot h2,.Tsib .Tcofl5 h2,.Tww1 .Tcofl5 h2,.Tart .Tmc11 h5,.Tart .Tml6 h6,.Tml4 .Tllc h6,.Tml20 .Tllc h6,#tsc_local h2{background:#1c1c1c url(http://img.toi.de/fb/fb-logo-kl.png) no-repeat 6px;text-indent:27px;height:23px;line-height:23px;color:#fff;padding:0}
+.Tnews h2 *,.Tnews h5 *,.Tmsl .Ttsx h2 *,.Tmsl .Ttsx h6 *,.Tsib .Tcofl5 h2,.Tlbox.Tww1 .Tcofl5 h2,.Tml4 .Tllc h6,.Tml20 .Tllc h6,#tsc_local h2{color:#fff;font-weight:normal;font-size:12px;text-transform:uppercase}
+.Ttshh .Ttsc{margin:0}
+.Tts h3,.Tts h6{height:auto}
+.Tmc0v,.Tmci{border:0}
+.Tmc1{border:0}
+.Tmc1 .Ttsc{margin-top:0;margin-left:0}
+.Tmc1 .Ttsi{margin-top:0;z-index:1}
+.Tmc1 .Ttst{background-color:#1c1c1c;top:302px;position:absolute;height:70px;filter:alpha(opacity:80);-moz-opacity:.8;opacity:.8;width:571px;z-index:2;margin:7px;padding:11px 13px 8px}
+.Tmc1 .Ttst p{color:#9C3;font-size:18px}
+.Tmc1 .Ttst h2 *,.Tmc1 .Ttst h5 *{color:#fff;font-size:14px;line-height:17px;font-weight:bold;text-transform:uppercase}
+.Tmc1 .Ttst h3 *,.Tmc1 .Ttst h6 *{color:#9C3;font-size:28px;line-height:30px;text-transform:uppercase}
+.Tmc1 .Ttst h3 a:hover,.Tmc1 .Ttst h6 a:hover,.Tmc1 .Ttst a p:hover,.Tmc1 .Ttst a:hover{text-decoration:underline;color:#9C3}
+.Tmc2,.Tmc2w,.Tmc2o{border:0}
+.Tmc2 h5,.Tmc2w h5,.Tmc2o h5,.Tsptt h5{display:block;overflow:hidden;height:11px}
+.Tmc2 h6,.Tmc2w h6,.Tmc2o h6,.Tsptt h6{display:block;overflow:hidden;height:34px}
+.Tmc2 h5 *,.Tmc2w h5 *,.Tmc2o h5 *,.Tsptt h5{line-height:11px;font-size:11px;font-weight:bold;text-transform:uppercase}
+.Tmc2 h5 a:hover,.Tmc2w h5 a:hover,.Tmc2o h5 a:hover,.Tsptt h5 a:hover{color:#9c3}
+.Tmc2 h6 *,.Tmc2w h6 *,.Tmc2o h6 *,.Tsptt h6{line-height:17px;font-size:14px;font-weight:bold;text-transform:none}
+.Tmc2 h6 a:hover,.Tmc2w h6 a:hover,.Tmc2o h6 a:hover{text-decoration:underline}
+.Tmc2 h6 *,.Tmc2w h6 *,.Tmc2o h6 *{color:#1c1c1c}
+.Tmc2 .Ttst,.Tmc2w .Ttst,.Tmc2o .Ttst,.Tsp .Tsptt{filter:alpha(opacity:80);-moz-opacity:.8;opacity:.8;top:105px;left:0;position:absolute;width:274px;height:43px;z-index:2;margin:7px;padding:4px 7px}
+.Tmc2 .Ttst{background-color:#9C3}
+.Tmc2 h5 *{color:#fff}
+.Tmc2w .Ttst{background-color:#fff}
+.Tmc2w h5 *{color:#9c3}
+.Tmc2w .Ttsbv{left:254px;top:65px}
+.Tmc2o .Ttst{background-color:#ff7300}
+.Tmc2o h5 *{color:#fff}
+.Tsp{border:0;position:relative}
+.Tsp ul{top:0;left:0;position:absolute}
+.Tsp li{float:left;position:relative}
+.Tsp .Tsptt{background-color:#1c1c1c}
+.Tsptt h2,.Tsptt h5{color:#9C3}
+.Tsptt h3,.Tsptt h6{color:#fff}
+.Tmc3,.Tmc3ra{padding-top:7px}
+.Tmc3 h2 *,.Tmc3ra h2 *,.Tmc3 h6 *,.Tmc3ra h6 *{color:#84b71e;font-size:12px;font-weight:normal;line-height:17px;text-decoration:none;text-transform:uppercase}
+.Tmc3 h3 *,.Tmc3ra h3 *,.Tmc3 h5 *,.Tmc3ra h5 *,.Tmc3 h3 *:hover,.Tmc3ra h3 *:hover,.Tmc3 h5 *:hover,.Tmc3ra h5 *:hover{color:#1c1c1c;font-size:18px;line-height:19px;margin-bottom:12px;text-decoration:none;height:auto}
+.Tmc3 h6 *,.Tmc3 h6:hover *{color:#9C3}
+.Tmc3ra .Ttsi img{width:209px;height:122px}
+.Tmc3ra{min-height:75px}
+.Thhc3ra{height:122px}
+.Tmc3 h6,.Tmc3 .Ttsc{padding-left:216px;margin-left:0}
+.Tmc3 h6{margin-top:-3px}
+.Tmc3 .Ttsc{margin-top:3px}
+.Tmc3 .Ttst{padding:9px 0 0}
+.Tmc3 .Ttsc .Ttsi{margin:-17px 0 0}
+.Tmc3 .Ttst a{background-position:0 4px;padding-left:10px;display:block}
+.Ttst li a{display:block;background-position:0 4px;padding-left:10px}
+.Tart .Tmc3{border-bottom:1px solid #e8e8e8;padding-bottom:11px;margin-bottom:14px}
+.Tart .Tmc3 .Ttst{margin:0}
+.Tmc3xl{border:0}
+.Tmc3xl h6 *,.Tmc3xl h6 *:hover{line-height:14px;font-size:12px;font-weight:normal;color:#84b71e;text-transform:uppercase}
+.Tmc3xl h5 *,.Tmc3xl h5 a:hover{line-height:25px;font-size:20px;font-weight:bold;color:#1c1c1c;text-transform:none;text-decoration:none}
+.Tmc3xl h6{z-index:1;position:absolute;left:315px;margin-top:-1px;height:14px;overflow:hidden}
+.Tmc3xl.Thh3{height:169px}
+.Tmc3xl .Ttsc{background-color:#fff;height:154px;margin:0;padding-top:15px;padding-right:15px;padding-left:315px;overflow:hidden}
+.Tmc3xl .Ttst{color:#1c1c1c;margin-bottom:8px;padding-top:3px;line-height:15px}
+.Tmc3xl .Ttst a{background-position:0 5px;display:inline;margin-left:0;padding-left:10px}
+.Tmc3xl .Tlult a{background-image:url(http://img.toi.de/fb/pfeil_03.png);background-repeat:no-repeat;line-height:16px}
+.Tmc3xl .Ttsi{height:169px;margin:0;overflow:hidden}
+.Tmc3xl .Tlult{height:50px;overflow:hidden}
+.Tmc3xl.Tmc3xlbb{border-bottom:1px solid #e8e8e8;padding-bottom:7px}
+.Tmc4{padding-top:7px}
+.Tmc4 .Ttsc{padding:0 7px 7px 0}
+.Tmc4 h2 *,.Tmc4 h5 *{color:#9C3;font-size:14px;font-weight:bold;line-height:16px;text-decoration:none;text-transform:uppercase}
+.Tmc4 h3 *,.Tmc4 h6 *{color:#1c1c1c;font-size:18px;line-height:19px;text-decoration:none}
+.Tmc4 .Ttst{margin-top:0}
+.Tmclv{padding-top:7px}
+.Tmclv .Ttsc{margin-left:10px;padding:2px 0}
+.Tmclv h2 *,.Tmclv h5 *{color:#9C3;font-size:14px;font-weight:bold;line-height:16px;text-decoration:none;text-transform:uppercase}
+.Tmclv .Ttst{margin-top:0}
+.Tmclvb{position:relative;width:591px;height:116px;margin-top:3px;background:url(http://stats.t-online.de/b/66/29/47/60/id_66294760/tid_da/index.jpg) no-repeat;border:0}
+.Tmclvl{position:absolute;width:40px;height:40px;border:0 solid #000}
+.Tmcil{padding-top:7px}
+.Tmcil .Ttsc{margin-left:10px;padding:2px 0}
+.Tmcil h2 *,.Tmcil h5 *{color:#9C3;font-size:14px;font-weight:bold;line-height:16px;text-decoration:none;text-transform:uppercase}
+.Tmcil .Ttst{margin-top:0}
+.Tmcil .Ttsi{position:static;margin:18px 38px 0 0}
+.Tmc5{padding-top:7px}
+.Tmc5 h2 *,.Tmc5 h5 *,.Tmc5 h2 a,.Tmc5 h5 a{line-height:13px;font-size:12px;color:#9C3;text-transform:uppercase}
+.Tmc5 h3 *,.Tmc5 h6 *{line-height:12px;font-size:11px;font-weight:bold;text-transform:none}
+.Tmc5 a{font-size:11px}
+.Tmc5 p{font-size:11px;color:#1c1c1c}
+.Tmc5 .Ttsc{margin-left:13px;border-top:0 solid #ededed;padding-top:0;padding-right:3px;height:65px}
+.Tmc5 .Ttsi{top:-1px;margin-left:-6px}
+.Tmc5 .Tlist{padding:5px}
+.Tmc5 .Tlist .Tline{padding-top:3px;margin-top:3px;border-top:1px solid #cfcfcf}
+.Tmc5 .Tlist li a{color:#ff7300;font-size:11px}
+.Tmc5 .Tlist li a:hover{color:#ff7300;text-decoration:underline}
+.Tmc5 .Tlist li span{color:#1c1c1c;font-size:11px;font-weight:bold;margin-right:5px}
+.Tmc5 .Tlist .Tico{display:inline}
+.Tmc5ll{border:0;background-color:#9C3;height:150px}
+.Tmc5ll h2 *,.Tmc5ll h5 *{line-height:17px;font-size:12px;color:#FFF;text-transform:uppercase}
+.Tmc5ll h2,.Tmc5ll h5{background-color:#1c1c1c;padding:3px 7px 3px 14px}
+.Tmc5ll .Ttsi{position:relative;float:left;padding:6px 7px 6px 10px}
+.Tmc5ll .Tlist{float:left;width:255px;padding:6px 7px 7px 0}
+.Tmc5ll li a{color:#1c1c1c;line-height:16px}
+.Tmc5ll li a:hover{color:#FFF}
+.Tmc5ll .Tlist1{float:left;width:290px;padding:6px 7px 7px 0}
+.Tmc5all{border:0;background-color:#9C3}
+.Tmc5all h2 *,.Tmc5all h5 *{line-height:17px;font-size:12px;color:#FFF;text-transform:uppercase}
+.Tmc5all h2,.Tmc5all h5{background-color:#1c1c1c;padding:3px 7px 3px 14px}
+.Tmc5all .Ttsi{position:relative;float:left;padding:6px 7px 6px 15px}
+.Tmc5all .Tlist{float:left;width:138px;padding:6px 7px 7px 0}
+.Tmc5all li a{color:#1c1c1c;line-height:16px}
+.Tmc5all li a:hover{color:#FFF}
+.Tmc5all .Tlist1{float:left;width:220px;padding:6px 7px 7px 0}
+.Tmc6,.Tmc6.Ttsni{height:17px}
+.Tmc6{padding-top:7px;width:611px}
+.Tmc6.Tww1{width:302px}
+.Tmc6 .Ttsc{padding:0 7px 7px 0}
+.Tmc6 h5,.Tmc6.Ttsni h5{padding:0}
+.Tmc6 h2 *,.Tmc6 h5 *{color:#9C3;font-size:14px;font-weight:bold;line-height:16px;text-decoration:none;text-transform:uppercase}
+.Tmcm6{padding-top:7px}
+.Tmcm6 .Ttsc{padding:0 7px 7px 0}
+.Tmcm6 h2 *,.Tmcm6 h5 *{color:#9C3;font-size:14px;font-weight:bold;line-height:16px;text-decoration:none;text-transform:uppercase}
+.Tmcm6 h3 *,.Tmcm6 h6 *{color:#1c1c1c;font-size:18px;line-height:19px;text-decoration:none}
+.Tmcm6 .Ttst{margin-top:0}
+.Tmc10{border:0}
+.Tmc10 .Ttst{background-color:#9C3;height:65px;padding:5px 6px}
+.Tmc10 .Ttst h6{margin-bottom:5px}
+.Tmc10 .Ttst h6 *{color:#fff;font-size:14px;line-height:15px;font-weight:bold;text-transform:uppercase}
+.Tmc10 .Ttst h5 *{color:#1c1c1c;font-size:14px;line-height:18px}
+.Tmc10 .Ttst h6 a:hover{color:#FFF}
+.Tmc10 .Ttst h5 a:hover{text-decoration:underline}
+.Tstgl .Tmc10 h6,.Tstgl .Tmc10 .Ttst{position:relative;z-index:2;background:none repeat scroll 0 0 transparent;height:auto;padding:2px 14px 0}
+.Tstgl .Tmc10 .Ttsv239{padding:225px 0 0 4px}
+.Tstgl .Tmc10 .Ttsm{display:none}
+.Tmc10 .Ttsm{background-position:0 4px;padding-left:10px}
+.Tart .Tmc11.Tww1{border:1px solid #cfcfcf;width:302px}
+.Tart .Tmc11 h5{top:0;text-transform:uppercase;border-bottom:1px solid #cfcfcf;height:23px;overflow:hidden;padding:0;margin:0 5px;background-position:2px 6px;background-color:#fff;color:#1c1c1c;font-weight:normal}
+.Tart .Tmc11 .Tllc{margin:0 10px 3px;width:282px;height:auto}
+.Tart .Tmc11 h6{top:0;text-transform:none;color:#a4a4a4;font-size:12px;margin-top:10px;padding:0;border:0}
+.Tart .Tmc11 .T11c11{width:302px;border:0}
+.Tart .Tmc11 .T11c11 li{float:left;margin-right:7px;padding:0}
+.Tart .Tmc11 .Tlult{float:left;padding:0;margin:14px 0 0;border:0}
+.Tart .Tmc11 .Tllc .Tlult li{padding:none;border:0}
+.Tart .Tmc11 .Tllc .Tlult li a{color:#ff7300;font-size:12px;font-weight:bold;background-position:0 4px}
+.Tagbox .Tart .Tmc11 .Ttsz{float:right;margin-top:14px;position:static}
+.Tmfspdw{background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/shop-der-woche.png);height:199px}
+.Tmfspdw a{text-decoration:none}
+.Tmfspdwl{float:left;padding:72px 0 0 16px}
+.Tmfspdwr1,.Tmfspdwr2,.Tmfspdwr2a{float:left;width:165px;padding:0 10px 5px 5px;height:22px}
+.Tmfspdwr1{padding-top:90px;height:45px}
+.Tmfspdwr2{width:65px;padding-right:4px}
+.Tmfspdwr2 span{text-decoration:line-through}
+.Tmfspdwr2a{width:80px;text-align:center}
+.Tmfspdwr3{clear:both;padding-left:16px}
+.Tmfspdwr2a a{font-size:14px;font-weight:bold;color:#fff}
+.Tmfspdwr2a a span{font-size:18px}
+.Tmfspdwr1 a{color:#1c1c1c;font-size:12px}
+.Tmfspdwr3 a{color:#666;font-size:10px}
+.Tbrnws{width:920px;border:1px solid #faa400;border-left:0;border-right:0;background:#fff;padding:1px 0;height:29px}
+.Tbrnws h5{position:absolute;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/ticker-sprite.png) 0 -62px repeat-x;z-index:1;overflow:visible;height:21px;padding:5px 12px 3px 9px}
+.Tbrnws h5 span{position:absolute;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/ticker-sprite.png) 0 0 no-repeat;right:-25px;width:25px;height:29px;display:block;top:0}
+.Tbrnws h5 i{color:#fff;text-shadow:0 -1px #888;text-transform:uppercase;font-style:normal}
+.Tbrnws h5 b{display:none;text-transform:uppercase}
+.Tbrnws ul{height:16px;overflow:hidden}
+.Tbrnws ul li{display:block;float:left;margin-right:3px}
+.Tbrnws ul li a{color:#111}
+.Tbrnws .newsticker{position:absolute}
+.tickercontainer{width:900px}
+.Tbrnwsrght{padding:7px 0;height:15px;background-image:linear-gradient(bottom,#e6e3e6 50%,#faf7fa 50%);background-image:-o-linear-gradient(bottom,#e6e3e6 50%,#faf7fa 50%);background-image:-moz-linear-gradient(bottom,#e6e3e6 50%,#faf7fa 50%);background-image:-webkit-linear-gradient(bottom,#e6e3e6 50%,#faf7fa 50%);background-image:-ms-linear-gradient(bottom,#e6e3e6 50%,#faf7fa 50%);background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.5,#e6e3e6),color-stop(0.5,#faf7fa));X-moz-box-shadow:inset 0 0 10px #fff;-webkit-box-shadow:inset 0 0 10px #fff;Xbox-shadow:inset 0 0 30px 30px #888}
+.Tbrnwrovl{width:25px;height:29px;display:block;position:absolute;right:0;top:1px;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/ticker-sprite.png) 0 -32px no-repeat}
+.Tll h3,.Tll h6,.Tll h2,.Tll h5,.Tlll{border-left:none;border-right:0}
+.Tllc{margin:0}
+.Tll h3,.Tll h6,.Tll h2,.Tll h5{top:0}
+.Tllr1,.Tllr2,.Tllr3,.Tllr4{display:none}
+.Tlult,.Ttsltag{list-style-type:none}
+.Tlult a{padding-left:11px}
+.Tlll{margin-top:14px;padding-top:10px;padding-bottom:5px;height:100%}
+.Tlll a{color:#ff7300}
+.Tico{display:block;background-position:0 4px;padding-left:10px}
+.Ticow{display:block;background-image:url(http://www.t-online.de/rl09/static/imgs/fussball-de/ticow.gif);background-position:0 4px;background-repeat:no-repeat;padding-left:10px}
+.Ticos{display:block;background-image:url(http://www.t-online.de/rl09/static/imgs/fussball-de/ticos.gif);background-position:0 4px;background-repeat:no-repeat;padding-left:10px}
+.Tll .Tllc h3 span,.Tll .Tllc h6 span{font-size:12px;color:#fff}
+.Tlult a,.Ttst li a,.Tmc3 .Ttst a,.Tmc3xl .Ttst a,.Tmc10 .Ttsm,.Ttsx li a,.Tmc5 .Ttsc>a,.Tnews .Ttnews .Ttsc>a,.Tnews2 .Ttnews .Ttsc>a,.Tnews2 .Ttnews .Ttsc>a,.Tart .Tmc11 .Tllc .Tlult li a{background-image:url(http://img.toi.de/fb/pfeil_01.png);background-repeat:no-repeat}
+.Tnews .Ttsi .Ttsbv,.Tnews2 .Ttsi .Ttsbv{width:27px;height:27px;background:url(http://www.t-online.de/rl09/static/imgs/plbut27.png);top:49px;left:111px}
+.Tnews2{border:0;height:172px}
+.Tnews2 .Ttnews{margin-bottom:14px}
+.Tnews2 .Ttnews .Ttsc{margin-left:0;padding-top:0;padding-right:3px;height:79px;overflow:hidden}
+.Tnews{border-bottom:1px solid #cfcfcf}
+.Tnews .Ttnews{border-left:1px solid #cfcfcf;border-right:1px solid #cfcfcf;padding:5px 0;width:300px;height:79px;overflow:hidden}
+.Tnews .Ttnews .Ttsc{margin-left:5px;padding-top:0;padding-right:3px;height:79px;overflow:hidden}
+.Ttnews .Ttsc h2,.Ttnews .Ttsc h5{padding:0 0 0 5px;background:0}
+.Ttnews .Ttsc h3,.Ttnews .Ttsc h6{padding:2px 0 2px 5px;height:auto}
+.Ttnews .Ttsc a.Tico{margin-left:5px;padding-left:10px}
+.Ttnews .Ttsc h2 *,.Ttnews .Ttsc h5 *{line-height:12px;font-size:11px;font-weight:normal;color:#84b71e;text-transform:uppercase}
+.Ttnews .Ttsc h3 a,.Ttnews .Ttsc h6 *{line-height:12px;font-size:11px;font-weight:bold;color:#1c1c1c;text-transform:none;margin:0}
+.Ttnews h3 a:hover,.Ttnews h6 a:hover{text-decoration:underline}
+.Ttnews a{font-size:11px}
+.Ttnews p{padding:0 0 0 5px;font-size:11px;line-height:12px;color:#1c1c1c}
+.Ttnews .Ttsi{width:141px;height:79px;overflow:hidden}
+.Ttnews h5,.Ttnews h6,.Ttnews p{width:145px}
+.Ttnews a{width:135px}
+.Tnewsfr{background-color:#fff;height:319px;width:300px;border:solid 1px #2d1717}
+.Tnewsfrh2{background-color:#fc0;height:17px;padding:3px 10px 0;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/p_dachzeile.png) no-repeat #fc0}
+.Tnewsfrh2 *{font-weight:bold;font-size:11px;text-transform:uppercase}
+.Ttnewsfr{padding-top:7px;background-color:#fff;height:89px;width:300px}
+.Ttnewsfr h2 *,.Ttnewsfr h5 *{line-height:11px;font-size:11px;color:#9C3;text-transform:uppercase}
+.Ttnewsfr h3 *,.Ttnewsfr h6 *{line-height:12px;font-size:11px;font-weight:normal;text-transform:none;color:#1c1c1c}
+.Ttnewsfr h3 a:hover,.Ttnewsfr h6 a:hover{color:#1c1c1c;text-decoration:underline}
+.Ttnewsfr a{font-size:11px}
+.Ttnewsfr p{font-size:11px;color:#1c1c1c}
+.Ttnewsfr .Ttsc{margin-left:13px;padding-top:0;padding-right:3px}
+.Ttnewsfr .Ttsi{top:0;margin-left:-6px}
+.Ttnewsfr .Ttsi img{width:141px;height:82px}
+.Tmsl h6 *{color:#fff}
+.Tmsl .Ttsx h6 *{line-height:23px;text-decoration:none}
+.Tmsl .Ttsx h6 *:hover{color:#fff}
+.Tmsl ul{border-left:1px solid #cfcfcf;border-right:1px solid #cfcfcf;border-bottom:1px solid #cfcfcf;padding:3px 5px;background-color:#fff}
+.Tmsl .Tline{padding-top:4px;margin-top:4px;border-top:1px solid #cfcfcf}
+.Tmsl li a{background-position:0 4px;color:#1c1c1c;font-size:11px;font-weight:bold}
+.Tmsl li a span{color:#ff7300;font-size:11px}
+.Tml4.Tww1{width:300px}
+.Tml4 .Tllx{border:0;top:1px;right:1px}
+.Tml4 h6 *{font-weight:normal;color:#fff;font-size:12px}
+.Tml4 .Tlult{border-left:1px solid #cfcfcf;border-right:1px solid #cfcfcf;border-bottom:1px solid #cfcfcf;padding:0 5px;margin:0}
+.Tml4 li:first-child{border:0}
+.Tml4 li{padding-top:5px;margin-top:0;border-top:1px solid #cfcfcf}
+.Tml4 li a{background-position:0 4px;color:#1c1c1c;font-size:11px;font-weight:bold}
+.Tml4 li a span{color:#ff7300;font-size:11px;font-weight:normal}
+.Tart .Tml6.Tww2{width:300px;border:1px solid #cfcfcf}
+.Tart .Tml6 .Tllc h6{display:block}
+.Tart .Tml6 h6{display:block;background-color:#fff;top:0;margin-top:0;border:0}
+.Tart .Tml6 h6 span{font-weight:normal;color:#000;font-size:12px}
+.Tart .Tml6 .Tlll.Tlult{float:left;padding:0 5px;margin-top:1px;border:0}
+.Tart .Tml6 .Tlll.Tlult li{margin-right:0;width:276px;height:auto}
+.Tart .Tml6 li{padding:3px 0 3px 11px;margin-top:0;border-top:1px solid #cfcfcf}
+.Tart .Tml6 li a{background-position:0 4px;color:#1c1c1c;font-size:11px;font-weight:bold}
+.Tart .Tml6 li a span{color:#ff7300;font-size:11px}
+.Tml6{padding-bottom: 2px}
+.Tml6 .Tllc .Tlll.Tlult{margin-top:0}
+.Tml6 .Tllc .Tlll.Tlult li{margin-right:7px;width:287px;height:12px;overflow:hidden;float:left}
+.Tml6.Tww1{width:611px}
+.Tml6 .Tllc .Tlll{padding:6px 0 0}
+.Tml6 .Tllc h6{display:none}
+.Tml6 .Tlult li a,.Tmc3xl .Ttsc .Tlult li a{background-image:url(http://img.toi.de/fb/pfeil_03.png);background-repeat:no-repeat;background-position:0 4px;color:#1c1c1c;font-weight:bold}
+.Tml20{width:302px}
+.Tml20 .Tllc h6 span{font-weight:normal;color:#fff}
+.Tml20 .Tllc .Tlult{margin:0;padding:0 5px 20px;border-left:1px solid #cfcfcf;border-right:1px solid #cfcfcf;border-bottom:1px solid #cfcfcf}
+.Tml20 .Tllc .Tlult li{padding-top:5px;border-top:1px solid #cfcfcf}
+.Tml20 .Tllc .Tlult li:first-child{margin-bottom:0;border:0}
+.Tml20 .Tllc .Tlult li a{background-position:0 4px;color:#1c1c1c;font-size:11px;font-weight:bold}
+.Tvs{background:0}
+.Tvs h2,.Tvs h5{padding:0}
+.Tvs div{background-color:#fff;margin:0;padding:5px;border-left:1px solid #cfcfcf;border-right:1px solid #cfcfcf;border-bottom:1px solid #cfcfcf}
+.Tvs .Tinsu{width:262px}
+.Tcfarrl,.Tcfarrr{width:25px;height:25px;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/coflsprite.png) 0 0 no-repeat;z-index:2}
+.Tcofl5 .Tcfarrl,.Tcofl5 .Tcfarrr{top:56px}
+.Tcofl5 .Tcofl5i .Tspti{height:170px;overflow:hidden}
+.Tcofl5 .Tcofl5i li a:hover{text-decoration:none;cursor:pointer}
+.Tgbox .Tcofl5{height:170px}
+.Tsib .Tcofl5,.Tlbox.Tww1 .Tcofl5{height:198px}
+.Tsib .Tcofl5 .Tcfarrl,.Tsib .Tcofl5 .Tcfarrr,.Tlbox.Tww1 .Tcofl5 .Tcfarrl,.Tlbox.Tww1 .Tcofl5 .Tcfarrr{top:79px}
+.Tsib .Tcofl5 .Tcfarrl,.Tlbox.Tww1 .Tcofl5 .Tcfarrl{left:6px}
+.Tsib .Tcofl5 .Tcfarrr,.Tlbox.Tww1 .Tcofl5 .Tcfarrr{right:8px}
+.Tsib .Tcofl5 .Tcofl5c,.Tlbox.Tww1 .Tcofl5 .Tcofl5c{height:174px;border-left:1px solid #cfcfcf;border-right:1px solid #cfcfcf;border-bottom:1px solid #cfcfcf}
+.Tsib .Tcofl5 .Tcofl5i,.Tlbox.Tww1 .Tcofl5 .Tcofl5i{left:0;top:23px}
+.Tsib .Tcofl5 .Tcofl5i li,.Tlbox.Tww1 .Tcofl5 .Tcofl5i li{margin:5px 6px}
+.Tsib .Tcofl5 .Tcofl5i .Tsptt,.Tlbox.Tww1 .Tcofl5 .Tcofl5i .Tsptt{top:99px;width:262px}
+.Tsib .Tcofl5 .Tcofl5i .Tspti,.Tlbox.Tww1 .Tcofl5 .Tcofl5i .Tspti{width:290px;height:164px}
+.Ttsbutba,.Ttsbutb{float:left;font-weight:bold;white-space:nowrap;font-size:12px;padding:4px;cursor:pointer;text-transform:uppercase}
+.Ttsbutba{width:92px;background:#1c1c1c;color:#9c3}
+.Ttsbutb{width:91px;color:#1c1c1c;background:#9c3}
+.Ttsbutba:hover,.Ttsbutb:hover{text-decoration:underline}
+#Ttsbutb1,#Ttsbutb2{margin-left:2px}
+#Ttsbuli0,#Ttsbuli1,#Ttsbuli2{clear:both;width:300px;height:96px;background:#fff;overflow:hidden;border:1px solid #cfcfcf}
+#Ttsbuli1,#Ttsbuli2{display:none}
+img.Tbu1ico{background:url(http://img.toi.de/fb/liga1.jpg);border:0;height:48px}
+img.Tbu2ico{background:url(http://img.toi.de/fb/liga2-1.jpg);border:0;height:48px}
+img.Tbu3ico{background:url(http://img.toi.de/fb/liga3.jpg);border:0;height:48px}
+#Ttsbuli0 a,#Ttsbuli1 a,#Ttsbuli2 a{display:block;float:left;font-size:0}
+.Tart .Tlll li{font:12px/14px Arial,Helvetica,freesans}
+.Tart ul.Tlll{margin:0;padding:0 9px}
+#hedvid{color:#9c3;font-size:13px;font-weight:bold;text-transform:uppercase;background:#fff;height:25px;padding:7px 0 0 7px}
+.fbcom-widget-thumb-teaser{margin-top:-21px!important;padding:0 7px 0!important}
+.fbcom-widget-thumb-teaser ul li{margin-right:24px!important;width:120px!important}
+.fbcom-widget-thumb-teaser ul li img,#tsrgbox div.fbcom-widget-thumb-teaser ul li span.image-anim{width:110px!important}
+.fbcom-widget-thumb-teaser ul li dl{width:120px!important;height:28px!important}
+iframe{margin:0 7px 7px 0}
+.Tart table td{border-bottom:0;padding:5px 5px 5px 0}
+#login.clearfix{display:inline-block!important}
+.Tart .Tmfsp h2,.Tart .Tmfsp h5,.Tmfsp h6{background:#1c1c1c;padding:0 10px}
+.Tart .Tmfsp h2 *,.Tart .Tmfsp h5 *,.Tmfsp h6 *,.Tart .Tmfsp h2 *:hover,.Tart .Tmfsp h5 *:hover,.Tmfsp h6 *:hover{color:#9c3;font-size:12px;font-weight:bold}
+.Tmfsp ul{background:#e8e8e8;border:1px solid #1c1c1c;height:193px;overflow:hidden}
+.Tart .Tmfsp ul{left:0;padding:0 0 0 6px;margin:0}
+.Tmfsp li{width:112px;border:0;margin:0;float:left;color:#000;overflow:hidden}
+.Tart .Tmfsp li{padding:10px 4px 0 4px}
+.Tmfsp li a{color:#000;font-weight:bold}
+.Tmfsp li div{float:left;padding-top:3px;width:48px}
+.Tmfsp li div.Tmfspw{width:53px}
+.Tmfsp li div a{color:#000;font-size:10px;font-weight:normal}
+.Tmfsp li div.Twwpx62{width:63px}
+.Tmfsp li div.Twwpx62.Tmfspw{width:59px}
+.Tmfspp{background:#ff7300;color:#fff;font-weight:bold}
+.Tmfspcp{color:#666;display:block;font-size:11px;text-decoration:none}
+.Tmfspcp em{text-decoration:line-through;font-size:11px}
+.Tcfarrl{left:8px}
+.Tcfarrr{right:9px;background-position:-24px 0}
+.Tcfarrl:hover{background-position:0 -25px}
+.Tcfarrr:hover{background-position:-24px -25px}
+.Tcofl6{border:1px solid #1c1c1c}
+.Tcofl6 .Tcfarrl{left:3px;background:url("http://www.t-online.de/rl09/static/imgs/fussball-de/coflsprite.png") 0 0 no-repeat}
+.Tcofl6 .Tcfarrr{right:4px;background:url("http://www.t-online.de/rl09/static/imgs/fussball-de/coflsprite.png") -24px 0 no-repeat}
+.Tcofl6 .Tcfarrl:hover{background-position:0 -75px}
+.Tcofl6 .Tcfarrr:hover{background-position:-24px -75px}
+.Tcofl6 .Tcfarrrd,.Tcofl6 .Tcfarrrd:hover{background-position:-24px -50px;cursor:auto}
+.Tcofl6i{position:absolute;top:9px;left:9px}
+.Tcofl6i li{margin-right:9px;position:relative;float:left}
+.Tcofl6i li div{background:#9c3;float:left;height:139px}
+.Tcofl6i li div a img{margin:13px 12px 14px 15px}
+.Tcofl6i li div h2,.Tcofl6i li div h5{padding-top:10px}
+.Tcofl6i li div p{padding-bottom:5px}
+.Tcofl6i li div h2 a,.Tcofl6i li div h5 a{color:#fff}
+.Tcofl6i li div h2 a:hover,.Tcofl6i li div h5 a:hover{text-decoration:none}
+.Tcofl6i li div p a{color:#1c1c1c}
+.Tcofl6i li div span{background:#ff7300;color:#fff;font-weight:bold;padding:1px 4px}
+.Tcofl6i li div span.Tmfspcp{background:0;color:#666;display:block;text-decoration:none;font-weight:normal;font-size:12px}
+.Tcofl6i li div span.Tmfspcp em{text-decoration:line-through;font-weight:normal;font-size:12px}
+.Tcofl6i li div.Tcofl6lir{width:143px;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/shopteaser-re-back.png)}
+.Tlln h3 *:hover,.Tlln h6 *:hover{font-size:15px;text-transform:none}
+#Thead2{width:920px;height:46px;margin:7px 0 1px 7px;background-color:#1c1c1c;z-index:601}
+#Tlogo2{display:block;width:232px;height:46px;margin:0}
+.Ttopnavl{position:absolute;left:261px;top:5px}
+.Ttopnavr{position:absolute;top:6px;right:6px;width:239px;height:40px;text-align:right;margin:0;padding:0}
+#Tsearch2{width:203px;padding:3px 10px;position:absolute;top:77px;left:701px}
+.Ttopnavreiteri,.Ttopnavreitera{padding:0;float:left}
+.Ttopnavreiteri a,.Ttopnavreitera a{display:block;padding-top:24px;font-size:10px;font-weight:bold;color:#fff;text-transform:uppercase;text-decoration:none}
+.Ttopnavreitera a{color:#9c3}
+.Ttopnavreiteri a:hover{color:#9c3;text-decoration:none}
+.Ttopnavl .Ttopnavnews{margin-left:20px;background:url(http://img.toi.de/fb/icon_news.png) no-repeat center top}
+.Ttopnavl .Ttopnavshop{margin-left:25px;background:url(http://img.toi.de/fb/icon_shop.png) no-repeat center top}
+.Ttopnavl .Ttopnavcommunity{margin-left:22px;background:url(http://img.toi.de/fb/icon_community.png) no-repeat 15px top}
+.Ttopnavl .Ttopnavspecials{margin-left:17px;background:url(http://img.toi.de/fb/icon_specials.png) no-repeat center top}
+.Tinsu{border:1px solid #1c1e1d;height:18px;line-height:18px;width:175px;float:left;margin:0;padding:1px 2px}
+.Tbusu{width:22px;height:22px}
+#Tbcrumb{clear:both;width:920px;height:16px;padding:0 3px}
+#Tbcrumb a{color:#404040;font-size:11px}
+#Tbcrumb a:hover{text-decoration:underline}
+#Tbcrumbinner{height:16px;padding:0 4px}
+#Tbcrumb h1{font-size:11px;color:#404040;font-weight:400}
+#Tbcrumbinner>div{display:inline;font-size:11px}
+#Tfoot{padding:0;margin:7px 0 7px 7px;width:920px;background:#1c1c1c;border-top:5px solid #9c3;position:relative;font-size:11px}
+#Tfoot h2{margin:5px 7px 3px 8px;line-height:22px;background-position:0 5px;font-weight:bold;font-size:15px;text-transform:uppercase;border-bottom:1px solid #fff}
+#Tfootblock{float:left;width:952px;margin-left:7px;padding:0 0 10px;border:0}
+#Tfootblock a{color:#fff;font-size:11px}
+#Tfootblock .Tlinklst{margin:0;width:136px;overflow:hidden}
+#Tfootblock h5{padding:0 10px 0 0;width:126px;text-transform:uppercase;font-weight:bold}
+#Tfootblock .Tlinklst ul{padding:0 10px 0 0;width:126px;float:left;overflow:hidden}
+#Tfootblock .Tlinklst.Tllast{text-transform:uppercase;font-weight:bold}
+#Tfootblock .Tlinklst h5,.Tlinklst h5 *,.Tlinklst ul li a{line-height:23px;color:#fff}
+#Tfoot #footerLinks{clear:both;padding:1px 0 1px;text-align:center;color:#fff}
+#Tfoot #footerLinks *{line-height:15px;font-size:11px;text-align:center;color:#fff}
+#Tcopyr{font-size:11px;text-align:center;color:#fff;padding-bottom:10px}
+.Th1head{float:left;width:611px;height:61px;background:url(http://www.t-online.de/rl09/static/imgs/fussball-de/h1-back.gif) no-repeat;margin:0 7px 7px 0}
+.Th1head *{text-transform:uppercase;font-weight:bold;font-size:17px;color:#fff;padding:23px 18px 16px 18px}
+.TFooterNavigationPartner{height:30px;margin:9px 0 5px 7px;text-align:center;width:920px;margin-left:7px;background:#FFF}
+.TFooterNavigationPartner .TLinks{display:inline;width:auto;clear:both;overflow:hidden;margin:auto}
+.TFooterNavigationPartner .TLinks li{display:inline;float:none;border:0;padding-left:8px}
+.TFooterNavigationPartner .TLabel{margin-top:2px;font-weight:bold}
+.TFlashPlayer{margin-left:13px}
+.Tlbvipr{padding-right:200px;position:relative;height:60px;margin:0 15px}
+.Tlbviprq{display:block;text-align:right;position:absolute;right:0;top:0}
+.Tlbvideo h1{width:730px}
+.Tlbvideo h1{font-size:15px;margin:15px 15px 10px;border-bottom:1px solid #dcdcdc;height:35px;color:#4b4b4b;font-weight:bold}
+.Tlbvideo .Ttsbv{background:0}
+.Tlbvideo .Tlbvipr{width:501px}
+.Tlbvideo .Tlbfkt{width:723px}
+.Tlbvideo #im_if_video_cad{margin-left:15px}
+.Tart .TFlashPlayer{margin:0}
+#Tnnav{margin:0 7px;width:920px;background:#1c1c1c}
+#Tnnav2 *,#Tnnav3 *{font-size:12px}
+#Tnnav2{border:0;height:27px;background:#9c3;overflow:hidden}
+#Tnnav2 li{padding:4px 0 7px 5px}
+#Tnnav2 li.Tnnak{margin-left:-1px;padding-left:7px;background-color:#1c1c1c}
+#Tnnav2 li.Tnnaa{margin-left:0;padding-left:10px}
+#Tnnav2 li.Tnnzz{padding-right:7px}
+#Tnnav2 li a{float:left;border:0;padding:2px 0;font-weight:bold;color:#1c1c1c;text-transform:uppercase}
+#Tnnav2 li.Tnnak a{color:#9c3;background:0}
+#Tnnav2 a:hover{color:#1c1c1c}
+#Tnnav2 li p{border-right:1px solid #1c1c1c;margin:1px 0 0 5px;height:16px}
+.Tnn2l,.Tnn2r,#Tnnav2 span{display:none}
+#Tnnav3{border:0;height:34px;background:#1c1c1c}
+#Tnnav3 .Tnnaa{padding-left:5px}
+#Tnnav #Tnnav3 li *{color:#fff}
+#Tnnav #Tnnav3 li a,#Tnnav #Tnnav3 li span{margin-top:1px;padding:10px 0 7px 6px}
+#Tnnav #Tnnav3 li p{top:10px;margin-left:6px;border-right:1px solid #fff;height:16px}
+#Tnnav #Tnnav3 .Tnnzz p{display:none}
+#Tnnav #Tnnav3 .Tnnak a{color:#9c3}
+.Tnnav4{top:32px;border:0;background:#fff}
+.Tnnav4 dt{border:0;border-bottom:1px solid #fff;background:#1c1c1c;opacity:1;filter:alpha(opacity=100)}
+.Tnnav4 .Tnnzz{border-bottom:0}
+#Tnnav #Tnnav3 .Tnnav4 dt *{margin:0;padding:4px 10px;color:#fff}
+.Tnnav4 b,.Tnnav4 i{display:none}
+.Tlbfsue .Tmc4.Tww1{width:209px}
+.Tlbfsue .Tmc4 .Ttsc{padding:0;border-top:0}
+.Tlbfsue .Tmc4 .Ttsh65{padding-left:70px}
+.Tlbfsue .Tmc4 h5,.Tlbfsue .Tmc4 h5 a{font-size:11px;line-height:13px}
+.Tlbfsue .Tmc4 h5 a:hover{color:#9c3}
+.Tlbfsue .Tmc4 .Ttsc .Ttsi{position:absolute}
+.Tlbco .Tmc7.Tww1{width:209px}
+.Tlbco .Tmc7.Thh2{height:auto}
+.Tlbco .Tmc7 h6,.Tlbco .Tsib .Tmc7 h6 *{font-size:11px;color:#9c3}
+.Tlbco .Tmc7 h5,.Tlbco .Tmc7 h5 a{font-size:14px;color:#1c1c1c}
+.Tlbco .Tmc7 .Ttsc .Ttst{padding:0}
+#TappLayer .Tlb1,#TappLayer .Tlb2,#TappLayer .Tlb3,#TappLayer .Tlb4,#TappLayer .Tlb6,#TappLayer .Tlb7,#TappLayer .Tlb8,#TappLayer .Tlb9,#TappLayer h1,#TappLayer .Tlbad{display:none}
+#TappLayer span{color:#ff7300;text-decoration:underline;cursor:pointer}
+#TappLayer .Tart{border:0}
+#Tnnav2 li span{display:none}

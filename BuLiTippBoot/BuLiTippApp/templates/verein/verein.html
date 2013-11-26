@@ -1,0 +1,46 @@
+﻿{% extends "base_site.html" %}
+<!-- benötigt: spieltag, spielzeit -->
+{% load i18n  %}
+
+{% block breadcrumbs %}
+    
+    {% if title %} &rsaquo; {{ title }}{% endif %}
+	<li>    <a href="{% url BuLiTippApp.views.index %}">{% trans 'Home' %}</a></li>
+	<li class="active">{% trans 'Verein' %} </li>
+    
+{% endblock %}
+
+{% block content %}
+
+<h2>Verein "{{ verein.name }}"</h2>
+    <div class="col-md-8">
+        <table class="table table-bordered" >
+        <tr>
+            <th>Heim</th>
+            <th>Auwärts</th>
+            <th>Spieltag</th>
+            <th>Datum</th>
+            <th>Ergebnis</th>
+        </tr>
+{% for spiel in spiele %}
+        <tr >
+            <td>
+                <b>{{spiel.heimmannschaft.name}}</b>
+            </td>
+            <td>
+                <b>{{spiel.auswaertsmannschaft}}</b>
+            </td>
+            <td>
+                {{spiel.spieltag.nummer }}
+            </td>
+            <td >         
+                {{spiel.datum|date:"d M Y" }}
+            </td>
+            <td>
+                {{spiel.ergebniss}}
+            </td>
+        </tr>
+{% endfor %}
+        </table>
+    </div>
+{% endblock %}

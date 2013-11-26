@@ -1,0 +1,21 @@
+function imb(e) {return document.getElementById(e);}
+var imbn = 'im_blocker_'+new Date().getTime();
+var imact = "hid"
+function imba(e) {return document.getElementById(e).style.visibility = "hidden"}
+document.write('<div id="'+imbn+'" style="width:120px;height:600px;visibility:hidden;">Blocker</div>');
+if(imb("skyscraper_ads")){
+document.getElementById("adsense_skyscraper").style.position = "relative";
+document.getElementById("adsense_skyscraper").style.top = "400px";
+}
+var imarr_divs = new Array('sky_anz','skyscraper','adsd_skyscraper','adsd_txt_sky','skyscraper_content','skyScraper','c_ad_sky','sbr','adside','skyscrapermember','AdSky','knuddels.de-home-160x600-1','bimpskyscraper','skyscraperWrapper','commercialdiv','sky','vmsky','banner-right-con','tagsc','AdtagRight','ad4','skybanner','im-skyScraper','ad_skyscraper_container','adsd_skyscraper','banner3','ad_skyscraper_right');
+for (var i=0; i<=imarr_divs.length; i++){
+if (imb(imarr_divs[i])){
+imba(imarr_divs[i]);
+}
+}
+if(imb("skyscraper_ads")){
+document.getElementById("adsense_skyscraper").style.position = "relative";
+document.getElementById("adsense_skyscraper").style.top = "400px";
+}
+var adcount_1845230_1_=new Image();
+adcount_1845230_1_.src="http://im.banner.t-online.de/adcount/3.0/784/1845230/0/168/AdId=9395441;BnId=8;ct=1603383440;st=1142;adcid=1;itime=235929319;reqtype=5;";

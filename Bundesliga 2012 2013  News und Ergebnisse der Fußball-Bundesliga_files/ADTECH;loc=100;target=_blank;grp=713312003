@@ -1,0 +1,119 @@
+var iam_adtype = 'expHockeystick';
+
+//PARAMETER SKY
+var FEM_DivWidth = 302;
+var FEM_DivHeight = 95;
+var FEM_DivZ_Index = 100;
+var FEM_Sky_Url = 'http://im.banner.t-online.de/adlink/784/3090809/0/3658/AdId=9395441;BnId=27;itime=235928043;nodecode=yes;link=http://ad.doubleclick.net/clk;277064015;104485108;y';
+var FEM_SwfUrl = 'kia_proceedgt_302x95.swf';
+var FEM_SwfWidth = 302;
+var FEM_SwfHeight = 95;
+var FEM_SwfFallback = 'kia_proceedgt_302x95.jpg';
+var FEMFlashvars_Sky = 'clickTAG=' + escape(FEM_Sky_Url) + '&clicktarget=_blank';
+var FEM_Sky_Left = 920-302;
+var FEM_Sky_Top = 0;
+//PARAMETER LEADERBOARD
+var FEMLeader_DivLeft = 0;
+var FEMLeader_DivTop = 0;
+var FEMLeader_DivWidth = 920;
+var FEMLeader_DivHeight = 60;
+var FEMLeader_DivZ_Index = 100;
+var FEM_Leader_Url = 'http://im.banner.t-online.de/adlink/784/3090809/0/3658/AdId=9395441;BnId=27;itime=235928043;nodecode=yes;link=http://ad.doubleclick.net/clk;277064015;104485108;y';
+var FEMLeader_SwfUrl = 'kia_proceedgt_920x60.swf';
+var FEMLeader_SwfWidth = 920;
+var FEMLeader_SwfHeight = 60;
+var FEMLeader_SwfFallback = 'kia_proceedgt_920x60.jpg';
+var FEMFlashvars_Leader = 'clickTAG=' + escape(FEM_Leader_Url) + '&clicktarget=_blank';
+//Pruefen auf die Flashversion
+var requiredVersion = 15;
+var flash2Installed = false;
+var flash3Installed = false;
+var flash4Installed = false;
+var flash5Installed = false;
+var flash6Installed = false;
+var flash7Installed = false;
+var flash8Installed = false;
+var flash9Installed = false;
+var flash10Installed = false;
+var maxVersion = 10;
+var actualVersion = 0;
+var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+if(isIE && isWin){
+eval('try{var xObj = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.2");if (xObj != null) {flash2Installed=true;xObj = null;}}catch(e) { }');
+eval('try{var xObj = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");if (xObj != null) {flash3Installed=true;xObj = null;}}catch(e) { }');
+eval('try{var xObj = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.4");if (xObj != null) {flash4Installed=true;xObj = null;}}catch(e) { }');
+eval('try{var xObj = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.5");if (xObj != null) {flash5Installed=true;xObj = null;}}catch(e) { }');
+eval('try{var xObj = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");if (xObj != null) {flash6Installed=true;xObj = null;}}catch(e) { }');
+eval('try{var xObj = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");if (xObj != null) {flash7Installed=true;xObj = null;}}catch(e) { }');
+eval('try{var xObj = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.8");if (xObj != null) {flash8Installed=true;xObj = null;}}catch(e) { }');
+eval('try{var xObj = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.9");if (xObj != null) {flash9Installed=true;xObj = null;}}catch(e) { }');
+eval('try{var xObj = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.10");if (xObj != null) {flash10Installed=true;xObj = null;}}catch(e) { }');
+}
+if (navigator.plugins) {
+if (navigator.plugins["Shockwave Flash 2.0"]
+|| navigator.plugins["Shockwave Flash"]) {
+var isVersion2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+var flashDescription = navigator.plugins["Shockwave Flash" + isVersion2].description;
+//alert("Flash plugin description: " + flashDescription);
+var flashVersion = parseInt(flashDescription.substring(16));
+flash2Installed = flashVersion == 2;
+flash3Installed = flashVersion == 3;
+flash4Installed = flashVersion == 4;
+flash5Installed = flashVersion == 5;
+flash6Installed = flashVersion == 6;
+flash7Installed = flashVersion == 7;
+flash8Installed = flashVersion == 8;
+flash9Installed = flashVersion == 9;
+flash10Installed = flashVersion >= 10;
+}
+}
+// Nach der aktuellsten Version schauen
+for (var i = 2; i <= maxVersion; i++) {
+if (eval("flash" + i + "Installed") == true) actualVersion = i;
+}
+if(navigator.userAgent.indexOf("WebTV") != -1) actualVersion = 4;
+//Erzeugen des LeaderBoards
+var flashsourceLeader ='<DIV id="im_presenter_anker" STYLE="display:block; position:relative; visibility:visible; left:' + FEMLeader_DivLeft + 'px;  top:' + FEMLeader_DivTop + 'px; width:' + FEMLeader_DivWidth + 'px; height:' + FEMLeader_DivHeight + 'px; z-index:' + FEMLeader_DivZ_Index + ';">';
+if (actualVersion >= requiredVersion)
+{
+flashsourceLeader +=  '<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"'
++ 'width="' + FEMLeader_SwfWidth + '" height="' + FEMLeader_SwfHeight + '">'
++ '<param name="allowscriptaccess" value="always" />'
++ '<param name="movie" value="http://aka-cdn-ns.adtech.de/apps/241/Ad9395441St3Sz3658Sq105186458V1Id27/' + FEMLeader_SwfUrl + '" />'
++ '<param name="play" value="true" />'
++ '<param name="loop" value="true"/>'
++ '<param name="wmode" value="opaque"/>'
++ '<param name="quality" value="high" />'
++ '<param name="flashvars" value="' + FEMFlashvars_Leader + '" />'
++ '<param name="menu" value="false" />'
++ '<embed src="http://aka-cdn-ns.adtech.de/apps/241/Ad9395441St3Sz3658Sq105186458V1Id27/' + FEMLeader_SwfUrl + '"'
++ 'width="' + FEMLeader_SwfWidth + '" height="' + FEMLeader_SwfHeight + '" play="true" '
++ 'loop="true" '
++ 'wmode="opaque" '
++ 'quality="high" '
++ 'menu="false" '
++ 'flashvars="' + FEMFlashvars_Leader + '" '
++ 'allowScriptAccess="always" '
++ 'type="application/x-shockwave-flash" '
++ '</embed>'
++ '</object>\n';
+} else {
+var alternateContent = '<a href="http://im.banner.t-online.de/adlink/784/3090809/0/3658/AdId=9395441;BnId=27;itime=235928043;nodecode=yes;link=http://ad.doubleclick.net/clk;277064015;104485108;y" target=_blank><img src="http://aka-cdn-ns.adtech.de/apps/241/Ad9395441St3Sz3658Sq105186458V1Id27/' + FEMLeader_SwfFallback + '" width="' + FEMLeader_SwfWidth + '" height="' + FEMLeader_SwfHeight + '" border="0"></a>\n';
+flashsourceLeader +=alternateContent;
+}
+//Erzeugen des SKY
+var flashsourceSky ='<DIV id="_im_pr_sky" STYLE="display:block; position:absolute; visibility:visible; left:' + FEM_Sky_Left + 'px;  margin-top:' + FEM_Sky_Top + 'px; width:' + FEM_DivWidth + 'px; height:' + FEM_DivHeight + 'px; z-index:' + FEM_DivZ_Index + ';">';
+if (actualVersion >= requiredVersion)
+{
+flashsourceSky +=  '<a href="'+FEM_Sky_Url+'" target="_blank"><img src="http://aka-cdn-ns.adtech.de/apps/241/Ad9395441St3Sz3658Sq105186458V1Id27/kia_proceedgt_302x95.jpg" width="302" height="95" border="0"></a>\n';
+} else {
+var alternateContent1 = '<a href="http://im.banner.t-online.de/adlink/784/3090809/0/3658/AdId=9395441;BnId=27;itime=235928043;nodecode=yes;link=http://ad.doubleclick.net/clk;277064015;104485108;y" target=_blank><img src="http://aka-cdn-ns.adtech.de/apps/241/Ad9395441St3Sz3658Sq105186458V1Id27/' + FEM_SwfFallback + '" width="' + FEM_SwfWidth + '" height="' + FEM_SwfHeight + '" border="0"></a>\n';
+flashsourceSky += alternateContent1;
+}
+flashsourceSky +='</DIV></DIV>';
+// write out
+document.write(flashsourceLeader);
+document.write(flashsourceSky);
+var adcount_3090809_1_=new Image();
+adcount_3090809_1_.src="http://im.banner.t-online.de/adcount/3.0/784/3090809/0/3658/AdId=9395441;BnId=27;ct=1602386679;st=1269;adcid=1;itime=235928043;reqtype=5;";

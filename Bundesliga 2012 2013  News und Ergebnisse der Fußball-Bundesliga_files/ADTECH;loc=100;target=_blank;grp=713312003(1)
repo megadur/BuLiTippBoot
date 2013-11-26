@@ -1,0 +1,4 @@
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"http://farm.plista.com/tiny/bc969196061dd4d7c014b97c/i611x90/?t=&urlprefix=http://im.banner.t-online.de/adlink/784/1845233/0/560/AdId=8518347;BnId=7;itime=235928458;nodecode=yes;link=&t=235928458\">\n");
+document.write("</scr"+"ipt>\n");
+var adcount_1845233_1_=new Image();
+adcount_1845233_1_.src="http://im.banner.t-online.de/adcount/3.0/784/1845233/0/560/AdId=8518347;BnId=7;ct=1602517324;st=2129;adcid=1;itime=235928458;reqtype=5;";
