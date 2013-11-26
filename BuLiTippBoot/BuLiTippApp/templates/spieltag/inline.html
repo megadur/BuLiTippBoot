@@ -1,84 +1,101 @@
-<!-- benoetigte Daten: spieltag, spieltipp=[spiel, tipp, punkte, fremdtipps(user, tipp, punkte)], spieltag_previous, spieltag_next  -->
+﻿<!-- benoetigte Daten: spieltag, spieltipp=[spiel, tipp, punkte, fremdtipps(user, tipp, punkte)], spieltag_previous, spieltag_next  -->
 <!-- Optional: no_navigation="true"  -->
 
 {% if spieltipp %}
-{% load url from future %}
-{% load filters %}
+    {% load url from future %}
+    {% load filters %}
 
-<form action="{% url "BuLiTippApp.views.tippen" spieltag.id  %}" method="post">
-{% csrf_token  %}
+    <form action="{% url "BuLiTippApp.views.tippen" spieltag.id  %}" method="post">
+    {% csrf_token  %}
+        <table class="table table-condensed">
+            <tr>
+		    <td colspan="3"><b>Spiel</b></td>
+		    <td><b>Ergebnis</b></td>
+		    {% if user.is_authenticated %}
+			    <td><b>mein Tipp</b></td>
+			    {% if not spieltag.is_tippable %}
+				    <!--td><b>Punkte</b></td-->{% endif %}{% endif %}
+		    {% if not spieltag.is_tippable %}
+			    <td><b><a onclick='if (document.getElementsByName("fremdtipp")[0].style.display==""){s="None";}else{ s="";}; for (var i = 0; i < document.getElementsByName("fremdtipp").length; i++) {document.getElementsByName("fremdtipp")[i].style.display=s; }' href="#">Andere:</a></b></td>
+		    {% endif %}
+	    </tr>
+        {% for spiel, tipp, punkte, fremdtipps in spieltipp  %}
+        {% with h=spiel.heimmannschaft.id a=spiel.auswaertsmannschaft.id%}
+	    <tr>
+		    <td class="right" >
+                <b>{{ spiel.heimmannschaft }}</b> ({{tabelle|get:h}}.)
+            </td>
+            <td> 
+                <span class="glyphicon glyphicon-resize-horizontal"></span> 
+            </td>
+            <td class="left" >
+                <b>{{ spiel.auswaertsmannschaft }}</b> ({{tabelle|get:a}}.)
+             </td>
+		    <td>
+		        <center>
+		        {% if spiel.ergebniss == "DNF" %}
+			        {% if spieltag.is_tippable and spiel.is_tippable %}
+				        tippen!
+			        {% else %}
+				        {% if user.is_staff %}
+					        <a href ="{% url "admin:BuLiTippApp_spieltag_change" spieltag.id %}">		
+				        {% endif %}
+					        eintragen!
+				        {% if user.is_staff %}
+					        </a>
+				        {% endif %}
+			        {% endif %}
+		        {% else %}
+			        {{ spiel.ergebniss  }}
+		        {% endif %}
+		        </center>
+		    </td>
+		    {% if user.is_authenticated %}
+		        <td>
+			        {% if spieltag.is_tippable and spiel.is_tippable  %}
+			        <input type="text" name="tipp_{{ spiel.id  }}" style="width:50px"
+			        id="tipp{{ spiel.id  }}" value="{{ tipp.ergebniss }}" 
+			        pattern="[0-9]{1,2}:[0-9]{1,2}" 
+			        title="Bitte Ergebnis im Format x:y angeben!"
+			        {% if not spieltag.is_tippable  %} Disabled {% endif %}>
+			        {% else %}
+			        <center class="tipp{{punkte}}">{{ tipp.ergebniss }} ({{punkte}})</center>
+			        {% endif %}
+		        </td>
+		    {% endif %}
+		    {% if user.is_authenticated and not spieltag.is_tippable %}
+		        <!--td>
+		        {% if punkte != None %}
+			        <center>{{punkte}}</center>
+		        {% endif %}
+		        </td-->
+		    {% endif %}
+		    {% for fremdtipp in fremdtipps %}
+			    <td name="fremdtipp" class="tipp{{fremdtipp.2}}">
+			        {% if fremdtipp.1 != "" %}
+				        {{fremdtipp.0}}: {{fremdtipp.1}} ({{fremdtipp.2}})
+			        {% endif %}
+			    </td>
+		    {% endfor %}
+		    </tr>
+        {% endwith %}
+        {% endfor %}
+        </table>
+        {% if spieltag.is_tippable %}
+            <div class="alert alert-success">
+                Jetzt tippen bis zum {{ spieltag.datum }}.
+                {% if user.is_authenticated %}	
+                <input type="submit" value="Tipp abgeben!" class="btn btn-success hright" 
+	                {% if not spieltag.is_tippable  %} Disabled {% endif %} />
+                {% endif %}
+            </div>
+        {% else %}
+            <div class="alert alert-warning">
+                Tippen nicht mehr möglich!
+            </div>
+        {% endif %}
 
-    <table class="table table-condensed">
-        <tr>
-		<td colspan="3"><b>Spiel</b></td>
-		<td><b>Ergebnis</b></td>
-		{% if user.is_authenticated %}
-			<td><b>mein Tipp</b></td>
-			{% if not spieltag.is_tippable %}
-				<!--td><b>Punkte</b></td-->{% endif %}{% endif %}
-		{% if not spieltag.is_tippable %}
-			<td><b><a onclick='if (document.getElementsByName("fremdtipp")[0].style.display==""){s="None";}else{ s="";}; for (var i = 0; i < document.getElementsByName("fremdtipp").length; i++) {document.getElementsByName("fremdtipp")[i].style.display=s; }' href="#">Andere:</a></b></td>
-		{% endif %}
-	</tr>
-    {% for spiel, tipp, punkte, fremdtipps in spieltipp  %}
-    {% with h=spiel.heimmannschaft.id a=spiel.auswaertsmannschaft.id%}
-		<tr>
-		<td class="right" ><b>{{ spiel.heimmannschaft }}</b> ({{tabelle|get:h}}.)</td><td> <span class="glyphicon glyphicon-resize-horizontal"></span> </td><td class="left" ><b>{{ spiel.auswaertsmannschaft }}</b> ({{tabelle|get:a}}.)</center></td>
-		<td>
-		<center>
-		{% if spiel.ergebniss == "DNF" %}
-			{% if spieltag.is_tippable and spiel.is_tippable %}
-				tippen!
-			{% else %}
-				{% if user.is_staff %}
-					<a href ="{% url "admin:BuLiTippApp_spieltag_change" spieltag.id %}">		
-				{% endif %}
-					eintragen!
-				{% if user.is_staff %}
-					</a>
-				{% endif %}
-			{% endif %}
-		{% else %}
-			{{ spiel.ergebniss  }}
-		{% endif %}
-		</center>
-		</td>
-		{% if user.is_authenticated %}
-		<td>
-			{% if spieltag.is_tippable and spiel.is_tippable  %}
-			<input type="text" name="tipp_{{ spiel.id  }}" style="width:50px"
-			id="tipp{{ spiel.id  }}" value="{{ tipp.ergebniss }}" 
-			pattern="[0-9]{1,2}:[0-9]{1,2}" 
-			title="Bitte Ergebnis im Format x:y angeben!"
-			{% if not spieltag.is_tippable  %} Disabled {% endif %}>
-			{% else %}
-			<center class="tipp{{punkte}}">{{ tipp.ergebniss }} ({{punkte}})</center>
-			{% endif %}
-		</td>
-		{% endif %}
-		{% if user.is_authenticated and not spieltag.is_tippable %}
-		<!--td>
-		{% if punkte != None %}
-			<center>{{punkte}}</center>
-		{% endif %}
-		</td-->
-		{% endif %}
-		{% for fremdtipp in fremdtipps %}
-			<td name="fremdtipp" class="tipp{{fremdtipp.2}}">
-			{% if fremdtipp.1 != "" %}
-				{{fremdtipp.0}}: {{fremdtipp.1}} ({{fremdtipp.2}})
-			{% endif %}
-			</td>
-		{% endfor %}
-		</tr>
-    {% endwith %}
-    {% endfor %}
-    </table>
-{% if user.is_authenticated %}	
-<input type="submit" value="Tipp abgeben!" class="btn btn-success hright" 
-	{% if not spieltag.is_tippable  %} Disabled {% endif %} />
-{% endif %}
-</form>
+    </form>
 {% else %}
     <p>Keine Spiele an diesem Spieltag.</p>
 {% endif %}

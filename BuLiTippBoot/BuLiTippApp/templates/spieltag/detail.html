@@ -1,4 +1,4 @@
-{% extends "base_site.html" %}
+﻿{% extends "base_site.html" %}
 <!-- benötigt: spieltag, spielzeit -->
 {% load i18n  %}
 
@@ -47,15 +47,6 @@
     </div>
 </form >
 </h2>
-{% if spieltag.is_tippable %}
-    <div class="alert alert-info">
-        Jetzt tippen bis zum {{ spieltag.datum }}.
-    </div>
-{% else %}
-    <div class="alert alert-warning">
-        Tippen nicht mehr möglich!
-    </div>
-{% endif %}
 <div>
     <div style="float:left">
         {% include "spieltag/inline.html" %}
