@@ -33,13 +33,13 @@
     <div class="form-group">
         {% if no_navigation != "true" %}
             {% if spieltag.previous.id > 0 %}
-	            <a href="{% url BuLiTippApp.views.detail spieltag.previous.id %}" class="btn btn-primary btn-sm active" role="button">
+	            <a href="{% url BuLiTippApp.views.detail spieltag.previous.id spieltag.spielzeit_id %}" class="btn btn-primary btn-sm active" role="button">
 	            <span class="glyphicon glyphicon-arrow-left"></span> vorheriger 
 	            </a>
             {% endif %}
 
             {% if spieltag.next.id > 0 %}
-	            <a href="{% url BuLiTippApp.views.detail spieltag.next.id  %}" class="btn btn-primary btn-sm active" role="button">
+	            <a href="{% url BuLiTippApp.views.detail spieltag.next.id  spieltag.spielzeit_id %}" class="btn btn-primary btn-sm active" role="button">
 	            nächster <span class="glyphicon glyphicon-arrow-right"></span>
 	            </a>
             {% endif %}

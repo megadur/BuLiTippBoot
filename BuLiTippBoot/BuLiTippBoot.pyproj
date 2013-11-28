@@ -6,6 +6,12 @@
     <Name>BuLiTippBoot</Name>
     <RootNamespace>BuLiTippBoot</RootNamespace>
     <NameOfLastUsedPublishProfile>test</NameOfLastUsedPublishProfile>
+    <CommandLineArguments />
+    <InterpreterPath />
+    <InterpreterArguments />
+    <DjangoSettingsModule>$(MSBuildProjectName).settings</DjangoSettingsModule>
+    <WebBrowserUrl>/BuLiTipp/spieltag/0/1/</WebBrowserUrl>
+    <WebBrowserPort>8888</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -181,6 +187,7 @@
     <Content Include="BuLiTippApp\templates\registration\login.html" />
     <Content Include="BuLiTippApp\templates\saisontipp.html" />
     <Content Include="BuLiTippApp\templates\spieltag\detail.html" />
+    <Content Include="BuLiTippApp\templates\spieltag\index.html" />
     <Content Include="BuLiTippApp\templates\spieltag\inline.html" />
     <Content Include="BuLiTippApp\templates\spielzeit\spielzeit.html" />
     <Content Include="BuLiTippApp\templates\start.html" />

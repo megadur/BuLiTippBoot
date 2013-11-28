@@ -29,7 +29,6 @@ urlpatterns = patterns('',
     url(r'^BuLiTipp/$', 'BuLiTippApp.views.index'),
     url(r'^BuLiTipp/(?P<spielzeit_id>\d+)/$', 'BuLiTippApp.views.index'),
     url(r'^BuLiTipp/news/$', 'BuLiTippApp.views.news'),
-    url(r'^BuLiTipp/test/$', 'BuLiTippApp.views.test'),
     url(r'^BuLiTipp/start/(?P<spielzeit_id>\d+)/$', 'BuLiTippApp.views.start'),
     url(r'^BuLiTipp/about/$', 'BuLiTippApp.views.about'),
     url(r'^BuLiTipp/basic/$', 'BuLiTippApp.views.basic'),
@@ -49,4 +48,7 @@ urlpatterns = patterns('',
 
     url(r'^BuLiTipp/verein/(?P<verein_id>\d+)/$', 'BuLiTippApp.views.verein'),
 
+    url(r'^BuLiTipp/spieltag/(?P<spieltag_id>\d+)/(?P<spielzeit_id>\d+)/$', 'BuLiTippApp.views.detail'),
+    url(r'^BuLiTipp/test/(?P<spieltag_id>\d+)/(?P<spielzeit_id>\d+)/$', 'BuLiTippApp.views.detail'),
+    url(r'^BuLiTipp/test/$', 'BuLiTippApp.views.test'),
 )

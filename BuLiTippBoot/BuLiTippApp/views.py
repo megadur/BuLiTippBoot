@@ -4,22 +4,30 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.template import RequestContext
 from django.core.urlresolvers import reverse
+from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth import authenticate, login as djlogin, logout as djlogout
 from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
 from django.db.models import Q
 from models import Spiel, Spieltag, Spielzeit, Tipp, Kommentar, News, Meistertipp, Verein, Herbstmeistertipp, Absteiger, Tabelle
-from datetime import datetime
+from datetime import datetime, date
 from sets import Set
+from django.utils import timezone
 import operator
+from django.core.paginator import Paginator
 
 def home(request):
 	return redirect("BuLiTippApp.views.index")
 
-def test(request):
+def test(request, spieltag_id, spielzeit_id):
 	return render_to_response("test.html",\
+		{ \
+		"spieltag":spieltag_id, \
+		"spielzeit":spielzeit_id, \
+		} ,\
 		context_instance=RequestContext(request))
+
 def about(request):
 	return render_to_response("about.html",\
 		context_instance=RequestContext(request))
@@ -303,11 +311,24 @@ def register(request):
 		user.save()
 		return redirect(reverse("BuLiTippApp.views.index"), context_instance=RequestContext(request))
 	return render_to_response("register.html", context_instance=RequestContext(request))
-	
+# /(?P<spielzeit_id>\d+)	
 @login_required
-def detail(request, spieltag_id, spielzeit_id=-1, info=""):
-	spieltag = get_object_or_404(Spieltag, pk=spieltag_id)
+def detail(request, spieltag_id, spielzeit_id, info = None):
+	spieltag_id =int(spieltag_id )
+	spielzeit_id=int(spielzeit_id)
+	if spieltag_id == 0:
+		dtnow=date.today()
+		dtnow=timezone.now()
+		try:
+			#spieltag =  Spieltag.objects.filter(datum__lt =  dtnow).order_by('datum')[0]
+			spieltag =  Spieltag.objects.filter(datum__lt =  dtnow).order_by('datum').reverse()[0]
+		except ObjectDoesNotExist:
+			print("Either the entry or blog doesn't exist.")
+		spieltag_id =spieltag.id
+	else:
+		spieltag = get_object_or_404(Spieltag, pk=spieltag_id)
 	spielzeit = Spielzeit.objects.get(pk=spieltag.spielzeit_id)
+
 	spieltag_next = int(spieltag_id) + 1
 	spieltag_previous = int(spieltag_id) - 1
 	tipps = Tipp.objects.filter(spiel_id__spieltag_id=spieltag_id).filter(user_id=request.user.id)
@@ -320,6 +341,7 @@ def detail(request, spieltag_id, spielzeit_id=-1, info=""):
 	if info is not None:
 		args["message"]=info
 	return render_to_response("spieltag/detail.html", args, context_instance=RequestContext(request))
+
 @login_required
 def tippen(request, spieltag_id):
 	''' request.POST.items() enthaelt die Tipps in der Form: [("tipp_"spielID : tipp), ]
